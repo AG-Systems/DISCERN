@@ -35,6 +35,39 @@ button {
     display: inline;
     margin-left: 20px;
     width: 10%;
-    font-size: 22px;
-    height: 40px;
+    font-size: 26px;
+    height: 42px;
+}
+
+.container {
+    width: 100%;
+}
+
+.col-xs-2 {
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.navbar {
+    background-color: transparent;
+    border: 0;
+}
+
+#login-icon {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+#lockA {
+    border-left: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+
+.fa-lock:before {
+    content: "\f023";
+    margin-left: 10px;
 }

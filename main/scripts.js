@@ -1,16 +1,24 @@
 var app = angular.module("myApp", ["ngRoute"]);
 app.config(function ($routeProvider) {
-    $routeProvider
-        .when("/", {
-            templateUrl: "main.htm"
+    $routeProvider.when("/about", {
+            templateUrl: "about.html"
         })
-        .when("/red", {
-            templateUrl: "red.htm"
+        .when("/data", {
+            templateUrl: "data.html"
         })
-        .when("/green", {
-            templateUrl: "green.htm"
+        .when("/demo", {
+            templateUrl: "demo.html"
         })
-        .when("/blue", {
-            templateUrl: "blue.htm"
+        .when("/contact", {
+            templateUrl: "contact.html"
+        })
+        .when("/news", {
+            templateUrl: "news.html"
+        })
+        .when("/services", {
+            templateUrl: "services.html"
+        })
+        .otherwise({
+            templateUrl: "home.html"
         });
 });

@@ -9,7 +9,7 @@ img {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
@@ -70,4 +70,117 @@ p {
 .fa-lock:before {
     content: "\f023";
     margin-left: 10px;
+}
+
+.row {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.thumbnail {
+    border: none;
+}
+
+.thumbnail img {
+    height: 200px;
+    display: block;
+    width: 200px;
+}
+
+.thumbnail:hover {
+    background: #f7f7f7;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    position: relative;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 50%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.thumbnail:hover {
+    background: #f7f7f7;
+}
+
+#about-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.caption {
+    margin-bottom: 100px;
+}
+
+.bios {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#modal-img {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+#leftside {
+    float: left;
+    width: 30%;
+    height: 90%;
+    border-right: 3px solid blue;
+}
+
+#rightside {
+    float: left;
+    width: 70%;
+    height: 90%;
+    border-left: 3px solid blue;
+    margin-left: -3px;
 }

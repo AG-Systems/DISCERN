@@ -1,230 +1,64 @@
-<!DOCTYPE html>
-<html ng-app="about" ng-controller="about_controller">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>DISCERN</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheets.css" type="text/css">
-</head>
-<style>
-    .row {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .thumbnail {
-        border: none;
-    }
-
-    .thumbnail img {
-        height: 300px;
-        display: block;
-        width: auto;
-    }
-
-    .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-        /* Height of the footer */
-        background: #6cf;
-    }
-
-    .thumbnail:hover {
-        background: #f7f7f7;
-    }
-
-    .modal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-    }
-    /* Modal Content/Box */
-
-    .modal-content {
-        background-color: #fefefe;
-        margin: 15% auto;
-        /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 50%;
-        /* Could be more or less, depending on screen size */
-    }
-    /* The Close Button */
-
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .thumbnail:hover {
-        background: #f7f7f7;
-    }
-</style>
-
-<body>
+<div id="about-page" ng-controller="about_controller">
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p><b>Name: </b></p>
-            <p>{{ current_name }}</p>
-            <p><b>Bio: </b></p>
-            <p>{{ bio }}</p>
-        </div>
+            <div id="leftside">
+                <img class="img-circle" id="modal-img" ng-src="{{image}}">
+                <p style="margin-top:10px; font-weight:bold; text-align:center;">{{ current_name }}</p>
+            </div>
+            <div id="rightside">
+                <p style="text-decoration:underline; margin-left:20px;"><b>Bio: </b></p>
+                <p style="text-align:left; margin-left:20px;">{{ bio }}</p>
+            </div>
 
+        </div>
     </div>
-    <h1 style="text-align: center;">Team</h1>
+    <h1 id="about-header">Our Team</h1>
     <div class="row" style="text-align: center;">
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-                <img src="http://blogs.timesofindia.indiatimes.com/wp-content/uploads/2015/12/mark-zuckerberg.jpg" alt="..." class="img-circle">
+                <img src="images/mark-zuckerberg.jpg" class="img-circle">
                 <div class="caption">
                     <h3 ng-click="changeName('Harry E. Blount');
-            changebio('Facebook facebook facebook facebook facebook facebook facebook facebook facebook facebook')
-            " class="myBtn">Harry E. Blount</h3>
+            changebio('Facebook... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eaque fugiat quis nobis nesciunt, sunt. Magni pariatur sed, blanditiis eligendi fugit, nemo, eum reprehenderit, voluptate ipsa in dolorem et reiciendis!');
+            changeImg('images/mark-zuckerberg.jpg')
+            " class="bios">Harry E. Blount</h3>
                     <p>CEO & Founder</p>
                 </div>
             </div>
-
         </div>
-
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-                <img src="http://www.patriots.com/sites/patriots.com/files/styles/gallery__lightbox/public/_gallery_photos/brady_tom_2014.jpg?itok=zIBNkeu5&timestamp=1449176585" class="img-circle" style="width: 340px; height: 300px;">
+                <img src="images/brady.png" class="img-circle" style="border:1px solid">
                 <div class="caption">
                     <h3 ng-click="changeName('Marc Cooperstein');
-            changebio('Football is my game, football is my life')
-            " class="myBtn">Marc Cooperstein</h3>
+            changebio('Football is my game, football is my life... Lorem ipsum dolor sit amet, consectetur adipisicing elit. At laudantium sunt perspiciatis voluptate facere quis architecto dolore provident sapiente nulla. Mollitia voluptates enim nostrum voluptas nobis neque, laudantium dicta dolorum!');
+            changeImg('images/brady.png');
+            " class="bios">Marc Cooperstein</h3>
                     <p>Software Engineer</p>
-
                 </div>
             </div>
-
         </div>
-
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-                <img src="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/2534551796ee0a2638b462ce82e33b65091b1d42_1600x1200.jpg?w=1200" class="img-circle" style="width: 335px; height: 300px;">
+                <img src="images/elon.jpg" class="img-circle">
                 <div class="caption">
-                    <h3>Elon Musk</h3>
+                    <h3 class="bios" ng-click="changeName('Elon Musk'); changebio('Tesla, SpaceX, Solar City... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores porro amet laboriosam, quasi, illo obcaecati odit. Fuga blanditiis, magni maxime asperiores possimus, aliquam hic iure dignissimos iusto perspiciatis, dolorem enim?'); changeImg('images/elon.jpg');">Elon Musk</h3>
                     <p>Founder of tesla</p>
-
                 </div>
             </div>
-
         </div>
-
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-                <img src="http://i.dailymail.co.uk/i/pix/2017/07/15/01/424C490A00000578-0-Swole_con_Valley_-a-15_1500079233545.jpg" class="img-circle" style="width: 340px; height: 300px;">
+                <img src="images/bezos.jpg" class="img-circle">
                 <div class="caption">
-                    <h3>Jeff Bezos</h3>
+                    <h3 class="bios" ng-click="changeName('Jeff Bezos'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/bezos.jpg');">Jeff Bezos</h3>
                     <p>Founder of Amazon</p>
-
                 </div>
-
             </div>
         </div>
-        <!--
-    <footer class="footer">
-        <div class="container">
-            <div class="col-xs-2">
-                <a>
-                    <p>Demo</p>
-                </a>
-            </div>
-            <div class="col-xs-2">
-                <a href="data.html">
-                    <p>Register</p>
-                </a>
-            </div>
-            <div class="col-xs-2">
-                <a>
-                    <p>Services</p>
-                </a>
-            </div>
-            <div class="col-xs-2">
-                <a>
-                    <p>News</p>
-                </a>
-            </div>
-            <div class="col-xs-2">
-                <a>
-                    <p>About</p>
-                </a>
-            </div>
-            <div class="col-xs-2">
-                <a>
-                    <p>Contact Us</p>
-                </a>
-            </div>
-        </div>
-    </footer>-->
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
-        <script>
-            var about_app = angular.module('about', []);
-            about_app.controller('about_controller', function ($scope) {
-                $scope.current_name = "";
-                $scope.bio = ""
-                $scope.changeName = function (name) {
-                    $scope.current_name = name;
-                    console.log(name);
-                };
-                $scope.changebio = function (bio_info) {
-                    $scope.bio = bio_info
-                }
-            });
-        </script>
-
-        <script>
-            var modal = document.getElementById('myModal');
-            var span = document.getElementsByClassName("close")[0];
-            $(".myBtn").click(function () {
-                modal.style.display = "block";
-            });
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
-</body>
-
-</html>
+    </div>
+</div>

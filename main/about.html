@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="about" ng-controller="control">
+<html ng-app="about" ng-controller="about_controller">
 
 <head>
     <meta charset="UTF-8">
@@ -38,30 +38,81 @@
     .thumbnail:hover {
           background: #f7f7f7;
         }
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 </style>
 <body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p><b>Name: </b></p>
+        <p>{{ current_name }}</p>
+        <p><b>Bio: </b></p>
+        <p>{{ bio }}</p>
+      </div>
+    
+    </div>
     <h1 style="text-align: center;">Team</h1>
     <div class="row" style="text-align: center;">
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
           <img src="http://blogs.timesofindia.indiatimes.com/wp-content/uploads/2015/12/mark-zuckerberg.jpg" alt="..." class="img-circle">
           <div class="caption">
-            <h3>Harry E. Blount</h3>
+            <h3 ng-click="changeName('Harry E. Blount');
+            changebio('Facebook facebook facebook facebook facebook facebook facebook facebook facebook facebook')
+            " class="myBtn">Harry E. Blount</h3>
             <p>CEO & Founder</p>
-
           </div>
         </div>
         
       </div>
       
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
           <img src="http://www.patriots.com/sites/patriots.com/files/styles/gallery__lightbox/public/_gallery_photos/brady_tom_2014.jpg?itok=zIBNkeu5&timestamp=1449176585" class="img-circle"
           style="width: 340px; height: 300px;"
           >
           <div class="caption">
-            <h3>Marc Cooperstein</h3>
+            <h3 ng-click="changeName('Marc Cooperstein');
+            changebio('Football is my game, football is my life')
+            " class="myBtn">Marc Cooperstein</h3>
             <p>Software Engineer</p>
             
           </div>
@@ -69,7 +120,7 @@
         
       </div>
       
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
           <img src="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/2534551796ee0a2638b462ce82e33b65091b1d42_1600x1200.jpg?w=1200" class="img-circle"
           style="width: 335px; height: 300px;"
@@ -83,7 +134,7 @@
         
       </div>
       
-      <div class="col-sm-6 col-md-4">
+      <div class="col-sm-6 col-md-3">
         <div class="thumbnail">
           <img src="http://i.dailymail.co.uk/i/pix/2017/07/15/01/424C490A00000578-0-Swole_con_Valley_-a-15_1500079233545.jpg" class="img-circle"
           style="width: 340px; height: 300px;"
@@ -137,12 +188,37 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js" type="text/javascript"></script>
     <script>
-    var app = angular.module('about', []);
-    app.controller('control', function($scope) {
-        $scope.firstName= "John";
-        $scope.lastName= "Doe";
+    var about_app = angular.module('about', []);
+    about_app.controller('about_controller', function($scope) 
+    {
+        $scope.current_name= "";
+        $scope.bio = ""
+        $scope.changeName = function(name) {
+                $scope.current_name = name;
+                console.log(name);
+            };
+        $scope.changebio = function(bio_info)
+        {
+            $scope.bio = bio_info
+        }
     });
     </script>
+    
+    <script>
+    var modal = document.getElementById('myModal');
+    var span = document.getElementsByClassName("close")[0];
+    $(".myBtn").click(function(){
+        modal.style.display = "block";
+    });
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </body>
 
 </html>

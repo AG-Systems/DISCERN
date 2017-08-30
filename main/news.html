@@ -50,7 +50,7 @@
 <div class="container" ng-controller="news">
     <div class="row">
         <div class="col-xs-6" style="overflow-y: auto;" id="fill">
-            <div ng-repeat="post in posts" id="single_news" ng-class="{ 'selected': post.post_id == $scope.index }" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">
+            <div ng-repeat="post in posts" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">
                 <div>
                     <h4>{{ post.title }}</h4>
                     <p>{{ post.date }}</p>

@@ -62,6 +62,9 @@
             <div id="rightside">
                 <p style="text-decoration:underline; margin-left:20px;"><b>Bio: </b></p>
                 <p style="text-align:left; margin-left:20px;">{{ bio }}</p>
+                <!--<ul>
+                    <li ng-repeat="bullet in bullets">{{bullet}}</li>
+                </ul>-->
             </div>
 
         </div>
@@ -76,10 +79,22 @@
             changebio('Facebook... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eaque fugiat quis nobis nesciunt, sunt. Magni pariatur sed, blanditiis eligendi fugit, nemo, eum reprehenderit, voluptate ipsa in dolorem et reiciendis!');
             changeImg('images/mark-zuckerberg.jpg')
             " class="bios">Harry E. Blount</h3>
-                    <p>CEO & Founder</p>
+                    <p>Chairman & CEO</p>
                 </div>
             </div>
         </div>
+        <!--<div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="images/mark-zuckerberg.jpg" class="img-circle">
+                <div class="caption">
+                    <h3 ng-click="changeName('Harry E. Blount');
+                                  changeBullets(bullet.bio_id)
+                                  changeImg('images/mark-zuckerberg.jpg')
+                                  " class="bios">Harry E. Blount</h3>
+                    <p>Chairman & CEO</p>
+                </div>
+            </div>
+        </div>-->
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
                 <img src="images/brady.png" class="img-circle" style="border:1px solid">
@@ -87,8 +102,8 @@
                     <h3 ng-click="changeName('Marc Cooperstein');
             changebio('Football is my game, football is my life... Lorem ipsum dolor sit amet, consectetur adipisicing elit. At laudantium sunt perspiciatis voluptate facere quis architecto dolore provident sapiente nulla. Mollitia voluptates enim nostrum voluptas nobis neque, laudantium dicta dolorum!');
             changeImg('images/brady.png');
-            " class="bios">Marc Cooperstein</h3>
-                    <p>Software Engineer</p>
+            " class="bios">Thor Hauge</h3>
+                    <p>Head of Business Development</p>
                 </div>
             </div>
         </div>
@@ -96,8 +111,8 @@
             <div class="thumbnail">
                 <img src="images/elon.jpg" class="img-circle">
                 <div class="caption">
-                    <h3 class="bios" ng-click="changeName('Elon Musk'); changebio('Tesla, SpaceX, Solar City... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores porro amet laboriosam, quasi, illo obcaecati odit. Fuga blanditiis, magni maxime asperiores possimus, aliquam hic iure dignissimos iusto perspiciatis, dolorem enim?'); changeImg('images/elon.jpg');">Elon Musk</h3>
-                    <p>Founder of tesla</p>
+                    <h3 class="bios" ng-click="changeName('Elon Musk'); changebio('Tesla, SpaceX, Solar City... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores porro amet laboriosam, quasi, illo obcaecati odit. Fuga blanditiis, magni maxime asperiores possimus, aliquam hic iure dignissimos iusto perspiciatis, dolorem enim?'); changeImg('images/elon.jpg');">Jim Christie</h3>
+                    <p>Head of Product</p>
                 </div>
             </div>
         </div>
@@ -105,8 +120,8 @@
             <div class="thumbnail">
                 <img src="images/bezos.jpg" class="img-circle">
                 <div class="caption">
-                    <h3 class="bios" ng-click="changeName('Jeff Bezos'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/bezos.jpg');">Jeff Bezos</h3>
-                    <p>Founder of Amazon</p>
+                    <h3 class="bios" ng-click="changeName('Jeff Bezos'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/bezos.jpg');">Ragu Madabusi</h3>
+                    <p>CTO</p>
                 </div>
             </div>
         </div>
@@ -117,8 +132,8 @@
                     <h3 ng-click="changeName('Harry E. Blount');
                                   changebio('Facebook... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eaque fugiat quis nobis nesciunt, sunt. Magni pariatur sed, blanditiis eligendi fugit, nemo, eum reprehenderit, voluptate ipsa in dolorem et reiciendis!');
                                   changeImg('images/mark-zuckerberg.jpg')
-                                  " class="bios">Harry E. Blount</h3>
-                    <p>CEO & Founder</p>
+                                  " class="bios">Troy Hansen</h3>
+                    <p>Data Integrity & Enhancement</p>
                 </div>
             </div>
         </div>
@@ -129,8 +144,8 @@
                     <h3 ng-click="changeName('Marc Cooperstein');
                                   changebio('Football is my game, football is my life... Lorem ipsum dolor sit amet, consectetur adipisicing elit. At laudantium sunt perspiciatis voluptate facere quis architecto dolore provident sapiente nulla. Mollitia voluptates enim nostrum voluptas nobis neque, laudantium dicta dolorum!');
                                   changeImg('images/brady.png');
-                                  " class="bios">Marc Cooperstein</h3>
-                    <p>Software Engineer</p>
+                                  " class="bios">Mark Herrmann</h3>
+                    <p>Data & Content Sales</p>
                 </div>
             </div>
         </div>
@@ -138,8 +153,8 @@
             <div class="thumbnail">
                 <img src="images/elon.jpg" class="img-circle">
                 <div class="caption">
-                    <h3 class="bios" ng-click="changeName('Elon Musk'); changebio('Tesla, SpaceX, Solar City... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores porro amet laboriosam, quasi, illo obcaecati odit. Fuga blanditiis, magni maxime asperiores possimus, aliquam hic iure dignissimos iusto perspiciatis, dolorem enim?'); changeImg('images/elon.jpg');">Elon Musk</h3>
-                    <p>Founder of tesla</p>
+                    <h3 class="bios" ng-click="changeName('Elon Musk'); changebio('Tesla, SpaceX, Solar City... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores porro amet laboriosam, quasi, illo obcaecati odit. Fuga blanditiis, magni maxime asperiores possimus, aliquam hic iure dignissimos iusto perspiciatis, dolorem enim?'); changeImg('images/elon.jpg');">Dave Wigginton</h3>
+                    <p>Real Estate Curation</p>
                 </div>
             </div>
         </div>
@@ -147,8 +162,8 @@
             <div class="thumbnail">
                 <img src="images/bezos.jpg" class="img-circle">
                 <div class="caption">
-                    <h3 class="bios" ng-click="changeName('Jeff Bezos'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/bezos.jpg');">Jeff Bezos</h3>
-                    <p>Founder of Amazon</p>
+                    <h3 class="bios" ng-click="changeName('Jeff Bezos'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/bezos.jpg');">Rick Church</h3>
+                    <p>Consumer Retail Curation</p>
                 </div>
             </div>
         </div>
@@ -156,8 +171,8 @@
             <div class="thumbnail">
                 <img src="images/bezos.jpg" class="img-circle">
                 <div class="caption">
-                    <h3 class="bios" ng-click="changeName('Jeff Bezos'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/bezos.jpg');">Jeff Bezos</h3>
-                    <p>Founder of Amazon</p>
+                    <h3 class="bios" ng-click="changeName('Jeff Bezos'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/bezos.jpg');">Dr. Gil Yang</h3>
+                    <p>Energy Curation</p>
                 </div>
             </div>
         </div>

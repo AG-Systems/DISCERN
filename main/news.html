@@ -1,3 +1,4 @@
+<!--
 <article id="news-stories">
     <div>
         <ul>
@@ -10,3 +11,53 @@
 <article id="display" class="scrollable active" style="overflow:hidden;">
     <h1>Test Test</h1>
 </article>
+
+
+-->
+
+<div class="container" ng-controller="news">
+    <div class="row">
+        <div class="col-xs-6" style="overflow-y: auto;" id="fill">
+            <div ng-repeat="post in posts" id="single_news" ng-class="{ 'selected': post.post_id == $scope.index }" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">
+                <div>
+                  <h4>{{ post.title }}</h4>
+                  <p>{{ post.date }}</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-xs-6" style="text-align: center; overflow-y: scroll;" id="currentpost">
+            <h3>{{ current_story.title }}</h3>
+            <p>Date published: {{ current_story.date }}</p>
+            <p>{{ current_story.text }}</p>
+            <p><a ng-href="{{current_story.link}}">Link to the full article</a></p>
+        </div>
+    </div>
+</div>
+
+<style>
+    #single_news
+    {
+        /* width: 300px; */
+        height: 100px;
+        background-color: #d3d3d3;
+        color: black;
+        text-align: center;
+    }
+    .selected {
+      background-color: green;
+    }    
+    #fill
+    {
+        height: 550px;
+    }
+    #currentpost
+    {
+        background-color: #00ffa5;
+        height: 550px;
+    }
+    a{
+        cursor: pointer;
+    }
+</style>
+

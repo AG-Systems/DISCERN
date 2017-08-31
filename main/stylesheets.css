@@ -53,6 +53,11 @@ img {
     padding-right: 0;
 }
 
+.newsHeader {
+    text-align: center;
+    text-decoration: underline;
+}
+
 .searchNav {
     margin-top: 5px;
 }
@@ -275,4 +280,8 @@ p {
     height: 90%;
     border-left: 3px solid blue;
     margin-left: -3px;
+}
+
+iframe {
+    width: 100%;
 }

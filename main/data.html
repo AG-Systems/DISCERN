@@ -52,15 +52,16 @@
     <h2 style="text-align: center;">Sign Up</h2>
     <hr>
     <form>
-        <input name="utf8" type="hidden" value="✓"> Email:
+        <input placeholder="Name" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+        <input name="utf8" type="hidden" value="✓">
         <br>
-        <input autofocus="autofocus" placeholder="Email address" type="email" value="" name="user[email]" id="user_email"> Password:
-        <input placeholder="Password" type="password" name="user[password]" id="user_password"> Confirm password:
-        <input placeholder="Password" type="password" name="user[password_confirmation]" id="user_password_confirmation"> Company:
-        <input placeholder="Company" type="password" name="user[password_confirmation]" id="user_password_confirmation"> Display:
-        <input placeholder="Display name" type="password" name="user[password_confirmation]" id="user_password_confirmation"> Number:
+        <input autofocus="autofocus" placeholder="Email address" type="email" value="" name="user[email]" id="user_email">
+        <input placeholder="Password" type="password" name="user[password]" id="user_password">
+        <input placeholder="Confirm Password" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+        <input placeholder="Company" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+
         <input placeholder="Phone number" type="password" name="user[password_confirmation]" id="user_password_confirmation">
-        <br/>Role:
+        <br/>
         <br/>
         <select>
             <option value="null">Select Role</option>

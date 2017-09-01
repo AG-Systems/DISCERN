@@ -77,7 +77,8 @@ img {
     border-radius: 0;
 }
 
-#main-search2::placeholder {
+#main-search2::placeholder,
+.form-inputs:placeholder {
     color: lightgray;
     padding-left: 2px;
 }

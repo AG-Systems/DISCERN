@@ -52,15 +52,16 @@
     <h2 style="text-align: center;">Sign Up</h2>
     <hr>
     <form>
-        <input name="utf8" type="hidden" value="✓"> Email:
+        <input class="form-inputs" placeholder="Name" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+        <input name="utf8" type="hidden" value="✓">
         <br>
-        <input autofocus="autofocus" placeholder="Email address" type="email" value="" name="user[email]" id="user_email"> Password:
-        <input placeholder="Password" type="password" name="user[password]" id="user_password"> Confirm password:
-        <input placeholder="Password" type="password" name="user[password_confirmation]" id="user_password_confirmation"> Company:
-        <input placeholder="Company" type="password" name="user[password_confirmation]" id="user_password_confirmation"> Display:
-        <input placeholder="Display name" type="password" name="user[password_confirmation]" id="user_password_confirmation"> Number:
-        <input placeholder="Phone number" type="password" name="user[password_confirmation]" id="user_password_confirmation">
-        <br/>Role:
+        <input class="form-inputs" autofocus="autofocus" placeholder="Email address" type="email" value="" name="user[email]" id="user_email">
+        <input class="form-inputs" placeholder="Password" type="password" name="user[password]" id="user_password">
+        <input class="form-inputs" placeholder="Confirm Password" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+        <input class="form-inputs" placeholder="Company" type="email" name="user[password_confirmation]" id="user_password_confirmation">
+
+        <input class="form-inputs" placeholder="Phone number" type="email" name="user[password_confirmation]" id="user_password_confirmation">
+        <br/>
         <br/>
         <select>
             <option value="null">Select Role</option>
@@ -103,8 +104,8 @@
 <br/>
 <style>
     .border-form-div {
-        max-width: 300px;
-        padding: 19px 29px 29px;
+        max-width: 400px;
+        padding: 15px 30px 20px;
         margin: 0 auto 20px;
         background-color: #f5f5f5;
         border: 1px solid #e5e5e5;

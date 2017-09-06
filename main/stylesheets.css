@@ -2,15 +2,16 @@
 
 
 /* #1E4089 darker blue color of logo */
-#lock
-{
+
+#lock {
     color: #337ab7;
 }
-#break
-{
+
+#break {
     width: 100%;
     height: 7px;
 }
+
 #img-center {
     display: block;
     width: 50%;
@@ -169,7 +170,6 @@ p {
     padding: 0;
 }
 
-
 .borderLogin {
     /*
     border-left: 1px solid #337ab7;
@@ -307,4 +307,60 @@ iframe {
 #demoHeader {
     text-align: center;
     color: #1E4089;
+}
+
+@media (max-width:991px) {
+    #servicesNav {
+        display: none;
+    }
+}
+
+@media (min-width:992px) {
+    #smallerNav {
+        display: none;
+    }
+    #servicesNav {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    #servicesHeader {
+        margin-top: 50px;
+    }
 }

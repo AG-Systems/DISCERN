@@ -2,7 +2,15 @@
 
 
 /* #1E4089 darker blue color of logo */
-
+#lock
+{
+    color: #337ab7;
+}
+#break
+{
+    width: 100%;
+    height: 7px;
+}
 #img-center {
     display: block;
     width: 50%;
@@ -162,10 +170,13 @@ p {
 }
 
 
-/*.borderLogin {
+.borderLogin {
+    /*
     border-left: 1px solid #337ab7;
     border-bottom: 1px solid #337ab7;
-}*/
+    */
+    width: 100%;
+}
 
 .fa-lock:before {
     content: "\f023";

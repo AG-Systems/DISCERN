@@ -28,8 +28,8 @@ app.config(function ($routeProvider) {
             templateUrl: "about.html",
             controller: "about_controller"
         })
-        .when("/data", {
-            templateUrl: "data.html"
+        .when("/partners", {
+            templateUrl: "partners.html"
         })
         .when("/demo", {
             templateUrl: "demo.html"
@@ -152,6 +152,27 @@ app.controller('about_controller', function ($scope) {
     var modal = document.getElementById('myModal');
     //var span = document.getElementsByTagName("span");
     $(".bios").click(function () {
+        modal.style.display = "block";
+    });
+    $("span").click(function () {
+        modal.style.display = "none";
+    })
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});
+
+
+app.controller('services_controller', function ($scope) {
+    $scope.current_pic = "";
+    $scope.changephoto = function (img_url) {
+        $scope.current_pic = img_url;
+    }
+    var modal = document.getElementById('myModal');
+    //var span = document.getElementsByTagName("span");
+    $(".list-group").click(function () {
         modal.style.display = "block";
     });
     $("span").click(function () {

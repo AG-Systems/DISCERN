@@ -28,8 +28,8 @@ app.config(function ($routeProvider) {
             templateUrl: "about.html",
             controller: "about_controller"
         })
-        .when("/data", {
-            templateUrl: "data.html"
+        .when("/partners", {
+            templateUrl: "partners.html"
         })
         .when("/demo", {
             templateUrl: "demo.html"
@@ -166,11 +166,10 @@ app.controller('about_controller', function ($scope) {
 
 
 app.controller('services_controller', function ($scope) {
-   $scope.current_pic = "";
-   $scope.changephoto = function (img_url)
-   {
-       $scope.current_pic = img_url;
-   }
+    $scope.current_pic = "";
+    $scope.changephoto = function (img_url) {
+        $scope.current_pic = img_url;
+    }
     var modal = document.getElementById('myModal');
     //var span = document.getElementsByTagName("span");
     $(".list-group").click(function () {

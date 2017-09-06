@@ -163,3 +163,25 @@ app.controller('about_controller', function ($scope) {
         }
     }
 });
+
+
+app.controller('services_controller', function ($scope) {
+   $scope.current_pic = "";
+   $scope.changephoto = function (img_url)
+   {
+       $scope.current_pic = img_url;
+   }
+    var modal = document.getElementById('myModal');
+    //var span = document.getElementsByTagName("span");
+    $(".list-group").click(function () {
+        modal.style.display = "block";
+    });
+    $("span").click(function () {
+        modal.style.display = "none";
+    })
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});

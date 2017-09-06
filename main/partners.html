@@ -54,8 +54,17 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="{{current_pic}}" />
-
+            <div class='img-responsive'>
+                <img class='img-responsive' src="{{current_pic}}" />
+            </div>
+            <style>
+                .img-responsive
+                {
+                    height: 100%;
+                    padding: 15px;
+                }
+                
+            </style>
         </div>
     </div>
     <div class="row" style="margin: 0 auto;">
@@ -64,9 +73,9 @@
                 <a href="" class="list-group-item active">
                     DISCERN makes your data & content
                 </a>
-                <a href="" class="list-group-item" ng-click="changephoto('http://st.motortrend.com/uploads/sites/5/2016/02/2015-Subaru-WRX-STI-Launch-Edition-front-three-quarters-in-motion-07.jpg');">More discoverable</a>
-                <a href="" class="list-group-item" ng-click="changephoto('http://media.caranddriver.com/images/media/331369/m-is-for-mega-2015-bmw-m3-pricing-surfaces-photo-583888-s-450x274.jpg');">More useful</a>
-                <a href="" class="list-group-item" ng-click="changephoto('');">More valuable</a>
+                <a href="" class="list-group-item" ng-click="changephoto('./images/slide1.png');">More discoverable</a>
+                <a href="" class="list-group-item" ng-click="changephoto('./images/slide2.png');">More useful</a>
+                <a href="" class="list-group-item" ng-click="changephoto('./images/slide3.png');">More valuable</a>
             </div>
         </div>
         <div class="col-xs-6 col-md-6">
@@ -79,10 +88,10 @@
                 <a href="" class="list-group-item active">
                     Benefits to you
                 </a>
-                <a href="" class="list-group-item" ng-click="changephoto('');">Lead generations</a>
-                <a href="" class="list-group-item" ng-click="changephoto('');">Transactions</a>
-                <a href="" class="list-group-item" ng-click="changephoto('');">Subscriptions</a>
-                <a href="" class="list-group-item" ng-click="changephoto('');">Profits</a>
+                <a href="" class="list-group-item" ng-click="changephoto('./images/slide4.png');">Lead generations</a>
+                <a href="" class="list-group-item" ng-click="changephoto('./images/slide5.png');">Transactions</a>
+                <a href="" class="list-group-item" ng-click="changephoto('./images/slide6.png');">Subscriptions</a>
+                <a href="" class="list-group-item" ng-click="changephoto('./images/slide7.png');">Profits</a>
             </div>
         </div>
 

@@ -3,6 +3,10 @@
 
 /* #1E4089 darker blue color of logo */
 
+body {
+    /*font-family: "Titillium Web", sans-serif;*/
+}
+
 #lock {
     color: #337ab7;
 }
@@ -16,6 +20,10 @@
     display: block;
     width: 50%;
     margin: 0 auto;
+}
+
+#title-page {
+    margin-top: 20px;
 }
 
 img {
@@ -52,6 +60,7 @@ img {
 
 .mainNav {
     margin-top: -20px;
+    margin-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
 }

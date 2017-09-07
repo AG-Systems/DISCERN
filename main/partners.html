@@ -46,7 +46,7 @@
         </div>
     </div>
 </div>
-<h3 id="title_page">Start Generating Interest in Your Data Today! No Cost to Get Started!</h3>
+<h3 id="title_page">Start Generating Interest in Your Data Today! No Cost to <span class="underline-text">Get Started!</span></h3>
 <br/>
 <div ng-controller="services_controller">
     <div id="myModal" class="modal">
@@ -96,7 +96,7 @@
     </div>
 </div>
 <div class="border-form-div" id="signup">
-    <h2 style="text-align: center;">Sign Up</h2>
+    <h2 style="text-align: center;">Monetize Today!</h2>
     <hr>
     <form>
         <input class="form-inputs" placeholder="Name" type="email" name="user[password_confirmation]" id="user_password_confirmation">
@@ -162,6 +162,18 @@
         </form>
         <!-- <a href="">Sign Up</a><br> -->
     </div>
+</div>
+<br/>
+<div id="faq">
+    <!--
+    <section class="box">
+    It says I have a very low rating
+    </section>
+    <section class="draw">
+    <p>The rating system still needs a lot of work. Please stay tuned.</p>
+    </section>
+    -->
+</div>
     <br/>
     <style>
         .border-form-div {
@@ -204,6 +216,27 @@
         select {
             width: 100%;
         }
+        .underline-text
+        {
+            text-decoration: underline;
+        }
+        #faq
+        {
+            text-align: center;
+            max-width: 400px;
+        }
+    .box {
+        background: #e67e22;
+        color: white;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .draw {
+        display: none;
+        background: white;
+        border: 1px solid #c3c3c3;
+        padding: 20px;
+    }
     </style>
 
     <script>
@@ -217,4 +250,9 @@
                 $("#signup").removeClass("hidden");
             });
         });
+        
+        
+            $(".box").click(function(){
+  $(this).next().slideToggle("fast");
+});  
     </script>

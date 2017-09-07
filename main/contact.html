@@ -7,7 +7,7 @@
     </div>
     <div class="navLinks col-xs-7">
         <div class="col-xs-2">
-            <a ng-href="#/demo">
+            <a ng-href="#/overview">
                 <p class="navText">Overview</p>
             </a>
         </div>
@@ -133,6 +133,22 @@
                     align-items: center;
                     justify-content: center;
                 }
+                #footer-contact
+                {
+                    min-height: 170px;
+                    width: 100%;
+                    background-color: #609dff;
+                }
+                .rowcontact
+                {
+                    text-align: center;
+                    color: white;
+                }
+                .mapsize
+                {
+                    height: 50px;
+                    width: 250px;
+                }
             </style>
         </div>
     </div>
@@ -140,3 +156,29 @@
 </div>
 
 
+<div id="footer-contact">
+<div class="row rowcontact">
+  <div class="col-sm-4">
+      <br/>
+      <h3>Offices: </h3>
+  <h4>Google address</h4>
+  </div>
+  <div class="col-sm-4">
+      <br/>
+  <div class="">
+      <iframe
+      width="200"
+      height="140"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8JfQVNwDzOZTyZp34mhHIqb3BZa9nI60
+        &q=Space+Needle,Seattle+WA" allowfullscreen>
+    </iframe>
+  </div>
+  </div>
+  <div class="col-sm-4">
+      <br/>
+      <h3>Want to work here?</h3>
+      <button class="btn btn-primary">JOBS</button>
+  </div>
+</div>
+</div>

@@ -26,13 +26,13 @@
                 </a>
             </div>
             <div class="col-xs-2">
-                <a ng-href="#/partners">
-                    <p>Partners</p>
+                <a href="#/services">
+                    <p>Services</p>
                 </a>
             </div>
             <div class="col-xs-2">
-                <a href="#/services">
-                    <p>Services</p>
+                <a ng-href="#/partners">
+                    <p>Partners</p>
                 </a>
             </div>
             <div class="col-xs-2">
@@ -53,8 +53,9 @@
         </div>
         <div class="col-xs-1" id="footerLoginDiv">
             <div class="col-xs-12">
-                <a href="#/contact">
-                    <p>Login</p>
+                <a href="#">
+                    <i id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                    <p id="loginP">Login</p>
                 </a>
             </div>
         </div>
@@ -68,5 +69,16 @@
 
     #footerLoginDiv {
         height: 55px;
+        margin-top: 20px
+    }
+
+    .fa-lg {
+        font-size: 1.33333333em;
+        line-height: .75em;
+        /* vertical-align: -15%; */
+    }
+
+    #loginP {
+        display: inline;
     }
 </style>

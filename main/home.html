@@ -6,42 +6,81 @@
 <div id="img-center">
     <img class="img-responsive" src="images/discernLogo.png" />
 </div>
-<div id="input-bar">
-    <input id="main-search" placeholder="Global Search">
-    <button id="submit"><i class="fa fa-search"></i></button>
+<div id="input-bar" class="col-xs-12">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+        <input id="main-search" placeholder="Global Search">
+    </div>
+    <div class="col-xs-2" id="homeButtonDiv">
+        <button id="submit"><i class="fa fa-search"></i></button>
+    </div>
 </div>
 <p id="underInput">Business Data Search</p>
+<div id="emptySpace"></div>
 <footer class="footer fixed-bottom">
-    <div class="container">
-        <div class="col-xs-2">
-            <a ng-href="#/demo">
-                <p>Demo</p>
-            </a>
+    <!--<div class="col-xs-1"></div>-->
+    <div class="container col-xs-12">
+        <div class="col-xs-11">
+            <div class="col-xs-2">
+                <a ng-href="#/overview">
+                    <p>Overview</p>
+                </a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#/services">
+                    <p>Services</p>
+                </a>
+            </div>
+            <div class="col-xs-2">
+                <a ng-href="#/partners">
+                    <p>Partners</p>
+                </a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#/news">
+                    <p>News</p>
+                </a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#/about">
+                    <p>About</p>
+                </a>
+            </div>
+            <div class="col-xs-2">
+                <a href="#/contact">
+                    <p>Contact Us</p>
+                </a>
+            </div>
         </div>
-        <div class="col-xs-2">
-            <a ng-href="#/partners">
-                <p>Partners</p>
-            </a>
-        </div>
-        <div class="col-xs-2">
-            <a href="#/services">
-                <p>Services</p>
-            </a>
-        </div>
-        <div class="col-xs-2">
-            <a href="#/news">
-                <p>News</p>
-            </a>
-        </div>
-        <div class="col-xs-2">
-            <a href="#/about">
-                <p>About</p>
-            </a>
-        </div>
-        <div class="col-xs-2">
-            <a href="#/contact">
-                <p>Contact Us</p>
-            </a>
+        <div class="col-xs-1" id="footerLoginDiv">
+            <div class="col-xs-12">
+                <a href="#">
+                    <i id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></i>
+                    <p id="loginP">Login</p>
+                </a>
+            </div>
         </div>
     </div>
 </footer>
+
+<style>
+    #emptySpace {
+        height: 400px;
+        width: 100%;
+    }
+
+    #footerLoginDiv {
+        height: 55px;
+        margin-top: 20px
+    }
+
+    .fa-lg {
+        font-size: 1.33333333em;
+        line-height: .75em;
+        /* vertical-align: -15%; */
+    }
+
+    #loginP {
+        display: inline;
+    }
+</style>

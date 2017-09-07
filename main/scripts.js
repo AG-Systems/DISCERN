@@ -31,8 +31,8 @@ app.config(function ($routeProvider) {
         .when("/partners", {
             templateUrl: "partners.html"
         })
-        .when("/demo", {
-            templateUrl: "demo.html"
+        .when("/overview", {
+            templateUrl: "overview.html"
         })
         .when("/contact", {
             templateUrl: "contact.html"

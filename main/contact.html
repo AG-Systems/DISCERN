@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?rd5re8"> <!-- social icons -->
 <div class="mainNav col-xs-12">
 
     <div class="searchNav col-xs-4">
@@ -135,7 +136,8 @@
                 }
                 #footer-contact
                 {
-                    min-height: 170px;
+                    min-height: 300px;
+                    height: 350px;
                     width: 100%;
                     background-color: #609dff;
                 }
@@ -149,6 +151,25 @@
                     height: 50px;
                     width: 250px;
                 }
+                .footer-icons
+                {
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .ficon
+                {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .socicon-googleplus
+                {
+                    font-size: 45px;
+                }
+                .footer-icons a
+                {
+                    text-decoration: none;
+                    color: white;
+                }
             </style>
         </div>
     </div>
@@ -157,28 +178,48 @@
 
 
 <div id="footer-contact">
+    <div class="footer-icons fade">
+        <div id="break"></div>
+        <a href="">
+            <span class="socicon-google ficon">
+        </span>
+        </a>
+        <a href="">
+            <span class="socicon-linkedin ficon">
+        </span>
+        </a>
+        <a href="">
+            <span class="socicon-twitter ficon"></span>
+        </a>
+    </div>
 <div class="row rowcontact">
-  <div class="col-sm-4">
+  <div class="col-sm-4 fade">
       <br/>
       <h3>Offices: </h3>
   <h4>Google address</h4>
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-4 fade">
       <br/>
   <div class="">
       <iframe
       width="200"
-      height="140"
+      height="220"
       frameborder="0" style="border:0"
       src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8JfQVNwDzOZTyZp34mhHIqb3BZa9nI60
         &q=Space+Needle,Seattle+WA" allowfullscreen>
     </iframe>
   </div>
   </div>
-  <div class="col-sm-4">
+  <div class="col-sm-4 fade">
       <br/>
       <h3>Want to work here?</h3>
       <button class="btn btn-primary">JOBS</button>
   </div>
 </div>
 </div>
+
+<script>
+    $(window).scroll(function () {
+        $(".fade").css("opacity", 0 + $(window).scrollTop() / 250);
+    });
+</script>

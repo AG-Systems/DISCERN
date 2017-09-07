@@ -68,25 +68,26 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#page-top">Demo</a>
+                    <!--<a class="page-scroll" href="#page-top">Demo</a>-->
+                    <a href="#">Demo</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">Partners</a>
+                    <a href="#">Services</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Services</a>
+                    <a href="#">Partners</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">News</a>
+                    <a href="#">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">About</a>
+                    <a href="#">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact Us</a>
+                    <a href="#">Contact Us</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Login</a>
+                    <a href="#">Login</a>
                 </li>
             </ul>
         </div>
@@ -96,27 +97,26 @@
 </nav>
 <div id="max-breaker"></div>
 <div id="bg-demo">
-    <h1 style="font-size: 70px; margin-top: 0; padding-top: 180px;" id="fade">The Problem</h1>
+    <h1 style="font-size: 120px; margin-top: 0; padding-top: 160px;" id="fade">The Problem</h1>
 </div>
-<div id="max-breaker"></div>
 <div style="text-align: center;">
-    <div style="width: 80%; margin: 0 auto;">
+    <!--<div style="width: 80%; margin: 0 auto;">-->
+    <div>
         <h2>There is a growing gap between data generated and the ability of business to derive actionable insights</h2>
         <div id="max-breaker"></div>
-        <div id="max-breaker"></div>
-        <img src="https://obamawhitehouse.archives.gov/sites/whitehouse.gov/files/images/open%20data%201_0.png" />
+        <img id="obamaImg" src="https://obamawhitehouse.archives.gov/sites/whitehouse.gov/files/images/open%20data%201_0.png" />
         <hr/>
-        <div id="max-breaker"></div>
-        <div id="max-breaker"></div>
-        <h2><b>Our Mission:</b> DISCERN makes the world of data MORE:</h2>
-        <h3>Discoverable</h3>
-        <h3>Useful</h3>
-        <h3>Accessible</h3>
-        <h3>Valuable</h3>
-        <div id="max-breaker"></div>
-        <div id="max-breaker"></div>
+        <div id="missionDiv">
+            <h2><b>Our Mission:</b> DISCERN makes the world of data MORE:</h2>
+            <h3>Discoverable</h3>
+            <h3>Useful</h3>
+            <h3>Accessible</h3>
+            <h3>Valuable</h3>
+        </div>
         <hr>
-        <h2>Value Proposition: DISCERN improves decision-making effectiveness by <b><span style="color: #337ab7;">>100x</b></span></h2>
+        <div id="valuePropDiv">
+            <h2>Value Proposition: DISCERN improves decision-making effectiveness by <span id="increase100" style="color: #337ab7;"><b>>100x</b></span></h2>
+        </div>
     </div>
 </div>
 <div id="max-breaker"></div>
@@ -129,8 +129,6 @@
             <li><a href="#">Sign Up</a></li>
             <li><a href="#">Log in</a></li>
             <li><a href="#">Connect to Chat</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
         </ul>
     </div>
 </div>
@@ -142,21 +140,40 @@
         right: 0;
         padding: 20px;
     }
-</style>
-<style>
+
     #bg-demo {
         width: 100%;
-        height: 400px;
+        height: 380px;
         background-image: url("./images/dataCenter2.jpg");
         background-repeat: no-repeat;
         text-align: center;
-        background-position: 0px -160px;
+        background-position: -50px -160px;
         color: white;
     }
 
     #max-breaker {
         width: 100%;
         height: 50px;
+    }
+
+    #missionDiv {
+        background-color: #337ab7;
+        padding: 50px;
+        color: white;
+    }
+
+    #valuePropDiv {
+        padding: 50px;
+    }
+
+    #obamaImg {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+
+    #increase100 {
+        font-size: 1.25em;
     }
 </style>
 

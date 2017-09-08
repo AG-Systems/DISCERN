@@ -60,14 +60,22 @@
             </button>
             <div class="searchNav">
                 <a class="navbar-brand page-scroll" ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
-                <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
-                <button id="submit2"><i class="fa fa-search"></i></button>
+                <div class="navbar-collapse" id="global-search-desktop">
+                    <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                    <button id="submit2"><i class="fa fa-search"></i></button>
+                </div>
             </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                                    <div class="navbar-collapse" id="global-search-mobile">
+                                        <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                                        <button id="submit2"><i class="fa fa-search"></i></button>
+                                    </div>
+                </li>
                 <li>
                     <a class="page-scroll" href="#page-top">Demo</a>
                 </li>
@@ -95,5 +103,46 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+<div id="pushContent"></div> <!-- pushing down site -->
+<!-- navbar code done -->
 
 <h1 id="servicesHeader">Services Page</h1>
+<div id="emptySpace"></div>
+<!--
+<script type='text/javascript'>
+    var __ac = {};
+    __ac.uid = "ed0daea228b016d9966b60b4637abc9c";
+    __ac.server = "secure.chatrify.com";
+
+    (function () {
+        var ac = document.createElement('script');
+        ac.type = "text/javascript";
+        ac.async = true;
+        ac.src = "https://cdn.chatrify.com/go.js";
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ac, s);
+    })();
+</script>
+-->
+<style>
+    #emptySpace {
+        height: 400px;
+        width: 100%;
+    }
+    #antila-widget-offline
+    {
+      bottom:20px !important;  
+      border-bottom: blue;
+    }
+    .chat-container
+    {
+        border-top: 7px solid #609dff;
+    }
+</style>
+
+<script>
+        $('.navbar-toggle').on("click", function(){
+            $('#pushContent').slideToggle();
+        });
+    // navbar
+</script>

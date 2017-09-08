@@ -55,6 +55,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
+            <!--
             <div id="leftside">
                 <img class="img-circle" id="modal-img" ng-src="{{image}}">
                 <p style="margin-top:10px; font-weight:bold; text-align:center;">{{ current_name }}</p>
@@ -62,11 +63,56 @@
             <div id="rightside">
                 <p style="text-decoration:underline; margin-left:20px;"><b>Bio: </b></p>
                 <p style="text-align:left; margin-left:20px;">{{ bio }}</p>
-                <!--<ul>
+                <ul>
                     <li ng-repeat="bullet in bullets">{{bullet}}</li>
-                </ul>-->
+                </ul>
             </div>
-
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6" id="left">
+                <img class="img-circle" id="modal-img" ng-src="{{image}}">
+                <p style="margin-top:10px; font-weight:bold; text-align:center;">{{ current_name }}</p>
+        </div>
+        <div class="col-sm-6" style="max-height: 230px; overflow-y: auto; " id="right">
+                <p style="text-decoration:underline; margin-left:20px;"><b>Bio: </b></p>
+                <p style="text-align:left; margin-left:20px;">{{ bio }}</p>
+        </div>
+    </div>
+</div>
+<style>
+@media (max-width: 644px)
+{
+    #servicesNav 
+    {
+         margin-top: -20px; 
+    }
+    .right
+    {
+        text-align: center;
+        overflow-y: auto; 
+        max-height: 230px;
+    }
+    .left
+    {
+        margin: 0 auto;
+    }
+    .modal-content {
+        background-color: #fefefe;
+        position: relative;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 60%;
+        height: 90%;
+    }
+}
+.right
+{
+    overflow-y: auto; 
+    max-height: 230px;
+}
+</style>
         </div>
     </div>
     <h1 id="about-header">Our Team</h1>
@@ -147,11 +193,11 @@ specializing in gold securities.');
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="thumbnail">
-                <img src="images/brady.png" class="img-circle" style="border:1px solid">
+                <img src="images/Mark.jpg" class="img-circle" style="border:1px solid">
                 <div class="caption">
                     <h3 ng-click="changeName('Mark Herrmann');
-                                  changebio('Football is my game, football is my life... Lorem ipsum dolor sit amet, consectetur adipisicing elit. At laudantium sunt perspiciatis voluptate facere quis architecto dolore provident sapiente nulla. Mollitia voluptates enim nostrum voluptas nobis neque, laudantium dicta dolorum!');
-                                  changeImg('images/brady.png');
+                                  changebio('Mark Herrmann has 18 years of institutional equity sales experience, including 9 as a Managing Director at Bear Stearns, covering the largest hedge funds and mutual funds on the west coast.  Over the past year, he has been working in a marketing and product development role for several alternative data companies.  Mark received an undergraduate degree in mechanical engineering from Rensselaer Polytechnic Institute and an MBA in finance from USC. He is based in San Francisco.');
+                                  changeImg('images/Mark.jpg');
                                   " class="bios">Mark Herrmann</h3>
                     <p>Data & Content Sales</p>
                 </div>
@@ -232,4 +278,15 @@ the Street Award.'); changeImg('images/bezos.jpg');">Rick Church</h3>
     .img-circle {
         margin-top: 50px;
     }
+
+    #rightside {
+        overflow: auto;
+    }
+    /*#myModal {
+        display: flex;
+        align-items: center;
+    }
+    #leftside {
+        margin: auto;
+    }*/
 </style>

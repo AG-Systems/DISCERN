@@ -47,6 +47,8 @@ app.config(function ($routeProvider) {
         .otherwise({
             templateUrl: "home.html"
         });
+        
+        
 });
 app.controller('news', function ($scope) {
     $scope.index = 0;
@@ -184,3 +186,9 @@ app.controller('services_controller', function ($scope) {
         }
     }
 });
+    app.controller('UI', function ($scope, $window) {
+        $scope.$on('$viewContentLoaded', function () {
+            $window.scrollTo(0, 0);
+        });
+    });
+    

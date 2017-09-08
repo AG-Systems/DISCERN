@@ -1,11 +1,11 @@
-<div class="mainNav col-xs-12">
+<div id="servicesNav" class="mainNav col-xs-12">
 
-    <div class="searchNav col-xs-4">
+    <div class="searchNav col-md-5 col-lg-4">
         <a ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
         <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
         <button id="submit2"><i class="fa fa-search"></i></button>
     </div>
-    <div class="navLinks col-xs-7">
+    <div class="navLinks col-md-6 col-lg-7">
         <div class="col-xs-2">
             <a ng-href="#/overview">
                 <p class="navText">Overview</p>
@@ -21,6 +21,7 @@
                 <p class="navText">Partners</p>
             </a>
         </div>
+
         <div class="col-xs-2">
             <a href="#/news">
                 <p class="navText">News</p>
@@ -46,6 +47,64 @@
         </div>
     </div>
 </div>
+
+<nav id="smallerNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="searchNav">
+                <a class="navbar-brand page-scroll" ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
+                <div class="navbar-collapse" id="global-search-desktop">
+                    <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                    <button id="submit2"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                                    <div class="navbar-collapse" id="global-search-mobile">
+                                        <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                                        <button id="submit2"><i class="fa fa-search"></i></button>
+                                    </div>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#page-top">Demo</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">Partners</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#portfolio">Services</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">News</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact Us</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Login</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div id="pushContent"></div> <!-- pushing down site -->
+<!-- navbar code done -->
 <h3 id="title_page">Start Generating Interest in Your Data Today! No Cost to <span class="underline-text">Get Started!</span></h3>
 <br/>
 <div ng-controller="services_controller">
@@ -70,12 +129,13 @@
     <div class="row" style="margin: 0 auto;">
         <div class="col-xs-6 col-md-3">
             <div class="list-group" style="text-align: center;">
-                <a href="" class="list-group-item active">
-                    DISCERN makes your data & content
+                <a href="">
+                    <h3>DISCERN makes your data & content </h3>
                 </a>
-                <a href="#/partners#Q1" class="list-group-item item1" >More discoverable</a>
-                <a href="#/partners#Q1" class="list-group-item" ng-click="changephoto('./images/slide2.png');">More useful</a>
-                <a href="#/partners#Q1" class="list-group-item" ng-click="changephoto('./images/slide3.png');">More valuable</a>
+                <a href="" class="list-group-item item1" >More discoverable</a>
+                <a href="" class="list-group-item item2">More useful</a>
+                <a href="" class="list-group-item item3">More valuable</a>
+                <a href="" class="list-group-item item4">More accessible</a>
             </div>
         </div>
         <div class="col-xs-6 col-md-6">
@@ -85,13 +145,13 @@
         </div>
         <div class="col-xs-6 col-md-3">
             <div class="list-group" style="text-align: center;">
-                <a href="" class="list-group-item active">
-                    Benefits to you
+                <a href="">
+                    <h3>DISCERN </h3>
                 </a>
-                <a href="" class="list-group-item" ng-click="changephoto('./images/slide4.png');">Lead generations</a>
-                <a href="" class="list-group-item" ng-click="changephoto('./images/slide5.png');">Transactions</a>
-                <a href="" class="list-group-item" ng-click="changephoto('./images/slide6.png');">Subscriptions</a>
-                <a href="" class="list-group-item" ng-click="changephoto('./images/slide7.png');">Profits</a>
+                <a href="" class="list-group-item item5">Lead generations</a>
+                <a href="" class="list-group-item item6">Transactions</a>
+                <a href="" class="list-group-item item7">Subscriptions</a>
+                <a href="" class="list-group-item item8">Profits</a>
             </div>
         </div>
 
@@ -165,31 +225,11 @@
         <!-- <a href="">Sign Up</a><br> -->
     </div>
 </div>
+<div id="slide1"><img src="./images/slide1.png"/></div>
 <br/>
-<div id="faq">
-    
-    <section class="box" id="Q1">
-    More discoverable
-    </section>
-    <section class="draw" id="A1">
-    <p>Answer 1</p>
-    </section>
+<div id="slide2"><img src="./images/slide2.png"/></div>
+<br/>
 
-
-    <section class="box">
-    More useful
-    </section>
-    <section class="draw">
-    <p>answer 2</p>
-    </section>
-    
-    <section class="box">
-    More valuable
-    </section>
-    <section class="draw">
-    <p>What about this</p>
-    </section>    
-</div>
     <br/>
     <style>
         .border-form-div {
@@ -268,20 +308,22 @@
             });
         });
         
-        
-            $(".box").click(function(){
-              $(this).next().slideToggle("fast");
-            });  
-            $(".item1").click(function(){
-                console.log("--");
-              $("#A1").show();
-            }); 
 $(".item1").click(function() {
     // $("#videodiv").delay("fast").fadeOut();
     $('html, body').animate({
-        scrollTop: $("#Q1").offset().top
+        scrollTop: $("#slide1").offset().top
     }, 2000);
 });
-
+$(".item2").click(function() {
+    // $("#videodiv").delay("fast").fadeOut();
+    $('html, body').animate({
+        scrollTop: $("#slide2").offset().top
+    }, 2000);
+});
  $("#videodiv").delay("slow").fadeIn();
-    </script>
+
+    $('.navbar-toggle').on("click", function(){
+            $('#pushContent').slideToggle();
+        });
+    // navbar
+</script>

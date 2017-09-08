@@ -12,15 +12,16 @@
             </a>
         </div>
         <div class="col-xs-2">
-            <a ng-href="#/partners">
-                <p class="navText">Partners</p>
-            </a>
-        </div>
-        <div class="col-xs-2">
             <a href="#/services">
                 <p class="navText">Services</p>
             </a>
         </div>
+        <div class="col-xs-2">
+            <a ng-href="#/partners">
+                <p class="navText">Partners</p>
+            </a>
+        </div>
+
         <div class="col-xs-2">
             <a href="#/news">
                 <p class="navText">News</p>
@@ -59,8 +60,10 @@
             </button>
             <div class="searchNav">
                 <a class="navbar-brand page-scroll" ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
-                <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
-                <button id="submit2"><i class="fa fa-search"></i></button>
+                <div class="navbar-collapse" id="global-search-desktop">
+                    <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                    <button id="submit2"><i class="fa fa-search"></i></button>
+                </div>
             </div>
         </div>
 
@@ -68,26 +71,31 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <!--<a class="page-scroll" href="#page-top">Demo</a>-->
-                    <a href="#">Demo</a>
+                                    <div class="navbar-collapse" id="global-search-mobile">
+                                        <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                                        <button id="submit2"><i class="fa fa-search"></i></button>
+                                    </div>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a class="page-scroll" href="#page-top">Demo</a>
                 </li>
                 <li>
-                    <a href="#">Partners</a>
+                    <a class="page-scroll" href="#about">Partners</a>
                 </li>
                 <li>
-                    <a href="#">News</a>
+                    <a class="page-scroll" href="#portfolio">Services</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a class="page-scroll" href="#contact">News</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a class="page-scroll" href="#contact">About</a>
                 </li>
                 <li>
-                    <a href="#">Login</a>
+                    <a class="page-scroll" href="#contact">Contact Us</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Login</a>
                 </li>
             </ul>
         </div>
@@ -95,6 +103,8 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+<div id="pushContent"></div> <!-- pushing down site -->
+<!-- navbar code done -->
 <div id="max-breaker"></div>
 <div id="bg-demo">
     <h1 style="font-size: 120px; margin-top: 0; padding-top: 160px;" id="fade">The Problem</h1>
@@ -148,6 +158,7 @@
     #bg-demo {
         width: 100%;
         height: 380px;
+        margin-top: -10px;
         background-image: url("./images/dataCenter2.jpg");
         background-repeat: no-repeat;
         text-align: center;
@@ -185,9 +196,21 @@
     #increase100 {
         font-size: 1.25em;
     }
+@media (min-width: 992px)
+{
+    #servicesNav 
+    {
+         margin-top: 0px; 
+    }
+
+}
 </style>
 
 <script>
+    $('.navbar-toggle').on("click", function(){
+            $('#pushContent').slideToggle();
+        });
+    // navbar
     $(window).scroll(function () {
         $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
     });

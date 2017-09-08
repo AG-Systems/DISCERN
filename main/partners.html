@@ -1,11 +1,11 @@
-<div class="mainNav col-xs-12">
+<div id="servicesNav" class="mainNav col-xs-12">
 
-    <div class="searchNav col-xs-4">
+    <div class="searchNav col-md-5 col-lg-4">
         <a ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
         <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
         <button id="submit2"><i class="fa fa-search"></i></button>
     </div>
-    <div class="navLinks col-xs-7">
+    <div class="navLinks col-md-6 col-lg-7">
         <div class="col-xs-2">
             <a ng-href="#/overview">
                 <p class="navText">Overview</p>
@@ -21,6 +21,7 @@
                 <p class="navText">Partners</p>
             </a>
         </div>
+
         <div class="col-xs-2">
             <a href="#/news">
                 <p class="navText">News</p>
@@ -46,6 +47,64 @@
         </div>
     </div>
 </div>
+
+<nav id="smallerNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="searchNav">
+                <a class="navbar-brand page-scroll" ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
+                <div class="navbar-collapse" id="global-search-desktop">
+                    <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                    <button id="submit2"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                                    <div class="navbar-collapse" id="global-search-mobile">
+                                        <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                                        <button id="submit2"><i class="fa fa-search"></i></button>
+                                    </div>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#page-top">Demo</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">Partners</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#portfolio">Services</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">News</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact Us</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Login</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div id="pushContent"></div> <!-- pushing down site -->
+<!-- navbar code done -->
 <h3 id="title_page">Start Generating Interest in Your Data Today! No Cost to <span class="underline-text">Get Started!</span></h3>
 <br/>
 <div ng-controller="services_controller">
@@ -262,4 +321,9 @@ $(".item2").click(function() {
     }, 2000);
 });
  $("#videodiv").delay("slow").fadeIn();
+
+    $('.navbar-toggle').on("click", function(){
+            $('#pushContent').slideToggle();
+        });
+    // navbar
 </script>

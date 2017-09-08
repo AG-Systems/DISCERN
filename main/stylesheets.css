@@ -424,3 +424,12 @@ iframe {
         display: none;
     }
 }
+
+@media (min-width: 992px)
+{
+    #servicesNav 
+    {
+         margin-top: -20px; 
+    }
+
+}

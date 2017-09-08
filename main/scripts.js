@@ -192,7 +192,3 @@ app.controller('services_controller', function ($scope) {
         });
     });
     
-    $('.navbar-toggle').on("click", function(){
-        $('#pushContent').slideToggle();
-    });
-// navbar

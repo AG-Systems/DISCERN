@@ -1,6 +1,9 @@
 /* #337ab7 lighter blue color */
 
 
+/* #116194 color for main headers */
+
+
 /* #1E4089 darker blue color of logo */
 
 body {
@@ -343,11 +346,14 @@ iframe {
     }
 }
 
-@media (min-width:534px)
-{
-    
-}
+@media (min-width:534px) {}
 
+@media (max-width:1148px) {
+    .navLinkDivs {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
 
 @media (max-width: 991px) {
     .navbar-header {
@@ -398,38 +404,32 @@ iframe {
 
 @media (max-width: 984px) {
     #pushContent {
-    height: 300.5px;
-    width:100%;
-    display: none;
+        height: 300.5px;
+        width: 100%;
+        display: none;
     }
 }
 
 @media (max-width: 499px) {
-    #global-search-desktop
-    {
+    #global-search-desktop {
         display: none;
     }
-    #global-search-mobile
-    {
+    #global-search-mobile {
         display: block;
     }
 }
+
 @media (min-width: 500px) {
-    #global-search-desktop
-    {
+    #global-search-desktop {
         display: block;
     }
-    #global-search-mobile
-    {
+    #global-search-mobile {
         display: none;
     }
 }
 
-@media (min-width: 992px)
-{
-    #servicesNav 
-    {
-         margin-top: -20px; 
+@media (min-width: 992px) {
+    #servicesNav {
+        margin-top: -20px;
     }
-
 }

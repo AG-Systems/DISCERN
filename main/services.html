@@ -6,33 +6,33 @@
         <button id="submit2"><i class="fa fa-search"></i></button>
     </div>
     <div class="navLinks col-md-6 col-lg-7">
-        <div class="col-xs-2">
+        <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/overview">
                 <p class="navText">Overview</p>
             </a>
         </div>
-        <div class="col-xs-2">
+        <div class="col-xs-2 navLinkDivs">
             <a href="#/services">
                 <p class="navText">Services</p>
             </a>
         </div>
-        <div class="col-xs-2">
+        <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/partners">
                 <p class="navText">Partners</p>
             </a>
         </div>
 
-        <div class="col-xs-2">
+        <div class="col-xs-2 navLinkDivs">
             <a href="#/news">
                 <p class="navText">News</p>
             </a>
         </div>
-        <div class="col-xs-2">
+        <div class="col-xs-2 navLinkDivs">
             <a href="#/about">
                 <p class="navText">About</p>
             </a>
         </div>
-        <div class="col-xs-2">
+        <div class="col-xs-2 navLinkDivs">
             <a href="#/contact">
                 <p class="navText">Contact Us</p>
             </a>
@@ -71,10 +71,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                                    <div class="navbar-collapse" id="global-search-mobile">
-                                        <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
-                                        <button id="submit2"><i class="fa fa-search"></i></button>
-                                    </div>
+                    <div class="navbar-collapse" id="global-search-mobile">
+                        <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                        <button id="submit2"><i class="fa fa-search"></i></button>
+                    </div>
                 </li>
                 <li>
                     <a class="page-scroll" href="#page-top">Demo</a>
@@ -103,7 +103,8 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-<div id="pushContent"></div> <!-- pushing down site -->
+<div id="pushContent"></div>
+<!-- pushing down site -->
 <!-- navbar code done -->
 
 <h1 id="servicesHeader">Services Page</h1>
@@ -129,20 +130,20 @@
         height: 400px;
         width: 100%;
     }
-    #antila-widget-offline
-    {
-      bottom:20px !important;  
-      border-bottom: blue;
+
+    #antila-widget-offline {
+        bottom: 20px !important;
+        border-bottom: blue;
     }
-    .chat-container
-    {
+
+    .chat-container {
         border-top: 7px solid #609dff;
     }
 </style>
 
 <script>
-        $('.navbar-toggle').on("click", function(){
-            $('#pushContent').slideToggle();
-        });
+    $('.navbar-toggle').on("click", function () {
+        $('#pushContent').slideToggle();
+    });
     // navbar
 </script>

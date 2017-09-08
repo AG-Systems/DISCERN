@@ -343,6 +343,12 @@ iframe {
     }
 }
 
+@media (min-width:534px)
+{
+    
+}
+
+
 @media (max-width: 991px) {
     .navbar-header {
         float: none;
@@ -387,5 +393,34 @@ iframe {
     }
     #newsContainer {
         margin-top: 50px;
+    }
+}
+
+@media (max-width: 984px) {
+    #pushContent {
+    height: 300.5px;
+    width:100%;
+    display: none;
+    }
+}
+
+@media (max-width: 499px) {
+    #global-search-desktop
+    {
+        display: none;
+    }
+    #global-search-mobile
+    {
+        display: block;
+    }
+}
+@media (min-width: 500px) {
+    #global-search-desktop
+    {
+        display: block;
+    }
+    #global-search-mobile
+    {
+        display: none;
     }
 }

@@ -191,3 +191,8 @@ app.controller('services_controller', function ($scope) {
             $window.scrollTo(0, 0);
         });
     });
+    
+    $('.navbar-toggle').on("click", function(){
+        $('#pushContent').slideToggle();
+    });
+// navbar

@@ -60,14 +60,22 @@
             </button>
             <div class="searchNav">
                 <a class="navbar-brand page-scroll" ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
-                <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
-                <button id="submit2"><i class="fa fa-search"></i></button>
+                <div class="navbar-collapse" id="global-search-desktop">
+                    <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                    <button id="submit2"><i class="fa fa-search"></i></button>
+                </div>
             </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                <li>
+                                    <div class="navbar-collapse" id="global-search-mobile">
+                                        <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                                        <button id="submit2"><i class="fa fa-search"></i></button>
+                                    </div>
+                </li>
                 <li>
                     <a class="page-scroll" href="#page-top">Demo</a>
                 </li>
@@ -95,6 +103,8 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+<div id="pushContent"></div> <!-- pushing down site -->
+<!-- navbar code done -->
 
 <div id="newsContainer" class="container" ng-controller="news">
     <h2 class="newsHeader">DISCERN in the News</h2>
@@ -157,3 +167,5 @@
         margin: 0 auto;
     }
 </style>
+
+

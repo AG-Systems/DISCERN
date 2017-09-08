@@ -70,12 +70,13 @@
     <div class="row" style="margin: 0 auto;">
         <div class="col-xs-6 col-md-3">
             <div class="list-group" style="text-align: center;">
-                <a href="" class="list-group-item active">
-                    DISCERN makes your data & content
+                <a href="">
+                    <h3>DISCERN makes your data & content </h3>
                 </a>
-                <a href="#/partners#Q1" class="list-group-item item1" >More discoverable</a>
-                <a href="#/partners#Q1" class="list-group-item" ng-click="changephoto('./images/slide2.png');">More useful</a>
-                <a href="#/partners#Q1" class="list-group-item" ng-click="changephoto('./images/slide3.png');">More valuable</a>
+                <a href="" class="list-group-item item1" >More discoverable</a>
+                <a href="" class="list-group-item item2">More useful</a>
+                <a href="" class="list-group-item item3">More valuable</a>
+                <a href="" class="list-group-item item4">More accessible</a>
             </div>
         </div>
         <div class="col-xs-6 col-md-6">
@@ -85,13 +86,13 @@
         </div>
         <div class="col-xs-6 col-md-3">
             <div class="list-group" style="text-align: center;">
-                <a href="" class="list-group-item active">
-                    Benefits to you
+                <a href="">
+                    <h3>DISCERN </h3>
                 </a>
-                <a href="" class="list-group-item" ng-click="changephoto('./images/slide4.png');">Lead generations</a>
-                <a href="" class="list-group-item" ng-click="changephoto('./images/slide5.png');">Transactions</a>
-                <a href="" class="list-group-item" ng-click="changephoto('./images/slide6.png');">Subscriptions</a>
-                <a href="" class="list-group-item" ng-click="changephoto('./images/slide7.png');">Profits</a>
+                <a href="" class="list-group-item item5">Lead generations</a>
+                <a href="" class="list-group-item item6">Transactions</a>
+                <a href="" class="list-group-item item7">Subscriptions</a>
+                <a href="" class="list-group-item item8">Profits</a>
             </div>
         </div>
 
@@ -165,31 +166,11 @@
         <!-- <a href="">Sign Up</a><br> -->
     </div>
 </div>
+<div id="slide1"><img src="./images/slide1.png"/></div>
 <br/>
-<div id="faq">
-    
-    <section class="box" id="Q1">
-    More discoverable
-    </section>
-    <section class="draw" id="A1">
-    <p>Answer 1</p>
-    </section>
+<div id="slide2"><img src="./images/slide2.png"/></div>
+<br/>
 
-
-    <section class="box">
-    More useful
-    </section>
-    <section class="draw">
-    <p>answer 2</p>
-    </section>
-    
-    <section class="box">
-    More valuable
-    </section>
-    <section class="draw">
-    <p>What about this</p>
-    </section>    
-</div>
     <br/>
     <style>
         .border-form-div {
@@ -268,20 +249,17 @@
             });
         });
         
-        
-            $(".box").click(function(){
-              $(this).next().slideToggle("fast");
-            });  
-            $(".item1").click(function(){
-                console.log("--");
-              $("#A1").show();
-            }); 
 $(".item1").click(function() {
     // $("#videodiv").delay("fast").fadeOut();
     $('html, body').animate({
-        scrollTop: $("#Q1").offset().top
+        scrollTop: $("#slide1").offset().top
     }, 2000);
 });
-
+$(".item2").click(function() {
+    // $("#videodiv").delay("fast").fadeOut();
+    $('html, body').animate({
+        scrollTop: $("#slide2").offset().top
+    }, 2000);
+});
  $("#videodiv").delay("slow").fadeIn();
-    </script>
+</script>

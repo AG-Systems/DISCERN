@@ -235,28 +235,121 @@
     </div>
 </div>
 <style>
+    .Aligner {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer-contact {
+        min-height: 300px;
+        height: 300px;
+        width: 100%;
+        background-color: #609dff;
+    }
+
+    .rowcontact {
+        text-align: center;
+        color: white;
+    }
+
+    .mapsize {
+        height: 50px;
+        width: 250px;
+    }
+
+    .footer-icons {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ficon {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .socicon-googleplus {
+        font-size: 45px;
+    }
+
+    .footer-icons a {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+</div>
+</div>
+
+</div>
+
+
+<div id="footer-contact">
+    <div class="footer-icons fade">
+        <div id="break"></div>
+        <a href="">
+            <span class="socicon-google ficon">
+            </span>
+        </a>
+        <a href="">
+            <span class="socicon-linkedin ficon">
+            </span>
+        </a>
+        <a href="">
+            <span class="socicon-twitter ficon"></span>
+        </a>
+    </div>
+    <div class="row rowcontact">
+        <div class="col-sm-4 fade">
+            <br/>
+            <h3>Offices: </h3>
+            <h4>493 S El Camino Real<br>San Mateo, CA</h4>
+        </div>
+        <div class="col-sm-4 fade">
+            <br/>
+            <div class="">
+                <iframe width="200" height="220" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8JfQVNwDzOZTyZp34mhHIqb3BZa9nI60
+                                                                                       &q=San+Francisco" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="col-sm-4 fade">
+            <br/>
+            <h3>Want to work here?</h3>
+            <button class="btn btn-primary">JOBS</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(window).scroll(function () {
+        $(".fade").css("opacity", 0 + $(window).scrollTop() / 250);
+    });
+</script>
+<style>
     #about-page {
         margin-top: 20px;
         padding-top: 1px;
     }
 
     h1 {
-        /*background-color: #337ab7;*/
-        color: #116194;
+        background-color: #337ab7;
+        color: white;
         padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .row {
         /*background-color: #337ab7;*/
         margin: 0;
-        padding-top: 50px
+        /*padding-top: 50px*/
     }
 
     #about-header {
         margin-bottom: 0;
         font-size: 70px;
-        /*color: white;*/
-        color: #116194;
+        color: white;
+        /*color: #116194;*/
     }
 
     .caption {
@@ -272,19 +365,19 @@
     }
 
     .thumbnail {
-        background-color: #337ab7;
+        background-color: white;
     }
 
     .thumbnail:hover {
-        background-color: #337ab7;
+        background-color: white;
     }
 
     h3.bios {
-        color: white;
+        color: #116194;
     }
 
     p {
-        color: white;
+        color: #116194;
     }
     /*#myModal {
         display: flex;

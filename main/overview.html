@@ -114,24 +114,48 @@
     <!--<div style="width: 80%; margin: 0 auto;">-->
     <div>
         <div id="theProblem">
-            <h2 style="color: #116194;">There is a growing gap between data generated and the ability of business to derive actionable insights</h2>
+            <h2 id="theGap">There is a growing gap between data generated and the ability of business to derive actionable insights</h2>
 
 
             <div id="max-breaker"></div>
             <img id="dataImg" src="images/data_knowledge_action.png" />
         </div>
-        <hr/>
         <div id="change">
             <h2 id="changeHeader">DISCERN Changes all of that</h2>
         </div>
-        <div id="missionDiv">
-            <h2><b>Our Mission:</b> DISCERN makes the world of data MORE:</h2>
-            <h3>Discoverable</h3>
-            <h3>Useful</h3>
-            <h3>Accessible</h3>
-            <h3>Valuable</h3>
+        <img src="images/spider.png">
+        <h2 id="bridgeGap">DISCERN Bridges the Gap</h2>
+        <div id="splitButtons">
+            <div id="leftButtonDiv" class="col-xs-6">
+                <button id="leftButton">Learn More</button>
+            </div>
+            <div id="rightButtonDiv" class="col-xs-6">
+                <button id="rightButton">Learn More</button>
+            </div>
         </div>
-        <hr>
+        <div id="missionDiv">
+            <h2 id="missionHeader">Our Mission</h2>
+            <h3 id="bulletsHeader">DISCERN makes the world of data MORE:</h3>
+            <div class="col-xs-1"></div>
+            <div id="bulletDiv" class="col-xs-10">
+                <div class="col-xs-3">
+                    <h3 class="bullets">Discoverable</h3>
+                </div>
+                <div class="col-xs-3">
+                    <h3 class="bullets">Useful</h3>
+                </div>
+                <div class="col-xs-3">
+                    <h3 class="bullets">Valuable</h3>
+                </div>
+                <div class="col-xs-3">
+                    <h3 class="bullets">Accessible</h3>
+                </div>
+            </div>
+            <div class="col-xs-1"></div>
+
+
+
+        </div>
         <div id="valuePropDiv">
             <h2 style="color: white">Value Proposition: DISCERN improves decision-making effectiveness by > 100x</h2>
             <!--<span id="increase100" style="color: #337ab7;"><b>>100x</b></span></h2>-->
@@ -157,6 +181,57 @@
         position: fixed;
         bottom: 0;
         right: 0;
+        padding: 20px;
+    }
+
+    #theGap {
+        color: #116194;
+        margin-top: 50px;
+    }
+
+    #bulletDiv {
+        padding: 0;
+    }
+
+    #leftButtonDiv {
+        border-right: 2px solid #116194;
+        padding: 30px;
+    }
+
+    #rightButtonDiv {
+        padding: 30px;
+    }
+
+    #splitButtons {
+        background-color: lightgray;
+        padding-top: 15px;
+        height: 150px;
+    }
+
+    #leftButton {
+        width: 50%;
+        display: block;
+        margin: auto;
+        font-size: 28px;
+        padding: 10px;
+        background-color: orange;
+        border: 1px solid orange;
+        color: white;
+    }
+
+    #rightButton {
+        width: 50%;
+        display: block;
+        margin: auto;
+        font-size: 28px;
+        padding: 10px;
+        background-color: purple;
+        border: 1px solid purple;
+        color: white;
+    }
+
+    #bulletsHeader {
+        font-size: 42px;
         padding: 20px;
     }
 
@@ -196,9 +271,16 @@
 
     #missionDiv {
         /*background-color: #337ab7;*/
-        padding: 50px;
+        padding: 0 50px;
         /*color: white;*/
         color: #337ab7;
+        height: 400px;
+    }
+
+    #missionHeader {
+        font-size: 100px;
+        letter-spacing: 1px;
+        padding: 20px;
     }
 
     #valuePropDiv {
@@ -208,8 +290,9 @@
 
     #dataImg {
         display: block;
-        width: 90%;
+        width: 70%;
         margin: auto;
+        margin-bottom: 50px;
     }
 
     #increase100 {

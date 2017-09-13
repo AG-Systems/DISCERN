@@ -1,5 +1,4 @@
 var app = angular.module("myApp", ["ngRoute"]);
-
 /*app.value("bios", [
     //Harry
     {
@@ -50,7 +49,7 @@ app.config(function ($routeProvider) {
         
         
 });
-app.controller('news', function ($scope) {
+app.controller('news', function ($scope, $sce, $http) {
     $scope.index = 0;
     $scope.posts = [
         {
@@ -64,14 +63,14 @@ app.controller('news', function ($scope) {
             title: "Press release",
             date: "06/14/2017",
             post_id: 1,
-            link: "http://www.battlefin.com/press-release-discern",
+            link: "https://www.battlefin.com/press-release-discern",
             text: "'DISCERN’s platform automates non-alpha generating activities such as data management, visualization and sharing while simultaneously augmenting and enhancing alpha-generating activities in a repeatable, scalable, machine-learning framework” said Harry Blount, CEO of DISCERN. 'Our partnership with Battlefin enables their hedge fund customers to achieve more insights, more often and better returns..."
       },
         {
             title: "How DISCERN was founded",
             date: "07/09/1998",
             post_id: 2,
-            link: "http://www.discern.com/news/2016/5/4/transformed-by-911-wisconsin-native-started-investment-analytics-firm",
+            link: "https://www.discern.com/news/2016/5/4/transformed-by-911-wisconsin-native-started-investment-analytics-firm",
             text: "'One of the things about 9/11 that transformed me is I realized if people had better access to information, they could make better decisions in general,' \
           said Blount, who left New York several years later and is now running a start-up company in San Francisco."
 
@@ -88,7 +87,7 @@ app.controller('news', function ($scope) {
             title: "SNL Financial Joins DISCERN’s Signaling Platform",
             date: "02/02/2000",
             post_id: 4,
-            link: "http://www.discern.com/news/2015/4/6/snl-financial-joins-discerns-signaling-platform",
+            link: "https://www.discern.com/news/2015/4/6/snl-financial-joins-discerns-signaling-platform",
             text: "'Customers desire to spend more time on analysis and less time on mundane activities such as data aggregation, organization and presentation” says DISCERN CEO Harry Blount.  'With the addition of SNL, we can now provide real estate investors with all of the supply, demand, inventory valuation data they need, in one-location, to create and sustain a competitive information advantage...'"
       },
         {
@@ -122,6 +121,9 @@ app.controller('news', function ($scope) {
         console.log($scope.current_story);
     };
     $scope.current_story = $scope.posts[$scope.index]
+      $scope.trustSrc = function(src) {
+        return $sce.trustAsResourceUrl(src);
+      }
 });
 
 app.controller('about_controller', function ($scope) {

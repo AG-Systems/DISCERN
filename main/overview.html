@@ -126,18 +126,18 @@
         <div id="servicesAndPartners">
             <div id="servicesDiv" class="col-xs-6">
                 <div style="width:80%; display:block; margin:auto;">
-                    <h3 style="color:orange; font-size:50px">Our Services</h3>
-                    <h5 style="text-align:left">The Amount of Data in the world can be a lot of things at times.</h5>
-                    <p style="text-align:left">When you need quick access to data for smart business decision making <span><a>turn to DISCERN</a></span></p>
-                    <p style="text-align:left">We quickly distill vast amounts of data & make it manageable. This frees you up to make informed decisions and <span><a>drive your company to success</a></span></p>
+                    <h3 style="color:#F27144; font-size:50px; padding:30px;">Our Services</h3>
+                    <h5 id="servicesh5">The Amount of Data in the world can be a lot of things at times.</h5>
+                    <p class="servicesAndPartnersPs">When you need quick access to data for smart business decision making <a class="textLinks" href="#">turn to DISCERN</a></p>
+                    <p class="servicesAndPartnersPs">We quickly distill vast amounts of data & make it manageable. This frees you up to make informed decisions and <a class="textLinks" href="#">drive your company to success</a></p>
                 </div>
             </div>
             <div id="partnersDiv" class="col-xs-6">
                 <div style="width:80%; display:block; margin:auto;">
-                    <h3 style="color:purple; font-size:50px">Data Partners</h3>
-                    <h5 style="text-align:left">You've got the data and a drive to get it to the people who need it</h5>
-                    <p style="text-align:left">How do you get your data in front of the people who are looking for it? <span><a>Turn to DISCERN.</a></span></p>
-                    <p style="text-align:left">Our proprietary platform puts your data in front of the very people and companies that want to leverage your work.<span><a>Don't get lost in an ocean of data.</a></span></p>
+                    <h3 style="color:#962A97; font-size:50px; padding:30px;">Data Partners</h3>
+                    <h5 id="partnersh5">You've got the data and a drive to get it to the people who need it</h5>
+                    <p class="servicesAndPartnersPs">How do you get your data in front of the people who are looking for it? <a class="textLinks" href="#">Turn to DISCERN.</a></p>
+                    <p class="servicesAndPartnersPs">Our proprietary platform puts your data in front of the very people and companies that want to leverage your work. <a class="textLinks" href="#">Don't get lost in an ocean of data.</a></p>
                 </div>
             </div>
         </div>
@@ -202,6 +202,23 @@
         padding: 20px;
     }
 
+    .textLinks {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #servicesh5,
+    #partnersh5 {
+        text-align: left;
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+    .servicesAndPartnersPs {
+        text-align: left;
+        padding: 10px 0;
+    }
+
     #servicesDiv,
     #partnersDiv {
         background-color: #F7F7F7;
@@ -237,9 +254,15 @@
         margin: auto;
         font-size: 28px;
         padding: 10px;
+        background-color: #F27144;
+        border: 1px solid #F27144;
+        color: white;
+        font-weight: bold;
+    }
+
+    #leftButton:hover {
         background-color: orange;
         border: 1px solid orange;
-        color: white;
     }
 
     #rightButton {
@@ -248,9 +271,15 @@
         margin: auto;
         font-size: 28px;
         padding: 10px;
+        background-color: #962A97;
+        border: 1px solid #962A97;
+        color: white;
+        font-weight: bold;
+    }
+
+    #rightButton:hover {
         background-color: purple;
         border: 1px solid purple;
-        color: white;
     }
 
     #bulletsHeader {

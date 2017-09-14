@@ -1,11 +1,11 @@
-<div class="mainNav col-xs-12">
+<div id="servicesNav" class="mainNav col-xs-12">
 
-    <div class="searchNav col-xs-4">
+    <div class="searchNav col-md-5 col-lg-4">
         <a ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
         <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
         <button id="submit2"><i class="fa fa-search"></i></button>
     </div>
-    <div class="navLinks col-xs-7">
+    <div class="navLinks col-md-6 col-lg-7">
         <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/overview">
                 <p class="navText">Overview</p>
@@ -21,6 +21,7 @@
                 <p class="navText">Partners</p>
             </a>
         </div>
+
         <div class="col-xs-2 navLinkDivs">
             <a href="#/news">
                 <p class="navText">News</p>
@@ -47,8 +48,76 @@
     </div>
 </div>
 
+<nav id="smallerNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="searchNav">
+                <a class="navbar-brand page-scroll" ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
+                <div class="navbar-collapse" id="global-search-desktop">
+                    <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                    <button id="submit2"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <div class="navbar-collapse" id="global-search-mobile">
+                        <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
+                        <button id="submit2"><i class="fa fa-search"></i></button>
+                    </div>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#page-top">Demo</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">Partners</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#portfolio">Services</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">News</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact Us</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Login</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div id="pushContent"></div>
+<!-- pushing down site -->
+<!-- navbar code done -->
+<script>
+        $('.navbar-toggle').on("click", function () {
+        $('#pushContent').slideToggle();
+    });
+</script>
+
 
 <div id="about-page" ng-controller="about_controller">
+    
+    <a></a>
+    
+    
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
@@ -108,10 +177,21 @@
                     overflow-y: auto;
                     max-height: 230px;
                 }
+                .aboutpages li
+                {
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                
             </style>
         </div>
     </div>
     <h1 id="about-header">Our Team</h1>
+    <ul class="nav nav-tabs aboutpages nav-justified">
+      <li class="leader active"><a>Leadership / Tech team</a></li>
+      <li class="sales"><a>Sales team</a></li>
+      <li class="product"><a>Product team</a></li>
+    </ul>
     <!--
     <div class="row" style="text-align: center">
         <div ng-repeat="person in team" id="{{ team.indexOf(person) }}">
@@ -137,7 +217,7 @@
     </div>
     -->
     <div class="row" style="text-align: center;">
-        <div class="col-sm-6 col-md-4 col-lg-3" id="0">
+        <div class="col-sm-6 col-lg-3 leaderteam" id="0">
             <div class="thumbnail">
                 <img src="images/Team_Members_Harry.png" class="img-circle">
                 <div class="caption">
@@ -145,7 +225,7 @@
             changeImg('images/Team_Members_Harry.png')
             " class="bios">Harry E. Blount</h3>
                     <p>Chairman & CEO</p>
-                    <a ng-click="loadbio(0, 'Harry Blount, cofounded DISCERN in 2009, based in part on a study done for the national academy of science committee on “Forecasting Future Disruptive Tech” and his 20+ years on Wall Street with major investments firms such as brothers, credit suisse, first boston, donaldson, lukfin and jenette and CIBC oppenheimer. Previously, Harry was named an insituition investor all-Amercian in both infomation tech hardware and internet infrastructure and a wall street journal all-star covering the computer hardware sector. Harry also lent his expertise to the national academy of sciences, where he served as a member of the comittee for forecasting future disruptive tech and to the tech musuem of innovating in san jose where he chaired the futures ocmittee. Harry gradurate from the university of wisconsin la crosse in 1986 with a bs in finance and has been a cra charter holder since the early 1990s');">Bio</a>
+                    <a ng-click="loadbio(0, 'leader', 'Harry Blount, co-founded DISCERN in 2016, following a 20+ year stint on Wall Street with major investment firms such as Lehman Brothers, Credit Suisse First Boston, Donaldson Lukfin & Jenrette and CIBC Oppenheimer.  While on Wall Street, Harry was named an All-American analyst in both Information Technology Hardware and Internet Infrastructure and a Wall Street Journal All-Star covering the Computer Hardware sector.   He is currently on the Board of Governors of the Commonwealth Club and previously was on the Board of The Tech Museum of Innovation in San Jose where he chaired the Futures Committee.  Harry also lent his expertise to a National Academy of Sciences study funded by the DoD and the Defense Intelligence Agency, where he was a principal author of a report entitled Persistent Forecasting of Disruptive Technologies.  Harry is a graduate of the University of Wisconsin -  La Crosse and is Chartered Financial Analyst.');">Bio</a>
                 </div>
             </div>
         </div>
@@ -161,7 +241,7 @@
                 </div>
             </div>
         </div>-->
-        <div class="col-sm-6 col-md-4 col-lg-3" id="1">
+        <div class="col-sm-6 col-lg-3 salesteam" id="1">
             <div class="thumbnail">
                 <img src="images/Team_Members_Thor.png" class="img-circle">
                 <div class="caption">
@@ -170,11 +250,11 @@
             changeImg('images/Team_Members_Thor.png');
             " class="bios">Thor Hauge</h3>
                     <p>Head of Business Development</p>
-                    <a ng-click="loadbio(1 , '--------')">Bio</a>
+                    <a ng-click="loadbio(4 , 'sales', 'Thor Hauge has a unique background with years of expertise in innovation commercialization, peer-to-peer, digital currencies, mobile payments and big data. Previously, Thor was a Global Business Development Executive with Western Union Digital Ventures and worked in Early Stage Venture Investments at Nokia Ventures.')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" id="2">
+        <div class="col-sm-6 col-lg-3 productteam" productteam id="2">
             <div class="thumbnail">
                 <img src="images/Team_Members_Jim.png" class="img-circle">
                 <div class="caption">
@@ -182,22 +262,22 @@
                      changebio('Tesla, SpaceX, Solar City... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores porro amet laboriosam, quasi, illo obcaecati odit. Fuga blanditiis, magni maxime asperiores possimus, aliquam hic iure dignissimos iusto perspiciatis, dolorem enim?');
                     changeImg('images/images/Team_Members_Jim.png');" class="bios">Jim Christie</h3>
                     <p>Head of Product</p>
-                    <a ng-click="loadbio(2, '')">Bio</a>
+                    <a ng-click="loadbio(6, 'product', 'James Christie brings 10+ years of product and business experience to DISCERN.  Prior to joining DISCERN, Jim has led business intelligence and advertising operations at Blinkx Video where he managed geographically distributed AdOps teams and exceeded revenue targets for the video business unit in six consecutive quarters.  Jim also served as the scrum master and team leader at Blinkx desktop where he he oversaw a 6 member content team, the overhaul of the firms product and created and maintained the product roadmap.  Prior to Blinkx, Jim was the operations specialist for Shoplocal where he oversaw 30 account relationships, and managed the data entry operations team.  Jim has a BS – Computer and Systems Engineering from Rensselear Polytechnic Institute')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" id="3">
+        <div class="col-sm-6 col-lg-3 leaderteam" id="3">
             <div class="thumbnail">
-                <img src="images/Team_Members_Raghu.png" class="img-circle">
+                <img src="images/Team_Members_Raghu.png leaderteam" class="img-circle">
                 <div class="caption">
                     <h3 class="bios" ng-click="changeName('Raghu Madabusi'); changebio('Raghu Madabusi possess more than 20 years of design, development, and management experience in leading complex projects and high-caliber teams in USA, Germany and India. A Principal Technical Architect with strong business acumen and technical experience in Big Data, Cloud Computing & Traditional IT Projects. Raghu is PMP certified and holds close to dozen IT certifications. He has expertise in building complex Prototypes & Implementations in Big Data & Cloud that involve Machine Learning, Natural Language Processing, Graph Databases, Distributed Computing, Microservices, and more.'); changeImg('images/Team_Members_Raghu.png');">Raghu Madabusi</h3>
                     <p>CTO</p>
-                    <a ng-click="loadbio(3, '')">Bio</a>
+                    <a ng-click="loadbio(1, 'leader', 'd')">Bio</a>
                 </div>
             </div>
         </div>
         
-        <div class="col-sm-6 col-md-4 col-lg-3" id="4">
+        <div class="col-sm-6 col-lg-3 leaderteam" id="4">
             <div class="thumbnail">
                 <img src="images/Team_Members_Troy.png" class="img-circle">
                 <div class="caption">
@@ -205,14 +285,14 @@
                 changebio('30+ years Senior-level Quality Assurance executive. Prior to joining DISCERN, Troy worked for General Dynamics where he was responsible for communications testing on the last two major U.S. satellite constellations. Troy has also served in senior engineering positions for a variety of other firms including Xerox, Honeywell and Fischer Scientific. Troy is an avid options and commodity trader specializing in gold securities.');
                 changeImg('images/Team_Members_Troy.png')" class="bios">Troy Hansen</h3>
                     <p>Data Integrity & Enhancement</p>
-                    <a ng-click="loadbio(4, '')">Bio</a>
+                    <a ng-click="loadbio(2, 'leader', '30+ years Senior-level Quality Assurance executive. Prior to joining DISCERN, Troy worked for General Dynamics where he was responsible for communications testing on the last two major U.S. satellite constellations. Troy has also served in senior engineering positions for a variety of other firms including Xerox, Honeywell and Fischer Scientific. Troy is an avid options and commodity trader specializing in gold securities.')">Bio</a>
                 </div>
             </div>
         </div>
         <div>
             
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" id="5">
+        <div class="col-sm-6 col-lg-3 salesteam" id="5">
             <div class="thumbnail">
                 <img src="images/Team_Members_Mark.png" class="img-circle">
                 <div class="caption">
@@ -222,11 +302,11 @@
                                   
                                   " class="bios">Mark Herrmann</h3>
                     <p>Data & Content Sales</p>
-                    <a ng-click="loadbio(5, '')">Bio</a>
+                    <a ng-click="loadbio(5, 'sales', 'Mark Herrmann has 18 years of institutional equity sales experience, including 9 as a Managing Director at Bear Stearns, covering the largest hedge funds and mutual funds on the west coast.  Over the past year, he has been working in a marketing and product development role for several alternative data companies.  Mark received an undergraduate degree in mechanical engineering from Rensselaer Polytechnic Institute and an MBA in finance from USC. He is based in San Francisco.')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" id="6">
+        <div class="col-sm-6 col-lg-3 productteam" id="6">
             <div class="thumbnail">
                 <img src="images/Team_Members_Dave.png" class="img-circle">
                 <div class="caption">
@@ -234,11 +314,18 @@
                 changebio('David Wigginton has demonstrated a consistent ability to provide differentiated coverage of the real estate investment trust sector both as a Senior Analyst at Macquarie Capital and in the equity research department of Merrill Lynch. Prior to commencing his career in research, David worked as a Senior Consultant in the Financial Services Advisory area at Ernst & Young. He is a graduate of the University of Notre Dame, where he earned an M.S. in Accountancy, and Brigham Young University, where he earned a B.S. in Business Management with a finance emphasis.');
                 changeImg('images/Team_Members_Dave.png');">Dave Wigginton</h3>
                     <p>Real Estate Curation</p>
-                    <a ng-click="loadbio(6, '')">Bio</a>
+                    <a ng-click="loadbio(7, 'product', 'David Wigginton has demonstrated a consistent ability to provide
+differentiated coverage of the real estate investment trust sector both as a
+Senior Analyst at Macquarie Capital and in the equity research department
+of Merrill Lynch. Prior to commencing his career in research, David worked
+as a Senior Consultant in the Financial Services Advisory area at Ernst &
+Young. He is a graduate of the University of Notre Dame, where he earned
+an M.S. in Accountancy, and Brigham Young University, where he earned a
+B.S. in Business Management with a finance emphasis.')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" id="7">
+        <div class="col-sm-6 col-md-4 col-lg-3 productteam" id="7">
             <div class="thumbnail">
                 <img src="images/Team_Members_Richard.png" class="img-circle">
                 <div class="caption">
@@ -246,32 +333,86 @@
                 changebio('Richard Church’s experience base includes 20+ years in equity investing in both public and private realms. His strengths revolve around strategy, financial advisory services, business valuation and global consumer/retail fundamental research. Richard’s background includes senior roles, such as Managing Director at Citi-Smith Barney; Managing Director at Shumway Capital Partners; and Principal/CIO at Quartern Capital Partners. Among Richard’s honors stand his distinction as a five-time winner of the Institutional Investor All-America Research Team award and the Wall Street Journal Best of the Street Award.');
                 changeImg('images/Team_Members_Richard.png');">Rick Church</h3>
                     <p>Consumer Retail Curation</p>
-                    <a ng-click="loadbio(7, '')">Bio</a>
+                    <a ng-click="loadbio(8, 'product', 'Richard Church’s experience base includes 20+ years in equity
+investing in both public and private realms. His strengths revolve
+around strategy, financial advisory services, business valuation and
+global consumer/retail fundamental research. Richard’s background
+includes senior roles, such as Managing Director at Citi-Smith Barney;
+Managing Director at Shumway Capital Partners; and Principal/CIO at
+Quartern Capital Partners. Among Richard’s honors stand his
+distinction as a five-time winner of the Institutional Investor
+All-America Research Team award and the Wall Street Journal Best of
+the Street Award.')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" id="8">
+        <div class="col-sm-6 col-md-4 col-lg-3 productteam" id="8">
             <div class="thumbnail">
                 <img src="images/Team_Members_Gil.png" class="img-circle">
                 <div class="caption">
                     <h3 class="bios" ng-click="changeName('Gil Yang'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/Team_Members_Gil.png');">Dr. Gil Yang</h3>
                     <p>Energy Curation</p>
-                    <a ng-click="loadbio(8, '')">Bio</a>
+                    <a ng-click="loadbio(9, 'product', 'Gil Yang brings a broad wealth of expertise to his role as energy anaylst, given his understanding of not only the financial analysis, but the science behind this sector. Prior to joining DISCERN. Gil was a senior analyst at Bank of Amercia Merrill Lynch covering Oil and Gas: SMID Cap U.S E&P, and at Citi Investment Research covering North Amercian E&P. Gills additional work includes coverage of Specialty Chemicals at Citi where he was ranked #3 in 2002, and coverage of SPecialty chemicals and Ag Biotech at JP Morgan Securities. Gill holds a BA from Cornell,an MBA in Finance from UCLA and a PHD in chemistry from the universty of California - Berkeley.')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3" id="9">
+        <div class="col-sm-6 col-md-4 col-lg-3 leaderteam" id="9">
             <div class="thumbnail">
                 <img src="images/Team_Members_Sanjay.png" class="img-circle">
                 <div class="caption">
                     <h3 class="bios" ng-click="changeName('Sanjay Agarwal'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/Team_Members_Sanjay.png');">Sanjay Agarwal</h3>
                     <p>Chief Data Scientist</p>
-                    <a ng-click="loadbio(9, '')">Bio</a>
+                    <a ng-click="loadbio(3, 'leader', 'Sanjay Agarwal has a broad wealth of experience in machine learning, data
+science, software engineering and visualization.
+
+
+Prior to joining DISCERN, led the data science effort in Petzilla where he
+deployed machine learning tools for logistic regression and real time
+geo-mapping. Sanjay was a lead data scientist at Qualcomm Analytics
+Research Group where he built cluster models (unsupervised learning) and
+linear models (GLM, Random Forests, Trees, and Classification). Sanjay
+also has held a number of principal engineer and manager roles at Cisco,
+Maxim, Microchip, Texas Instruments, and Philips. Sanjay has an MS in
+Electrical Engineering from UT-Austin and MBA from U of New Mexico
+and and Data Analytics certificate from the UC – Santa Cruz.')">Bio</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    $(".productteam").hide();
+    $(".salesteam").hide();
+    $( ".product" ).click(function() {
+        $(".sales").removeClass("active");
+        $(".leader").removeClass("active");
+        $( ".product" ).addClass( "active" );
+        $(".productteam").show();
+        $(".salesteam").hide(); 
+        $(".leaderteam").hide(); 
+        $(".bioinfo").remove();
+    });
+    
+    $( ".sales" ).click(function() {
+        $(".sales").addClass("active");
+        $(".leader").removeClass("active");
+        $( ".product" ).removeClass( "active" );
+        $(".productteam").hide();
+        $(".salesteam").show(); 
+        $(".leaderteam").hide(); 
+        $(".bioinfo").remove();
+    });
+    
+    $( ".leader" ).click(function() {
+        $(".sales").removeClass("active");
+        $(".leader").addClass("active");
+        $( ".product" ).removeClass( "active" );
+        $(".leaderteam").show();
+        $(".salesteam").hide(); 
+        $(".productteam").hide(); 
+        $(".bioinfo").remove();
+    });
+</script>
 <style>
     .Aligner {
         height: 60vh;
@@ -386,6 +527,7 @@
         margin-bottom: 0;
         font-size: 70px;
         color: white;
+        background-image: url("images/hero_our_team.png");
         /*color: #116194;*/
     }
 

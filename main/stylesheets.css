@@ -13,7 +13,16 @@
 /* #F27144 orange color */
 
 
+/* #474747 darkgray dividing line color */
+
+
 /* #962A97 purple color */
+
+
+/* Klief Orange #f36b21 */
+
+
+/* Klief Purple #963095 */
 
 
 /* #1E4089 darker blue color of logo */
@@ -451,4 +460,8 @@ iframe {
     #servicesNav {
         margin-top: -20px;
     }
+}
+
+.bioinfo {
+    text-align: left;
 }

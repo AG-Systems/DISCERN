@@ -138,13 +138,14 @@ app.controller('about_controller', function ($scope) {
             ]
         }
     ];
-    $scope.loadbio= function (index, bio_input) {
+    $scope.loadbio= function (index, section ,bio_input) {
         var bio_page = null;
         $scope.bio = bio_input;
         if ($(document).width() >= 1200)
         {
             bio_page = 4;
         }
+        /*
         else if($(document).width() >= 993)
         {
             bio_page = 3;
@@ -158,6 +159,17 @@ app.controller('about_controller', function ($scope) {
             bio_page = 1;
             $("#" + (bio_page-1)).after("<style>.col-sm-6 { position: static; } </style>");
         }
+        */
+        else if($(document).width() > 767)
+        {
+            bio_page = 2;
+        }
+        else
+        {
+            bio_page = 1;   
+            $("#" + (bio_page-1)).after("<style>.col-sm-6 { position: static; } </style>");
+        }
+        /*
         if ( $("#" + (bio_page-1) ).length > 0 ) {
         
             $("#bioShown").remove();
@@ -264,6 +276,94 @@ app.controller('about_controller', function ($scope) {
         {
             console.log(bio_input);
             $("#" + (bio_page-1)).after("<div class='col-xs-12' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");
+        }
+        */
+        if ( $("#" + (bio_page-1) ).length > 0 ) {
+        
+            $("#bioShown").remove();
+            console.log(bio_page, index, section);
+            if(bio_page == 4 && index < 4 && section == "leader")
+            {
+                $("#9").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>"); 
+            }
+            else if(bio_page == 4 && index < 2 && section == "leader")
+            {
+                $("#3").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 2 && index < 2 && section == "leader")
+            {
+                $("#3").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 1 && index < 1 && section == "leader")
+            {
+                $("#0").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 1 && index < 2 && section == "leader")
+            {
+                $("#3").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 1 && index < 3 && section == "leader")
+            {
+                $("#4").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 1 && index < 4 && section == "leader")
+            {
+                $("#9").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            /*
+            else
+            {
+                console.log("--");
+                $("#9").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            */
+            
+            if(bio_page >= 2 && index < 6 && section == "sales")
+            {
+                $("#5").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>"); 
+            }
+            else if(bio_page == 1 && index < 5 && section == "sales")
+            {
+                $("#1").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>"); 
+            }
+            else if(bio_page == 1 && index < 6 && section == "sales")
+            {
+                $("#5").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>"); 
+            }
+            
+            if(bio_page == 4 && index < 10 && section == "product")
+            {
+                $("#8").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 2 && index < 8 && section == "product")
+            {
+                $("#6").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 2 && index < 10 && section == "product")
+            {
+                $("#8").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 1 && index < 7 && section == "product")
+            {
+                $("#3").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 1 && index < 8 && section == "product")
+            {
+                $("#6").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 1 && index < 9 && section == "product")
+            {
+                $("#7").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            else if(bio_page == 1 && index < 10 && section == "product")
+            {
+                $("#9").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
+            }
+            
+        }
+        else
+        {
+            $("#" + (bio_page-1)).after("<div class='col-xs-12' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");           
         }
     };
     /*

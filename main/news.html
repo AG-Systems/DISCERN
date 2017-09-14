@@ -122,10 +122,14 @@
             </div>
         </div>
         <div class="col-xs-6" style="text-align: center; overflow-y: scroll;" id="currentpost">
-            <h3>{{ current_story.title }}</h3>
+            <!-- 
             <p>Date published: {{ current_story.date }}</p>
             <p>{{ current_story.text }}</p>
-            <p><a ng-href="{{current_story.link}}">Link to the full article</a></p>
+            <p><a ng-href="{{current_story.link}}">Link to the full article</a></p>-->
+            <!--<iframe src="https://www.linkedin.com/pulse/your-data-ready-anthea-stratigos?trk=v-feed&lipi=urn:li:page:d_flagship3_profile_view_base_recent_activity_details_all;UASEq0lDL1iAuDpVmHVakw%3D%3D"></iframe>-->
+                <iframe id="Example2" title="Example2" width="100%" height="900px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" ng-src="{{ trustSrc(current_story.link) }}">
+            </div>
+            </iframe>
         </div>
     </div>
 </div>

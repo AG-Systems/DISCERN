@@ -112,16 +112,40 @@
         </div>
     </div>
     <h1 id="about-header">Our Team</h1>
+    <!--
+    <div class="row" style="text-align: center">
+        <div ng-repeat="person in team" id="{{ team.indexOf(person) }}">
+        <div style="overflow-y: hidden;" class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <img src="{{ person.img }}" class="img-circle">
+                    <div class="caption">
+                        <h3 class="bios">{{ person.name }}</h3>
+                        <p>{{ person.title }}</p>
+                        <a ng-click="showbio( person.name )">Bio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+          
+          
+            <div style="width: 100%;
+    height: 200px;
+    background-color: black;
+    margin-top: 400px; display: none;">
+            </div>  
+    </div>
+    -->
     <div class="row" style="text-align: center;">
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3" id="0">
             <div class="thumbnail">
                 <img src="images/Team_Members_Harry.png" class="img-circle">
                 <div class="caption">
                     <h3 ng-click="changeName('Harry E. Blount');
-            changebio('Harry Blount, cofounded DISCERN in 2009, based in part on a study done for the national academy of science committee on “Forecasting Future Disruptive Tech” and his 20+ years on Wall Street with major investments firms such as brothers, credit suisse, first boston, donaldson, lukfin and jenette and CIBC oppenheimer. Previously, Harry was named an insituition investor all-Amercian in both infomation tech hardware and internet infrastructure and a wall street journal all-star covering the computer hardware sector. Harry also lent his expertise to the national academy of sciences, where he served as a member of the comittee for forecasting future disruptive tech and to the tech musuem of innovating in san jose where he chaired the futures ocmittee. Harry gradurate from the university of wisconsin la crosse in 1986 with a bs in finance and has been a cra charter holder since the early 1990s');
             changeImg('images/Team_Members_Harry.png')
             " class="bios">Harry E. Blount</h3>
                     <p>Chairman & CEO</p>
+                    <a ng-click="loadbio(0, 'Harry Blount, cofounded DISCERN in 2009, based in part on a study done for the national academy of science committee on “Forecasting Future Disruptive Tech” and his 20+ years on Wall Street with major investments firms such as brothers, credit suisse, first boston, donaldson, lukfin and jenette and CIBC oppenheimer. Previously, Harry was named an insituition investor all-Amercian in both infomation tech hardware and internet infrastructure and a wall street journal all-star covering the computer hardware sector. Harry also lent his expertise to the national academy of sciences, where he served as a member of the comittee for forecasting future disruptive tech and to the tech musuem of innovating in san jose where he chaired the futures ocmittee. Harry gradurate from the university of wisconsin la crosse in 1986 with a bs in finance and has been a cra charter holder since the early 1990s');">Bio</a>
                 </div>
             </div>
         </div>
@@ -137,7 +161,7 @@
                 </div>
             </div>
         </div>-->
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3" id="1">
             <div class="thumbnail">
                 <img src="images/Team_Members_Thor.png" class="img-circle">
                 <div class="caption">
@@ -146,10 +170,11 @@
             changeImg('images/Team_Members_Thor.png');
             " class="bios">Thor Hauge</h3>
                     <p>Head of Business Development</p>
+                    <a ng-click="loadbio(1 , '--------')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3" id="2">
             <div class="thumbnail">
                 <img src="images/Team_Members_Jim.png" class="img-circle">
                 <div class="caption">
@@ -157,19 +182,22 @@
                      changebio('Tesla, SpaceX, Solar City... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores porro amet laboriosam, quasi, illo obcaecati odit. Fuga blanditiis, magni maxime asperiores possimus, aliquam hic iure dignissimos iusto perspiciatis, dolorem enim?');
                     changeImg('images/images/Team_Members_Jim.png');" class="bios">Jim Christie</h3>
                     <p>Head of Product</p>
+                    <a ng-click="loadbio(2, '')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3" id="3">
             <div class="thumbnail">
                 <img src="images/Team_Members_Raghu.png" class="img-circle">
                 <div class="caption">
                     <h3 class="bios" ng-click="changeName('Raghu Madabusi'); changebio('Raghu Madabusi possess more than 20 years of design, development, and management experience in leading complex projects and high-caliber teams in USA, Germany and India. A Principal Technical Architect with strong business acumen and technical experience in Big Data, Cloud Computing & Traditional IT Projects. Raghu is PMP certified and holds close to dozen IT certifications. He has expertise in building complex Prototypes & Implementations in Big Data & Cloud that involve Machine Learning, Natural Language Processing, Graph Databases, Distributed Computing, Microservices, and more.'); changeImg('images/Team_Members_Raghu.png');">Raghu Madabusi</h3>
                     <p>CTO</p>
+                    <a ng-click="loadbio(3, '')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        
+        <div class="col-sm-6 col-md-4 col-lg-3" id="4">
             <div class="thumbnail">
                 <img src="images/Team_Members_Troy.png" class="img-circle">
                 <div class="caption">
@@ -177,22 +205,28 @@
                 changebio('30+ years Senior-level Quality Assurance executive. Prior to joining DISCERN, Troy worked for General Dynamics where he was responsible for communications testing on the last two major U.S. satellite constellations. Troy has also served in senior engineering positions for a variety of other firms including Xerox, Honeywell and Fischer Scientific. Troy is an avid options and commodity trader specializing in gold securities.');
                 changeImg('images/Team_Members_Troy.png')" class="bios">Troy Hansen</h3>
                     <p>Data Integrity & Enhancement</p>
+                    <a ng-click="loadbio(4, '')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div>
+            
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3" id="5">
             <div class="thumbnail">
                 <img src="images/Team_Members_Mark.png" class="img-circle">
                 <div class="caption">
                     <h3 ng-click="changeName('Mark Herrmann');
                                   changebio('Mark Herrmann has 18 years of institutional equity sales experience, including 9 as a Managing Director at Bear Stearns, covering the largest hedge funds and mutual funds on the west coast.  Over the past year, he has been working in a marketing and product development role for several alternative data companies.  Mark received an undergraduate degree in mechanical engineering from Rensselaer Polytechnic Institute and an MBA in finance from USC. He is based in San Francisco.');
                                   changeImg('images/Team_Members_Mark.png');
+                                  
                                   " class="bios">Mark Herrmann</h3>
                     <p>Data & Content Sales</p>
+                    <a ng-click="loadbio(5, '')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3" id="6">
             <div class="thumbnail">
                 <img src="images/Team_Members_Dave.png" class="img-circle">
                 <div class="caption">
@@ -200,10 +234,11 @@
                 changebio('David Wigginton has demonstrated a consistent ability to provide differentiated coverage of the real estate investment trust sector both as a Senior Analyst at Macquarie Capital and in the equity research department of Merrill Lynch. Prior to commencing his career in research, David worked as a Senior Consultant in the Financial Services Advisory area at Ernst & Young. He is a graduate of the University of Notre Dame, where he earned an M.S. in Accountancy, and Brigham Young University, where he earned a B.S. in Business Management with a finance emphasis.');
                 changeImg('images/Team_Members_Dave.png');">Dave Wigginton</h3>
                     <p>Real Estate Curation</p>
+                    <a ng-click="loadbio(6, '')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3" id="7">
             <div class="thumbnail">
                 <img src="images/Team_Members_Richard.png" class="img-circle">
                 <div class="caption">
@@ -211,24 +246,27 @@
                 changebio('Richard Church’s experience base includes 20+ years in equity investing in both public and private realms. His strengths revolve around strategy, financial advisory services, business valuation and global consumer/retail fundamental research. Richard’s background includes senior roles, such as Managing Director at Citi-Smith Barney; Managing Director at Shumway Capital Partners; and Principal/CIO at Quartern Capital Partners. Among Richard’s honors stand his distinction as a five-time winner of the Institutional Investor All-America Research Team award and the Wall Street Journal Best of the Street Award.');
                 changeImg('images/Team_Members_Richard.png');">Rick Church</h3>
                     <p>Consumer Retail Curation</p>
+                    <a ng-click="loadbio(7, '')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3" id="8">
             <div class="thumbnail">
                 <img src="images/Team_Members_Gil.png" class="img-circle">
                 <div class="caption">
                     <h3 class="bios" ng-click="changeName('Gil Yang'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/Team_Members_Gil.png');">Dr. Gil Yang</h3>
                     <p>Energy Curation</p>
+                    <a ng-click="loadbio(8, '')">Bio</a>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3" id="9">
             <div class="thumbnail">
                 <img src="images/Team_Members_Sanjay.png" class="img-circle">
                 <div class="caption">
                     <h3 class="bios" ng-click="changeName('Sanjay Agarwal'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/Team_Members_Sanjay.png');">Sanjay Agarwal</h3>
                     <p>Chief Data Scientist</p>
+                    <a ng-click="loadbio(9, '')">Bio</a>
                 </div>
             </div>
         </div>
@@ -246,7 +284,7 @@
         min-height: 300px;
         height: 300px;
         width: 100%;
-        background-color: #609dff;
+        background-color: #337ab7;
     }
 
     .rowcontact {
@@ -308,8 +346,7 @@
         <div class="col-sm-4 fade">
             <br/>
             <div class="">
-                <iframe width="200" height="220" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8JfQVNwDzOZTyZp34mhHIqb3BZa9nI60
-                                                                                       &q=San+Francisco" allowfullscreen>
+                <iframe width="200" height="220" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8JfQVNwDzOZTyZp34mhHIqb3BZa9nI60&q=San+Mateo" allowfullscreen>
                 </iframe>
             </div>
         </div>

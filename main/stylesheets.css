@@ -465,3 +465,8 @@ iframe {
 .bioinfo {
     text-align: left;
 }
+
+.activetab
+{
+    text-decoration: underline;
+}

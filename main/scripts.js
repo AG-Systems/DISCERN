@@ -99,7 +99,7 @@ app.controller('news', function ($scope, $sce, $http) {
 
       },
         {
-            title: "Dummy title 1 ",
+            title: "DISCERN to present at Battlefin West Coast on October 26 in Palo Alto",
             date: "03/01/2019",
             post_id: 6,
             link: "https://www.google.com/",
@@ -107,10 +107,34 @@ app.controller('news', function ($scope, $sce, $http) {
 
       },
         {
-            title: "Dummy title 2",
+            title: "DISCERN chosen as default search platform for Alpha Theory Portfolio Optimization platform ",
             date: "03/01/2019",
             post_id: 7,
             link: "https://www.youtube.com/",
+            text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
+
+      },
+        {
+            title: "DISCERN chosen as one of 8 to watch in 2018 by Data Industry Research Leader Outsell  September 12, 2017 ",
+            date: "03/01/2019",
+            post_id: 8,
+            link: "https://outsellinc.com/signature-event-2017/#!/emergingcompanygrowthtank",
+            text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
+
+      },      
+        {
+            title: "DISCERN chosen as default search platform for Battlefin",
+            date: "03/01/2019",
+            post_id: 9,
+            link: "https://www.battlefin.com/press-release-discern",
+            text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
+
+      },
+        {
+            title: "DISCERN called the Google Images of Business Data",
+            date: "03/01/2019",
+            post_id: 10,
+            link: "",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
 
       }

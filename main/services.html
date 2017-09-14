@@ -13,7 +13,7 @@
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/services">
-                <p class="navText">Services</p>
+                <p class="navText activetab">Services</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
@@ -107,9 +107,38 @@
 <!-- pushing down site -->
 <!-- navbar code done -->
 
-<h1 id="servicesHeader">Services Page</h1>
-<div id="emptySpace"></div>
-
+<h1 id="servicesHeader"></h1>
+<br/>
+<!-- <div id="emptySpace"></div> -->
+<div style="text-align: center; height: 380px; width: 100%; background-image: url('images/hero_partners.png');">
+    <h1 id="fade" style="font-size: 80px; color: white; padding-top: 170px;">DATA PARTNERS</h1>
+</div>
+<div style="width: 100%; height: 150px; text-align: center; color: #116194;">
+    <h1>Start Generating In Your Data Today!</h1>
+    <h1>No cost to get started!</h1>
+</div>
+<div style="width: 100%; height: 800px; background-color: #116194;">
+    <div style="width: 100%; height: 50px;"></div>
+    <div style="width: 45%; margin: 0 auto; color: white;">
+        <img src="https://cdn-images-1.medium.com/fit/c/200/200/1*zyz9WsCkaQU_houFGYEvdQ.png" style="border-radius: 50%; width: auto !important; border: solid; border-width: 2px;" height="50" width="50" />
+        <span> Anthea Straigos | Co-founder & CEO of Outsell</span>
+        
+        <br/>
+        <b style="font-size:30px">“</b>
+          <blockquote>
+            <p>
+                What I love about what they done and are doing is they've created the holy grail for business 
+                decision-makers -- the integration of internal data with free extrenal data (think open web)
+                combined
+            </p>
+            <footer></footer>
+          </blockquote>
+          <b style="font-size:30px; float:right;">”</b>
+         <div>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/Rb3sbuEGZPE" frameborder="0" allowfullscreen></iframe>
+         </div>
+    </div>
+</div>
 <!--Chatrify Widget-->
 <!--
    <script type='text/javascript'>
@@ -142,6 +171,9 @@
     .chat-container {
         border-top: 7px solid #609dff;
     }
+    blockquote {
+        border-left: none;
+    }
 </style>
 
 <script>
@@ -149,4 +181,9 @@
         $('#pushContent').slideToggle();
     });
     // navbar
+    $(window).scroll(function () {
+        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
 </script>
+
+

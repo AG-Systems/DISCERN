@@ -334,6 +334,12 @@ app.controller('about_controller', function ($scope) {
             {
                 $("#9").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                 
             }
+            else if(bio_page == 2 && index < 4 && section == "leader")
+            {
+                $("#9").after("<div class='col-xs-12 bioinfo' style='background-color: blue; color: white;' id='bioShown'>" + bio_input + "</div>");                             
+                
+            }
+            
             /*
             else
             {

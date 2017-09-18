@@ -27,7 +27,7 @@
 
 /* #1E4089 darker blue color of logo */
 
-body {
+* {
     /*font-family: "Titillium Web", sans-serif;*/
 }
 
@@ -466,7 +466,6 @@ iframe {
     text-align: left;
 }
 
-.activetab
-{
+.activetab {
     text-decoration: underline;
 }

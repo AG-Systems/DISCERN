@@ -264,7 +264,7 @@
                 changeImg('images/Team_Members_Troy.png')" class="bios">Troy Hansen</h3>-->
                     <h3>Troy Hansen</h3>
                     <p>Data Integrity & Enhancement</p>
-                    <a class="bioAs" ng-click="loadbio(2, 'leader', '30+ years Senior-level Quality Assurance executive. Prior to joining DISCERN, Troy worked for General Dynamics where he was responsible for communications testing on the last two major U.S. satellite constellations. Troy has also served in senior engineering positions for a variety of other firms including Xerox, Honeywell and Fischer Scientific. Troy is an avid options and commodity trader specializing in gold securities.')">Read Bio</a>
+                    <a class="bioAs" ng-click="loadbio(2, 'leader', 'Troy Hansen has 30+ years of experience as a Senior-level Quality Assurance executive. Prior to joining DISCERN, Troy worked for General Dynamics where he was responsible for communications testing on the last two major U.S. satellite constellations. Troy has also served in senior engineering positions for a variety of other firms including Xerox, Honeywell and Fischer Scientific. Troy is an avid options and commodity trader specializing in gold securities.')">Read Bio</a>
                 </div>
             </div>
         </div>
@@ -446,6 +446,10 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
         cursor: pointer;
     }
 
+    .caption > p {
+        color: #474747;
+    }
+
     .ficon {
         padding-left: 10px;
         padding-right: 10px;
@@ -528,7 +532,8 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
 
     #about-header {
         margin-bottom: 0;
-        font-size: 70px;
+        font-size: 120px;
+        padding: 105px;
         color: white;
         background-image: url("images/hero_our_team.png");
         /*color: #116194;*/
@@ -555,7 +560,11 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
     }
 
     h3.bios {
-        color: #116194;
+        color: #474747;
+    }
+
+    .bioinfo {
+        color: #474747;
     }
 
     p {

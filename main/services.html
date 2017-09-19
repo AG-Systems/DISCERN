@@ -109,7 +109,7 @@
 </div>-->
 <div id="max-breaker"></div>
 <div id="bg-partners">
-    <h1 style="font-size: 120px; color: white; padding-top: 100px; margin-top:0" id="fade">THE PROBLEM</h1>
+    <h1 style="font-size: 120px; color: white; padding-top: 100px; margin-top:0" id="fade">DATA PARTNERS</h1>
 </div>
 <div style="width: 100%; height: 150px; text-align: center; color: #116194;">
     <h1>Start Generating In Your Data Today!</h1>
@@ -117,24 +117,112 @@
 </div>
 <div style="width: 100%; height: 800px; background-color: #116194;">
     <div style="width: 100%; height: 50px;"></div>
-    <div style="width: 45%; margin: 0 auto; color: white;">
+    <div style="width: 50%; margin: 0 auto; color: white;">
         <img src="https://cdn-images-1.medium.com/fit/c/200/200/1*zyz9WsCkaQU_houFGYEvdQ.png" style="border-radius: 50%; width: auto !important; border: solid; border-width: 2px;" height="50" width="50" />
-        <span> Anthea Straigos | Co-founder & CEO of Outsell</span>
+        <span> Anthea Stratigos | Co-founder & CEO of Outsell, Inc.</span>
 
         <br/>
-        <b style="font-size:30px">“</b>
+        <!--<b style="font-size:30px">“</b>-->
+        <img id="quote1" class="quoteImgs" src="images/startquotes.png">
         <blockquote>
-            <p>
-                What I love about what they done and are doing is they've created the holy grail for business decision-makers -- the integration of internal data with free extrenal data (think open web) combined
+
+            <p id="testimonialQuote">
+                What I love about what they've done and are doing is they've created the holy grail for business decision-makers: the integration of internal data with free external data (think open web) combined with external licensed data.
             </p>
-            <footer></footer>
+
         </blockquote>
-        <b style="font-size:30px; float:right;">”</b>
+        <img id="quote2" class="quoteImgs" src="images/endquotes.png">
+        <!--<b style="font-size:30px; float:right;">”</b>-->
         <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Rb3sbuEGZPE" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </div>
+<div style="width: 100%; text-align: center; color: #116194;">
+    <h1>Benefits to You:</h1>
+</div>
+<div class="col-xs-12">
+    <div class="panel-group wrap" id="bs-collapse" style="margin:50px;">
+
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                        <!--<a data-toggle="collapse" data-parent="#bs-collapse" href="#one">-->
+                        <a data-toggle="collapse" data-parent="#bs-collapse" id="content1">
+                            Content 1
+                        </a>
+                    </h4>
+            </div>
+            <div id="one" class="panel-collapse collapse in">
+                <div class="panel-body">
+
+                    Where now are the horse and the rider? Where is the horn that was blowing? Where is the helm and the hauberk, and the bright hair flowing?
+                </div>
+            </div>
+
+        </div>
+        <!-- end of panel -->
+
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#bs-collapse" id="content2">
+                            Content 2
+                        </a>
+                    </h4>
+            </div>
+            <div id="two" class="panel-collapse collapse">
+                <div class="panel-body">
+
+                    Where is the harp on the harpstring, and the red fire glowing? Where is the spring and the harvest and the tall corn growing?
+
+                </div>
+
+            </div>
+        </div>
+        <!-- end of panel -->
+
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#bs-collapse" id="content3">
+                            Content 3
+                        </a>
+                    </h4>
+            </div>
+            <div id="three" class="panel-collapse collapse">
+                <div class="panel-body">
+                    ave gone down in the West behind the hills into shadow. Who shall gather the smoke of the deadwood burning, Or behold the flowing years from the Sea returning? The days have gone down in the West behind the hills into shadow. Who shall gather the smoke of the deadwood burning, Or behold the flowing years from the Sea returning? The days have gone down in the West behind the hills into shadow. Who shall gather the smoke of the deadwood burning, Or behold the flowing years from the Sea returning? The days have gone down in the West behind the hills into shadow. Who shall gather the smoke of the deadwood burning, Or behold the flowing years from the Sea returning?
+                </div>
+            </div>
+        </div>
+        <!-- end of panel -->
+
+        <div class="panel">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#bs-collapse" id="content4">
+                            Content 4
+                        </a>
+                    </h4>
+            </div>
+            <div id="four" class="panel-collapse collapse">
+                <div class="panel-body">
+
+                    They have passed like rain on the mountain, like a wind in the meadow; The days have gone down in the West behind the hills into shadow.
+                </div>
+            </div>
+        </div>
+        <!-- end of panel -->
+
+    </div>
+    <!-- end of #bs-collapse  -->
+
+
+
+
+</div>
+<!-- end of container -->
 <div id="servicesGraphic">
     <img id="servicesImg" src="images/Partners_menu.png">
 </div>
@@ -156,10 +244,53 @@
 </script>
 -->
 
+<script>
+    $(document).ready(function () {
+        $('.collapse.in').prev('.panel-heading').addClass('active');
+        $("#content1").click(function (a) {
+            $('#one').slideDown()
+            $('#two, #three, #four').slideUp()
+        });
+        $("#content2").click(function (a) {
+            $('#two').slideDown()
+            $('#one, #three, #four').slideUp()
+        });
+        $("#content3").click(function (a) {
+            $('#three').slideDown()
+            $('#one, #two, #four').slideUp()
+        });
+        $("#content4").click(function (a) {
+            $('#four').slideDown()
+            $('#one, #two, #three').slideUp()
+        });
+    });
+</script>
+
 <style>
     #emptySpace {
         height: 400px;
         width: 100%;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    .quoteImgs {
+        height: 50px;
+        width: 50px;
+    }
+
+    #quote1 {
+        position: relative;
+        top: 35px;
+        left: -35px;
+    }
+
+    #quote2 {
+        position: relative;
+        top: -50px;
+        left: 500px;
     }
 
     #antila-widget-offline {
@@ -172,6 +303,11 @@
         width: 90%;
         margin: auto;*/
         margin-bottom: 50px;
+    }
+
+    #testimonialQuote {
+        font-family: 'EB Garamond', serif;
+        text-align: left;
     }
 
     #bg-partners {
@@ -200,6 +336,149 @@
 
     blockquote {
         border-left: none;
+    }
+</style>
+<!-- CSS for Accordion Dropdown -->
+<style>
+    h3 {
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+
+    .container {
+        max-width: 970px;
+    }
+    /*div[class*='col-'] {
+        padding: 0 30px;
+    }*/
+
+    .wrap {
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }
+
+    a:focus,
+    a:hover,
+    a:active {
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .panel {
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: #fff;
+        background: none;
+        box-shadow: none;
+    }
+
+    .panel:last-child {
+        border-bottom: none;
+    }
+
+    .panel-group > .panel:first-child .panel-heading {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .panel-group .panel {
+        border-radius: 0;
+    }
+
+    .panel-group .panel + .panel {
+        margin-top: 0;
+    }
+
+    .panel-heading {
+        background-color: #0072AE;
+        border-radius: 0;
+        border: none;
+        color: #fff;
+        padding: 0;
+    }
+
+    .panel-title a {
+        display: block;
+        color: #fff;
+        padding: 15px;
+        position: relative;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .panel-body {
+        background: #fff;
+    }
+
+    .panel:last-child .panel-body {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .panel:last-child .panel-heading {
+        border-radius: 0 0 4px 4px;
+        transition: border-radius 0.3s linear 0.2s;
+    }
+
+    .panel:last-child .panel-heading.active {
+        border-radius: 0;
+        transition: border-radius linear 0s;
+    }
+    /* #bs-collapse icon scale option */
+
+    .panel-heading a:before {
+        content: '\e146';
+        position: absolute;
+        font-family: 'Material Icons';
+        right: 5px;
+        top: 10px;
+        font-size: 24px;
+        transition: all 0.5s;
+        transform: scale(1);
+    }
+
+    .panel-heading.active a:before {
+        content: ' ';
+        transition: all 0.5s;
+        transform: scale(0);
+    }
+
+    #bs-collapse .panel-heading a:after {
+        content: ' ';
+        font-size: 24px;
+        position: absolute;
+        font-family: 'Material Icons';
+        right: 5px;
+        top: 10px;
+        transform: scale(0);
+        transition: all 0.5s;
+    }
+
+    #bs-collapse .panel-heading.active a:after {
+        content: '\e909';
+        transform: scale(1);
+        transition: all 0.5s;
+    }
+    /* #accordion rotate icon option */
+
+    #accordion .panel-heading a:before {
+        content: '\e316';
+        font-size: 24px;
+        position: absolute;
+        font-family: 'Material Icons';
+        right: 5px;
+        top: 10px;
+        transform: rotate(180deg);
+        transition: all 0.5s;
+    }
+
+    #accordion .panel-heading.active a:before {
+        transform: rotate(0deg);
+        transition: all 0.5s;
     }
 </style>
 

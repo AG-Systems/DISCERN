@@ -8,12 +8,12 @@
     <div class="navLinks col-md-6 col-lg-7">
         <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/overview">
-                <p class="navText activetab">Overview</p>
+                <p class="navText">Overview</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/services">
-                <p class="navText">Services</p>
+                <p class="navText activetab">Services</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
@@ -115,14 +115,14 @@
     <h1>Start Generating In Your Data Today!</h1>
     <h1>No cost to get started!</h1>
 </div>
-<div style="width: 100%; height: 800px; background-color: #116194;">
+<div style="width: 100%; background-color: #116194;">
     <div style="width: 100%; height: 50px;"></div>
     <div style="width: 50%; margin: 0 auto; color: white;">
         <img src="https://cdn-images-1.medium.com/fit/c/200/200/1*zyz9WsCkaQU_houFGYEvdQ.png" style="border-radius: 50%; width: auto !important; border: solid; border-width: 2px;" height="50" width="50" />
         <span> Anthea Stratigos | Co-founder & CEO of Outsell, Inc.</span>
-
+        <img src="images/quote.png" style="width:98%;">
+        <!--
         <br/>
-        <!--<b style="font-size:30px">“</b>-->
         <img id="quote1" class="quoteImgs" src="images/startquotes.png">
         <blockquote>
 
@@ -132,10 +132,13 @@
 
         </blockquote>
         <img id="quote2" class="quoteImgs" src="images/endquotes.png">
-        <!--<b style="font-size:30px; float:right;">”</b>-->
+
+        -->
+
         <div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Rb3sbuEGZPE" frameborder="0" allowfullscreen></iframe>
         </div>
+        <div style="width: 100%; height: 50px;"></div>
     </div>
 </div>
 <div style="width: 100%; text-align: center; color: #116194;">
@@ -149,7 +152,7 @@
                 <h4 class="panel-title">
                         <!--<a data-toggle="collapse" data-parent="#bs-collapse" href="#one">-->
                         <a data-toggle="collapse" data-parent="#bs-collapse" id="content1">
-                            Lead Generations
+                            <span id="carat1">&#9660;</span>Lead Generations
                         </a>
                     </h4>
             </div>
@@ -167,7 +170,7 @@
             <div class="panel-heading">
                 <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#bs-collapse" id="content2">
-                            Transactions
+                            <span id="carat2">&#9658;</span>Transactions
                         </a>
                     </h4>
             </div>
@@ -186,7 +189,7 @@
             <div class="panel-heading">
                 <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#bs-collapse" id="content3">
-                            Subscriptions
+                            <span id="carat3">&#9658;</span>Subscriptions
                         </a>
                     </h4>
             </div>
@@ -202,7 +205,7 @@
             <div class="panel-heading">
                 <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#bs-collapse" id="content4">
-                            Profits
+                            <span id="carat4">&#9658;</span>Profits
                         </a>
                     </h4>
             </div>
@@ -224,7 +227,7 @@
 </div>
 <!-- end of container -->
 <div id="servicesGraphic">
-    <img id="servicesImg" src="images/Partners_menu.png">
+    <img id="servicesImg" src="images/discrenMakesYourData.png">
 </div>
 <!--Chatrify Widget-->
 <!--
@@ -250,18 +253,26 @@
         $("#content1").click(function (a) {
             $('#one').slideDown()
             $('#two, #three, #four').slideUp()
+            $('#carat1').html("&#9660;")
+            $('#carat2, #carat3, #carat4').html("&#9658;")
         });
         $("#content2").click(function (a) {
             $('#two').slideDown()
             $('#one, #three, #four').slideUp()
+            $('#carat2').html("&#9660;")
+            $('#carat1, #carat3, #carat4').html("&#9658;")
         });
         $("#content3").click(function (a) {
             $('#three').slideDown()
             $('#one, #two, #four').slideUp()
+            $('#carat3').html("&#9660;")
+            $('#carat2, #carat1, #carat4').html("&#9658;")
         });
         $("#content4").click(function (a) {
             $('#four').slideDown()
             $('#one, #two, #three').slideUp()
+            $('#carat4').html("&#9660;")
+            $('#carat2, #carat3, #carat1').html("&#9658;")
         });
     });
 </script>
@@ -274,6 +285,10 @@
 
     a {
         cursor: pointer;
+    }
+
+    span {
+        margin-right: 10px;
     }
 
     .quoteImgs {
@@ -295,14 +310,14 @@
 
     #antila-widget-offline {
         bottom: 20px !important;
-        border-bottom: blue;
+        border-bottom: #116194;
     }
 
     #servicesImg {
         /*display: block;
         width: 90%;
-        margin: auto;*/
-        margin-bottom: 50px;
+        margin: auto;
+        margin-bottom: 50px;*/
     }
 
     #testimonialQuote {
@@ -331,7 +346,7 @@
     }
 
     .chat-container {
-        border-top: 7px solid #609dff;
+        border-top: 7px solid #116194;
     }
 
     blockquote {
@@ -395,7 +410,7 @@
     }
 
     .panel-heading {
-        background-color: #0072AE;
+        background-color: #116194;
         border-radius: 0;
         border: none;
         color: #fff;
@@ -429,8 +444,7 @@
         transition: border-radius linear 0s;
     }
     /* #bs-collapse icon scale option */
-
-    .panel-heading a:before {
+    /*.panel-heading a:before {
         content: '\e146';
         position: absolute;
         font-family: 'Material Icons';
@@ -462,7 +476,7 @@
         content: '\e909';
         transform: scale(1);
         transition: all 0.5s;
-    }
+    }*/
     /* #accordion rotate icon option */
 
     #accordion .panel-heading a:before {

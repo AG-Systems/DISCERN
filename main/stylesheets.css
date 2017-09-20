@@ -1,13 +1,10 @@
-/* #337ab7 lighter blue color */
-
-
 /* #F7F7F7 light gray */
 
 
 /* #116194 color for main headers */
 
 
-/* #337ab7 blue color for lock */
+/* #337ab7 previous blue color for lock */
 
 
 /* #F27144 orange color */
@@ -25,14 +22,29 @@
 /* Klief Purple #963095 */
 
 
-/* #1E4089 darker blue color of logo */
+/* #1E4089 previous darker blue color of logo */
+
+
+/*
 
 * {
     font-family: "Libre Franklin", "Arial", "Verdana", sans-serif;
 }
+*/
+
+@font-face {
+    font-family: 'franklingothic-book';
+    /*src: url('franklingothic-book-webfont.woff2') format('woff2'), url('franklingothic-book-webfont.woff') format('woff');*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "franklingothic-book", "Arial", "Verdana", sans-serif;
+}
 
 #lock {
-    color: #337ab7;
+    color: #116194;
 }
 
 #break {
@@ -84,7 +96,7 @@ img {
     margin: auto;
     height: 40px;
     font-size: 24px;
-    border: 1px solid #337ab7;
+    border: 1px solid #116194;
 }
 
 #main-search::placeholder {
@@ -125,7 +137,7 @@ img {
     width: 50%;
     height: 30px;
     font-size: 14px;
-    border: 1px solid #337ab7;
+    border: 1px solid #116194;
     border-radius: 0;
 }
 
@@ -162,7 +174,7 @@ img {
 
 #underInput {
     text-align: center;
-    color: #1E4089;
+    color: #116194;
     margin-top: -20px;
 }
 
@@ -177,6 +189,7 @@ img {
 p {
     text-align: center;
     font-size: 18px;
+    color: #116194;
 }
 
 .navbar {
@@ -189,7 +202,7 @@ p {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #337ab7;
+    color: #116194;
 }
 
 #login-icon {
@@ -203,10 +216,12 @@ p {
     font-size: 14px;
     padding: 10px;
     margin-right: -10px;
+    color: #116194;
 }
 
 #lockA2 {
     font-size: 12px;
+    color: #116194;
 }
 
 .col-xs-1 {
@@ -312,7 +327,7 @@ p {
 }
 
 .bios {
-    color: #337ab7;
+    color: #116194;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -328,14 +343,14 @@ p {
     float: left;
     width: 30%;
     height: 90%;
-    border-right: 3px solid blue;
+    border-right: 3px solid #116194;
 }
 
 #rightside {
     float: left;
     width: 70%;
     height: 90%;
-    border-left: 3px solid blue;
+    border-left: 3px solid #116194;
     margin-left: -3px;
 }
 
@@ -349,7 +364,7 @@ iframe {
 
 #demoHeader {
     text-align: center;
-    color: #1E4089;
+    color: #116194;
 }
 
 @media (max-width:991px) {

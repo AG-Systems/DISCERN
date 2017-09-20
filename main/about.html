@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?rd5re8">
+<!-- social icons -->
 <div id="servicesNav" class="mainNav col-xs-12">
 
     <div class="searchNav col-md-5 col-lg-4">
@@ -115,93 +117,16 @@
 
 <div id="about-page" ng-controller="about_controller">
 
-    <a></a>
 
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="container">
-                <!--<div class="row">-->
-                <div class="col-sm-4" id="left">
-                    <img class="img-circle" id="modal-img" ng-src="{{image}}">
-                    <p style="margin-top:10px; font-weight:bold; text-align:center;">{{ current_name }}</p>
-                </div>
-                <div class="col-sm-8" style="max-height: 230px; overflow-y: auto; " id="right">
-                    <p style="text-decoration:underline; margin-left:20px;"><b>Bio: </b></p>
-                    <p style="text-align:left; margin-left:20px;">{{ bio }}</p>
-                </div>
-                <!-- </div>-->
-            </div>
-            <style>
-                @media (max-width: 644px) {
-                    #servicesNav {
-                        margin-top: -20px;
-                    }
-                    .right {
-                        text-align: center;
-                        overflow-y: auto;
-                        max-height: 230px;
-                    }
-                    .left {
-                        margin: 0 auto;
-                    }
-                    .modal-content {
-                        background-color: #fefefe;
-                        position: relative;
-                        margin: 15% auto;
-                        padding: 20px;
-                        border: 1px solid #888;
-                        width: 60%;
-                        height: 90%;
-                    }
-                }
-
-                .right {
-                    overflow-y: auto;
-                    max-height: 230px;
-                }
-
-                .aboutpages li {
-                    margin: 0 auto;
-                    text-align: center;
-                }
-            </style>
-        </div>
+    <div id="bg-about">
+        <h1 style="font-size: 120px; padding-top: 100px;" id="fade">OUR TEAM</h1>
     </div>
-    <h1 id="about-header">Our Team</h1>
     <ul class="nav nav-tabs aboutpages nav-justified">
         <li class="leader active"><a>Leadership / Tech Team</a></li>
         <li class="sales"><a>Sales Team</a></li>
         <li class="product"><a>Product Team</a></li>
     </ul>
-    <!--
-    <div class="row" style="text-align: center">
-        <div ng-repeat="person in team" id="{{ team.indexOf(person) }}">
-        <div style="overflow-y: hidden;" class="col-sm-6 col-md-4 col-lg-3">
-            <div class="thumbnail">
-                <img src="{{ person.img }}" class="img-circle">
-                    <div class="caption">
-                        <h3 class="bios">{{ person.name }}</h3>
-                        <p>{{ person.title }}</p>
-                        <a ng-click="showbio( person.name )">Bio</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-
-
-            <div style="width: 100%;
-    height: 200px;
-    background-color: black;
-    margin-top: 400px; display: none;">
-            </div>
-    </div>
-    -->
     <div class="row" style="text-align: center;">
         <div class="col-sm-6 col-lg-3 leaderteam" id="0">
             <div class="thumbnail">
@@ -220,10 +145,6 @@
             <div class="thumbnail">
                 <img src="images/Team_Members_Thor.png" class="img-circle">
                 <div class="caption">
-                    <!--<h3 ng-click="changeName('Thor Hauge');
-            changebio('Thor Hauge has a unique backround with years of expertise in innovation commercialization, peer-to-peer, digital currencies, mobile payments and big data. Previously, Thor was a Global Business Development Executive with Western Union Digital Ventures and worked in Early Stage Venture Investments at Nokia Ventures.');
-            changeImg('images/Team_Members_Thor.png');
-            " class="bios">Thor Hauge</h3>-->
                     <h3>Thor Hauge</h3>
                     <p>Head of Business Development</p>
                     <a class="bioAs" ng-click="loadbio(4 , 'sales', 'Thor Hauge has a unique background with years of expertise in innovation commercialization, peer-to-peer, digital currencies, mobile payments and big data. Previously, Thor was a Global Business Development Executive with Western Union Digital Ventures and worked in Early Stage Venture Investments at Nokia Ventures.')">Read Bio</a>
@@ -234,9 +155,6 @@
             <div class="thumbnail">
                 <img src="images/Team_Members_Jim.png" class="img-circle">
                 <div class="caption">
-                    <!--<h3 ng-click="changeName('Jim Christie');
-                     changebio('Tesla, SpaceX, Solar City... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores porro amet laboriosam, quasi, illo obcaecati odit. Fuga blanditiis, magni maxime asperiores possimus, aliquam hic iure dignissimos iusto perspiciatis, dolorem enim?');
-                    changeImg('images/images/Team_Members_Jim.png');" class="bios">Jim Christie</h3>-->
                     <h3>Jim Christie</h3>
                     <p>Head of Product</p>
                     <a class="bioAs" ng-click="loadbio(6, 'product', 'Jim Christie brings 10+ years of product and business experience to DISCERN.  Prior to joining DISCERN, Jim has led business intelligence and advertising operations at Blinkx Video where he managed geographically distributed AdOps teams and exceeded revenue targets for the video business unit in six consecutive quarters.  Jim also served as the scrum master and team leader at Blinkx desktop where he he oversaw a 6 member content team, the overhaul of the firms product and created and maintained the product roadmap.  Prior to Blinkx, Jim was the operations specialist for Shoplocal where he oversaw 30 account relationships, and managed the data entry operations team.  Jim has a BS – Computer and Systems Engineering from Rensselear Polytechnic Institute')">Read Bio</a>
@@ -397,6 +315,51 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
     });
 </script>
 <style>
+    /* @media (max-width: 644px) {
+        #servicesNav {
+            margin-top: -20px;
+        }
+        .right {
+            text-align: center;
+            overflow-y: auto;
+            max-height: 230px;
+        }
+        .left {
+            margin: 0 auto;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            position: relative;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%;
+            height: 90%;
+        }
+    }*/
+
+    #bg-about {
+        width: 100%;
+        height: 330px;
+        margin-top: 0;
+        background-image: url("./images/hero_our_team.png");
+        background-repeat: no-repeat;
+        text-align: center;
+        /*background-position: -50px -160px;*/
+        color: white;
+    }
+
+    .right {
+        overflow-y: auto;
+        max-height: 230px;
+    }
+
+    .aboutpages li {
+        margin: 0 auto;
+        text-align: center;
+    }
+</style>
+<style>
     .Aligner {
         height: 60vh;
         display: flex;
@@ -422,7 +385,7 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
         min-height: 300px;
         height: 300px;
         width: 100%;
-        background-color: #337ab7;
+        background-color: #116194;
     }
 
     .rowcontact {
@@ -494,7 +457,8 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
         <div class="col-sm-4 fade">
             <br/>
             <div class="">
-                <iframe width="200" height="220" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8JfQVNwDzOZTyZp34mhHIqb3BZa9nI60&q=San+Mateo" allowfullscreen>
+                <iframe width="200" height="220" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8JfQVNwDzOZTyZp34mhHIqb3BZa9nI60
+                                                                                       &q=493+S+El+Camino+Real+San+Mateo" allowfullscreen style="display:block;">
                 </iframe>
             </div>
         </div>
@@ -510,6 +474,9 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
     $(window).scroll(function () {
         $(".fade").css("opacity", 0 + $(window).scrollTop() / 250);
     });
+    $(window).scroll(function () {
+        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
 </script>
 <style>
     #about-page {
@@ -518,7 +485,6 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
     }
 
     h1 {
-        background-color: #337ab7;
         color: white;
         padding-top: 50px;
         padding-bottom: 50px;
@@ -528,15 +494,6 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
         /*background-color: #337ab7;*/
         margin: 0;
         /*padding-top: 50px*/
-    }
-
-    #about-header {
-        margin-bottom: 0;
-        font-size: 120px;
-        padding: 105px;
-        color: white;
-        background-image: url("images/hero_our_team.png");
-        /*color: #116194;*/
     }
 
     .caption {
@@ -567,7 +524,8 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
         color: #474747;
     }
 
-    p {
+    p,
+    a {
         color: #116194;
     }
     /*#myModal {

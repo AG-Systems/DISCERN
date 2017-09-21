@@ -510,3 +510,9 @@ iframe {
 
     padding-right: 20px;
 }
+
+.biotext
+{
+    width: 85%;
+    margin: 0 auto;
+}

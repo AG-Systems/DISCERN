@@ -306,21 +306,21 @@ app.controller('about_controller', function ($scope) {
             $("#bioShown").remove();
             console.log(bio_page, index, section);
             if (bio_page == 4 && index < 4 && section == "leader") {
-                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 4 && index < 2 && section == "leader") {
-                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 2 && index < 2 && section == "leader") {
-                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 1 && section == "leader") {
-                $("#0").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#0").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 2 && section == "leader") {
-                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 3 && section == "leader") {
-                $("#4").after("<div class='col-xs-12 bioinfo' s id='bioShown'>" + bio_input + "</div>");
+                $("#4").after("<div class='col-xs-12 bioinfo' s id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 4 && section == "leader") {
-                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 2 && index < 4 && section == "leader") {
-                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
 
             }
 
@@ -333,31 +333,31 @@ app.controller('about_controller', function ($scope) {
             */
 
             if (bio_page >= 2 && index < 6 && section == "sales") {
-                $("#5").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#5").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 5 && section == "sales") {
-                $("#1").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#1").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 6 && section == "sales") {
-                $("#5").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#5").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             }
 
             if (bio_page == 4 && index < 10 && section == "product") {
-                $("#8").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#8").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 2 && index < 8 && section == "product") {
-                $("#6").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#6").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 2 && index < 10 && section == "product") {
-                $("#8").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#8").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 7 && section == "product") {
-                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 8 && section == "product") {
-                $("#6").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#6").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 9 && section == "product") {
-                $("#7").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#7").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 10 && section == "product") {
-                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             }
 
         } else {
-            $("#" + (bio_page - 1)).after("<div class='col-xs-12'  id='bioShown'>" + bio_input + "</div>");
+            $("#" + (bio_page - 1)).after("<div class='col-xs-12'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
         }
     };
     /*

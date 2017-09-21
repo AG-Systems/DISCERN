@@ -43,6 +43,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'franklingothic-demi';
+    src: url('franklingothic-demi-webfont.woff2') format('woff2'),
+         url('franklingothic-demi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+b
+{
+    font-family: "franklingothic-demi" !important;
+}
+
 * {
     font-family: "franklingothic-book", "Arial", "Verdana", sans-serif;
 }

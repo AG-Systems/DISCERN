@@ -1,40 +1,40 @@
 <div id="servicesNav" class="mainNav col-xs-12">
 
     <div class="searchNav col-md-5 col-lg-4">
-        <a ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
+        <a ng-href="#/home" class="img-a"><img class="img-nav" src="images/discernLogo.png" /></a>
         <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
         <button id="submit2"><i class="fa fa-search"></i></button>
     </div>
     <div class="navLinks col-md-6 col-lg-7">
         <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/overview">
-                <p class="navText">Overview</p>
+                <p class="navText bolded">OVERVIEW</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/services">
-                <p class="navText activetab">Services</p>
+                <p class="navText activetab bolded">SERVICES</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/partners">
-                <p class="navText">Partners</p>
+                <p class="navText bolded">PARTNERS</p>
             </a>
         </div>
 
         <div class="col-xs-2 navLinkDivs">
             <a href="#/news">
-                <p class="navText">News</p>
+                <p class="navText bolded">NEWS</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/about">
-                <p class="navText">About</p>
+                <p class="navText bolded">ABOUT</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/contact">
-                <p class="navText">Contact Us</p>
+                <p class="navText bolded">CONTACT US</p>
             </a>
         </div>
 
@@ -43,7 +43,7 @@
         <div class="col-xs-6"></div>
         <div class="borderLogin col-xs-6">
             <div id="break"></div>
-            <a id="lockA2" href="#"><span id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></span>&nbsp;Login</a>
+            <a id="lockA2" href="#"><span id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></span>&nbsp;<b>Login</b></a>
         </div>
     </div>
 </div>
@@ -109,7 +109,7 @@
 </div>-->
 <div id="max-breaker"></div>
 <div id="bg-partners">
-    <h1 style="font-size: 120px; color: white; padding-top: 100px; margin-top:0" id="fade"><b>DATA PARTNERS</b></h1>
+    <h1 style="font-size: 120px; color: white; padding-top: 100px; margin-top:0" id="fade">DATA PARTNERS</h1>
 </div>
 <div style="width: 100%; text-align: center; color: #116194;">
     <h1 style="font-size:48px;">Start Generating Interest In Your Data Today!</h1>
@@ -120,7 +120,8 @@
     <div style="width: 50%; margin: 0 auto; color: white;">
         <img src="https://cdn-images-1.medium.com/fit/c/200/200/1*zyz9WsCkaQU_houFGYEvdQ.png" style="margin-right:10px;border-radius: 50%; width: auto !important; border: solid; border-width: 2px;" height="50" width="50" />
         <span> Anthea Stratigos | Co-founder & CEO of Outsell, Inc.</span>
-        <img src="images/partners_quote.png" style="width:80%;display:block;margin:auto;">
+        <a id="linkToArticle" href="https://www.linkedin.com/pulse/your-data-ready-anthea-stratigos?trk=v-feed&lipi=urn:li:page:d_flagship3_profile_view_base_recent_activity_details_all;UASEq0lDL1iAuDpVmHVakw%3D%3D" target="_blank">Link to Full Article</a>
+        <img src="images/partners_quote.png" style="width:90%;display:block;margin:20px auto;">
         <!--
         <br/>
         <img id="quote1" class="quoteImgs" src="images/startquotes.png">
@@ -147,19 +148,19 @@
 <div style="width: 100%; text-align: center; color: #116194;">
     <h1>Benefits to You:</h1>
 </div>
-<div class="col-xs-12">
-    <div class="panel-group wrap" id="bs-collapse" style="margin:50px;">
+<div class="col-xs-12" style="padding:0;">
+    <div class="panel-group wrap" id="bs-collapse" style="width:50%; display:block; margin:50px auto;">
 
         <div class="panel">
             <div class="panel-heading">
                 <h4 class="panel-title">
                         <!--<a data-toggle="collapse" data-parent="#bs-collapse" href="#one">-->
                         <a data-toggle="collapse" data-parent="#bs-collapse" id="content1">
-                            <span id="carat1">&#9660;</span>Lead Generations
+                            <span id="carat1">&#9658;</span>Lead Generations
                         </a>
                     </h4>
             </div>
-            <div id="one" class="panel-collapse collapse in">
+            <div id="one" class="panel-collapse collapse">
                 <div class="panel-body">
 
                     Where now are the horse and the rider? Where is the horn that was blowing? Where is the helm and the hauberk, and the bright hair flowing?
@@ -223,13 +224,14 @@
 
     </div>
     <!-- end of #bs-collapse  -->
-
+    <div style="background-color:#f36b21;">
+        <h2 id="consultation" style="color:white; margin:0; padding:50px 0; font-size:48px; text-align:center;"><a href="#/contact"><span style="color:white;text-decoration:underline;">CONTACT US</span></a> FOR YOUR FREE CONSULTATION!</h2>
+    </div>
 </div>
+
 <!-- end of container -->
 
-<div style="background-color:#f36b21;">
-    <h2 id="consultation" style="color:white; margin:0; padding:50px 0; font-size:48px; text-align:center;"><span style="text-decoration:underline;">CONTACT US</span> FOR YOUR FREE CONSULTATION!</h2>
-</div>
+
 <!--Chatrify Widget-->
 <!--
    <script type='text/javascript'>
@@ -250,30 +252,42 @@
 
 <script>
     $(document).ready(function () {
-        $('.collapse.in').prev('.panel-heading').addClass('active');
+        /*$('.collapse.in').prev('.panel-heading').addClass('active');*/
         $("#content1").click(function (a) {
-            $('#one').slideDown()
-            $('#two, #three, #four').slideUp()
-            $('#carat1').html("&#9660;")
-            $('#carat2, #carat3, #carat4').html("&#9658;")
+            if ($("#carat1").html() != "▼") {
+                $('#one').slideDown()
+                $('#carat1').html("&#9660;")
+            } else {
+                $('#one').slideUp()
+                $('#carat1').html("&#9658;")
+            }
         });
         $("#content2").click(function (a) {
-            $('#two').slideDown()
-            $('#one, #three, #four').slideUp()
-            $('#carat2').html("&#9660;")
-            $('#carat1, #carat3, #carat4').html("&#9658;")
+            if ($("#carat2").html() != "▼") {
+                $('#two').slideDown()
+                $('#carat2').html("&#9660;")
+            } else {
+                $('#two').slideUp()
+                $('#carat2').html("&#9658;")
+            }
         });
         $("#content3").click(function (a) {
-            $('#three').slideDown()
-            $('#one, #two, #four').slideUp()
-            $('#carat3').html("&#9660;")
-            $('#carat2, #carat1, #carat4').html("&#9658;")
+            if ($("#carat3").html() != "▼") {
+                $('#three').slideDown()
+                $('#carat3').html("&#9660;")
+            } else {
+                $('#three').slideUp()
+                $('#carat3').html("&#9658;")
+            }
         });
         $("#content4").click(function (a) {
-            $('#four').slideDown()
-            $('#one, #two, #three').slideUp()
-            $('#carat4').html("&#9660;")
-            $('#carat2, #carat3, #carat1').html("&#9658;")
+            if ($("#carat4").html() != "▼") {
+                $('#four').slideDown()
+                $('#carat4').html("&#9660;")
+            } else {
+                $('#four').slideUp()
+                $('#carat4').html("&#9658;")
+            }
         });
     });
 </script>
@@ -282,6 +296,13 @@
     #emptySpace {
         height: 400px;
         width: 100%;
+    }
+
+    #linkToArticle {
+        display: block;
+        margin: 0px 65px 10px;
+        color: white;
+        text-decoration: underline;
     }
 
     a {
@@ -412,16 +433,15 @@
     }
 
     .panel-heading {
-        background-color: #116194;
+        background-color: #ececec;
         border-radius: 0;
         border: none;
-        color: #fff;
         padding: 0;
     }
 
     .panel-title a {
         display: block;
-        color: #fff;
+        color: #116194;
         padding: 15px;
         position: relative;
         font-size: 22px;

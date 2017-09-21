@@ -1,40 +1,40 @@
 <div id="servicesNav" class="mainNav col-xs-12">
 
     <div class="searchNav col-md-5 col-lg-4">
-        <a ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
+        <a ng-href="#/home" class="img-a"><img class="img-nav" src="images/discernLogo.png" /></a>
         <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
         <button id="submit2"><i class="fa fa-search"></i></button>
     </div>
     <div class="navLinks col-md-6 col-lg-7">
         <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/overview">
-                <p class="navText">Overview</p>
+                <p class="navText bolded">OVERVIEW</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/services">
-                <p class="navText">Services</p>
+                <p class="navText bolded">SERVICES</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/partners">
-                <p class="navText">Partners</p>
+                <p class="navText bolded">PARTNERS</p>
             </a>
         </div>
 
         <div class="col-xs-2 navLinkDivs">
             <a href="#/news">
-                <p class="navText activetab">News</p>
+                <p class="navText activetab bolded">NEWS</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/about">
-                <p class="navText">About</p>
+                <p class="navText bolded">ABOUT</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/contact">
-                <p class="navText">Contact Us</p>
+                <p class="navText bolded">CONTACT US</p>
             </a>
         </div>
 
@@ -43,7 +43,7 @@
         <div class="col-xs-6"></div>
         <div class="borderLogin col-xs-6">
             <div id="break"></div>
-            <a id="lockA2" href="#"><span id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></span>&nbsp;Login</a>
+            <a id="lockA2" href="#"><span id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></span>&nbsp;<b>Login</b></a>
         </div>
     </div>
 </div>
@@ -116,7 +116,7 @@
     </script>
 </div>
 <div id="needCopy">
-    <h1 style="color:white;">Check Out the Latest Buzz Below:</h1>
+    <h1 style="color:#116194;font-size:80px;">Check Out the Latest Buzz Below:</h1>
 </div>
 
 <div id="newsContainer" class="container" ng-controller="news">
@@ -173,22 +173,22 @@
     }
 
     #fill {
-        height: 550px;
+        height: 700px;
         border: 1px solid #474747;
         padding: 0;
     }
 
     #currentpost {
-        height: 550px;
+        height: 700px;
         background-color: #d3d3d3;
-        border: 1px solid #474747;
+        /*border: 1px solid #474747;*/
         padding: 0;
     }
 
     #needCopy {
         text-align: center;
-        padding: 50px;
-        background-color: #116194;
+        padding: 20px;
+        background-color: white;
     }
     /*#currentpost {
         background: #36D1DC;
@@ -201,9 +201,8 @@
     }*/
 
     #newsContainer {
-        background-color: #f5f5f5;
-        padding-bottom: 100px;
-        padding-top: 80px;
+        background-color: #ececec;
+        padding: 50px 0;
     }
 
     a {

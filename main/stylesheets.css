@@ -22,6 +22,9 @@
 /* Klief Purple #963095 */
 
 
+/* Klief Lighter Gray #ececec */
+
+
 /* #1E4089 previous darker blue color of logo */
 
 
@@ -40,9 +43,23 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'franklingothic-demi';
+    src: url('franklingothic-demi-webfont.woff2') format('woff2'), url('franklingothic-demi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+b,
+.bolded {
+    font-family: "franklingothic-demi" !important;
+}
+
 * {
     font-family: "franklingothic-book", "Arial", "Verdana", sans-serif;
 }
+
+.bold {}
 
 #lock {
     color: #116194;
@@ -82,6 +99,7 @@ img {
 
 #homeButtonDiv {
     margin-top: 0;
+    padding: 0;
 }
 
 
@@ -92,12 +110,22 @@ img {
 }*/
 
 #main-search {
-    display: block;
+    /*display: block;
     width: 90%;
-    margin: auto;
+    margin: auto;*/
+    width: 100%;
     height: 40px;
     font-size: 24px;
     border: 1px solid #116194;
+}
+
+#main-search2 {
+    display: inline;
+    width: 50%;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #116194;
+    border-radius: 0;
 }
 
 #main-search::placeholder {
@@ -133,15 +161,6 @@ img {
     display: inline;
 }
 
-#main-search2 {
-    display: inline;
-    width: 50%;
-    height: 30px;
-    font-size: 14px;
-    border: 1px solid #116194;
-    border-radius: 0;
-}
-
 #main-search2::placeholder,
 .form-inputs:placeholder {
     color: lightgray;
@@ -149,7 +168,7 @@ img {
 }
 
 .navLinks {
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
     margin-top: -10px;
 }
 
@@ -160,10 +179,10 @@ img {
 
 #submit {
     display: inline;
-    margin-left: -40px;
-    width: 50%;
+    /*margin-left: -40px;*/
+    width: 25%;
     font-size: 26px;
-    height: 42px;
+    height: 41px;
 }
 
 #submit2 {
@@ -484,4 +503,16 @@ iframe {
 
 .activetab {
     text-decoration: underline;
+}
+
+.img-a
+{
+
+    padding-right: 20px;
+}
+
+.biotext
+{
+    width: 85%;
+    margin: 0 auto;
 }

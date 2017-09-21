@@ -3,15 +3,15 @@
         <li id="login-icon"><a id="lockA" href="#"><i id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></i><br/>Login</a></li>
     </ul>
 </nav>
-<div id="img-center">
+<div id="img-center" style="width:40%;display:block;margin:auto;margin-top:100px;">
     <img class="img-responsive" src="images/discernLogo.png" />
 </div>
 <div id="input-bar" class="col-xs-12">
-    <div class="col-xs-2"></div>
-    <div class="col-xs-8">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
         <input id="main-search" placeholder="Global Search">
     </div>
-    <div class="col-xs-2" id="homeButtonDiv">
+    <div class="col-xs-3" id="homeButtonDiv">
         <button id="submit"><i class="fa fa-search"></i></button>
     </div>
 </div>
@@ -22,32 +22,32 @@
     <div class="container">
         <div class="col-xs-2">
             <a ng-href="#/overview">
-                <p>Overview</p>
+                <p class="footerPs">OVERVIEW</p>
             </a>
         </div>
         <div class="col-xs-2">
             <a href="#/services">
-                <p>Services</p>
+                <p class="footerPs">SERVICES</p>
             </a>
         </div>
         <div class="col-xs-2">
             <a ng-href="#/partners">
-                <p>Partners</p>
+                <p class="footerPs">PARTNERS</p>
             </a>
         </div>
         <div class="col-xs-2">
             <a href="#/news">
-                <p>News</p>
+                <p class="footerPs">NEWS</p>
             </a>
         </div>
         <div class="col-xs-2">
             <a href="#/about">
-                <p>About</p>
+                <p class="footerPs">ABOUT</p>
             </a>
         </div>
         <div class="col-xs-2">
             <a href="#/contact">
-                <p>Contact Us</p>
+                <p class="footerPs">CONTACT US</p>
             </a>
         </div>
     </div>
@@ -57,6 +57,11 @@
     #emptySpace {
         height: 200px;
         width: 100%;
+    }
+
+    .footerPs {
+        font-size: 16px;
+        font-family: "franklingothic-demi" !important;
     }
 
     #img-center {

@@ -69,14 +69,12 @@ app.controller('news', function ($scope, $sce, $http) {
             link: "https://www.battlefin.com/press-release-discern",
             text: "'DISCERN’s platform automates non-alpha generating activities such as data management, visualization and sharing while simultaneously augmenting and enhancing alpha-generating activities in a repeatable, scalable, machine-learning framework” said Harry Blount, CEO of DISCERN. 'Our partnership with Battlefin enables their hedge fund customers to achieve more insights, more often and better returns..."
       },*/
-        {
-            title: "How DISCERN was founded",
-            date: "05/04/2016",
-            post_id: 0,
-            link: "https://www.discern.com/news/2016/5/4/transformed-by-911-wisconsin-native-started-investment-analytics-firm",
-            text: "'One of the things about 9/11 that transformed me is I realized if people had better access to information, they could make better decisions in general,' \
-          said Blount, who left New York several years later and is now running a start-up company in San Francisco."
-
+    {
+            title: "SNL Financial Joins DISCERN’s Signaling Platform",
+            date: "11/13/2014",
+            post_id: 2,
+            link: "https://www.discern.com/news/2015/4/6/snl-financial-joins-discerns-signaling-platform",
+            text: "'Customers desire to spend more time on analysis and less time on mundane activities such as data aggregation, organization and presentation” says DISCERN CEO Harry Blount.  'With the addition of SNL, we can now provide real estate investors with all of the supply, demand, inventory valuation data they need, in one-location, to create and sustain a competitive information advantage...'"
       },
         {
             title: "DISCERN Raises $20 Million",
@@ -87,13 +85,6 @@ app.controller('news', function ($scope, $sce, $http) {
 
       },
         {
-            title: "SNL Financial Joins DISCERN’s Signaling Platform",
-            date: "11/13/2014",
-            post_id: 2,
-            link: "https://www.discern.com/news/2015/4/6/snl-financial-joins-discerns-signaling-platform",
-            text: "'Customers desire to spend more time on analysis and less time on mundane activities such as data aggregation, organization and presentation” says DISCERN CEO Harry Blount.  'With the addition of SNL, we can now provide real estate investors with all of the supply, demand, inventory valuation data they need, in one-location, to create and sustain a competitive information advantage...'"
-      },
-        {
             title: "Former Wall Street Execs Shake-Up Real Estate Investment Analysis",
             date: "09/17/2015",
             post_id: 3,
@@ -102,26 +93,20 @@ app.controller('news', function ($scope, $sce, $http) {
 
       },
         {
-            title: "DISCERN to present at Battlefin West Coast on October 26 in Palo Alto",
-            date: "08/01/2017",
-            post_id: 4,
-            link: "https://www.google.com/",
-            text: "Tbh heirloom wayfarers everyday carry distillery, shoreditch pickled glossier bespoke occupy. 3 wolf moon edison bulb portland, green juice cred raw denim adaptogen tattooed. Yuccie chillwave cardigan tattooed poke waistcoat affogato cred cloud bread trust fund pok pok semiotics typewriter literally brunch. Leggings celiac hashtag, freegan bicycle rights iPhone occupy farm-to-table copper mug tbh church-key cred. Tacos lo-fi YOLO poke. Chicharrones 90's lumbersexual, mlkshk small batch adaptogen franzen ennui four dollar toast kogi. Gentrify craft beer bitters, slow-carb cronut cred farm-to-table intelligentsia. Ramps raclette pok pok bespoke leggings tilde you probably haven't heard of them franzen lo-fi. Williamsburg jean shorts air plant, green juice YOLO knausgaard try-hard four loko helvetica brunch food truck gluten-free hell of truffaut..."
+            title: "How DISCERN was founded",
+            date: "05/04/2016",
+            post_id: 0,
+            link: "https://www.discern.com/news/2016/5/4/transformed-by-911-wisconsin-native-started-investment-analytics-firm",
+            text: "'One of the things about 9/11 that transformed me is I realized if people had better access to information, they could make better decisions in general,' \
+          said Blount, who left New York several years later and is now running a start-up company in San Francisco."
 
       },
-        {
-            title: "DISCERN chosen as default search platform for Alpha Theory Portfolio Optimization platform ",
-            date: "08/15/2017",
-            post_id: 5,
-            link: "https://www.youtube.com/",
-            text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
 
-      },
         {
-            title: "DISCERN chosen as one of 8 to watch in 2018 by Data Industry Research Leader Outsell  September 12, 2017 ",
-            date: "08/11/2017",
-            post_id: 6,
-            link: "https://outsellinc.com/signature-event-2017/#!/emergingcompanygrowthtank",
+            title: "Is Your Data Ready?",
+            date: "05/25/2017",
+            post_id: 8,
+            link: "./linkedin.html",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
 
       },
@@ -134,13 +119,31 @@ app.controller('news', function ($scope, $sce, $http) {
 
       },
         {
-            title: "Is Your Data Ready?",
-            date: "05/25/2017",
-            post_id: 8,
-            link: "./linkedin.html",
+            title: "DISCERN to present at Battlefin West Coast on October 26 in Palo Alto",
+            date: "08/01/2017",
+            post_id: 4,
+            link: "https://www.google.com/",
+            text: "Tbh heirloom wayfarers everyday carry distillery, shoreditch pickled glossier bespoke occupy. 3 wolf moon edison bulb portland, green juice cred raw denim adaptogen tattooed. Yuccie chillwave cardigan tattooed poke waistcoat affogato cred cloud bread trust fund pok pok semiotics typewriter literally brunch. Leggings celiac hashtag, freegan bicycle rights iPhone occupy farm-to-table copper mug tbh church-key cred. Tacos lo-fi YOLO poke. Chicharrones 90's lumbersexual, mlkshk small batch adaptogen franzen ennui four dollar toast kogi. Gentrify craft beer bitters, slow-carb cronut cred farm-to-table intelligentsia. Ramps raclette pok pok bespoke leggings tilde you probably haven't heard of them franzen lo-fi. Williamsburg jean shorts air plant, green juice YOLO knausgaard try-hard four loko helvetica brunch food truck gluten-free hell of truffaut..."
+
+      },
+        {
+            title: "DISCERN chosen as one of 8 to watch in 2018 by Data Industry Research Leader Outsell  September 12, 2017 ",
+            date: "08/11/2017",
+            post_id: 6,
+            link: "https://outsellinc.com/signature-event-2017/#!/emergingcompanygrowthtank",
+            text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
+
+      },
+        {
+            title: "DISCERN chosen as default search platform for Alpha Theory Portfolio Optimization platform ",
+            date: "08/15/2017",
+            post_id: 5,
+            link: "https://www.youtube.com/",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
 
       }
+
+
     ]
     $scope.change_post = function (index) {
         $scope.index = index
@@ -306,21 +309,21 @@ app.controller('about_controller', function ($scope) {
             $("#bioShown").remove();
             console.log(bio_page, index, section);
             if (bio_page == 4 && index < 4 && section == "leader") {
-                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 4 && index < 2 && section == "leader") {
-                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 2 && index < 2 && section == "leader") {
-                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 1 && section == "leader") {
-                $("#0").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#0").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 2 && section == "leader") {
-                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 3 && section == "leader") {
-                $("#4").after("<div class='col-xs-12 bioinfo' s id='bioShown'>" + bio_input + "</div>");
+                $("#4").after("<div class='col-xs-12 bioinfo' s id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 4 && section == "leader") {
-                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 2 && index < 4 && section == "leader") {
-                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
 
             }
 
@@ -333,31 +336,31 @@ app.controller('about_controller', function ($scope) {
             */
 
             if (bio_page >= 2 && index < 6 && section == "sales") {
-                $("#5").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#5").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 5 && section == "sales") {
-                $("#1").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#1").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 6 && section == "sales") {
-                $("#5").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#5").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             }
 
             if (bio_page == 4 && index < 10 && section == "product") {
-                $("#8").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#8").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 2 && index < 8 && section == "product") {
-                $("#6").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#6").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 2 && index < 10 && section == "product") {
-                $("#8").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#8").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 7 && section == "product") {
-                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#3").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 8 && section == "product") {
-                $("#6").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#6").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 9 && section == "product") {
-                $("#7").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#7").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             } else if (bio_page == 1 && index < 10 && section == "product") {
-                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'>" + bio_input + "</div>");
+                $("#9").after("<div class='col-xs-12 bioinfo'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
             }
 
         } else {
-            $("#" + (bio_page - 1)).after("<div class='col-xs-12'  id='bioShown'>" + bio_input + "</div>");
+            $("#" + (bio_page - 1)).after("<div class='col-xs-12'  id='bioShown'><div class='biotext'>" + bio_input + "</div></div>");
         }
     };
     /*

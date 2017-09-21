@@ -1,50 +1,40 @@
-<link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?rd5re8">
-<!-- social icons -->
-
-<script>
-    $('.navbar-toggle').on("click", function () {
-        $('#pushContent').slideToggle();
-    });
-    // navbar
-</script>
-
-<div id="servicesNav" class="mainNav col-xs-12" style="margin-top:0">
+<div id="servicesNav" class="mainNav col-xs-12">
 
     <div class="searchNav col-md-5 col-lg-4">
-        <a ng-href="#/home"><img class="img-nav" src="images/discernLogo.png" /></a>
+        <a ng-href="#/home" class="img-a"><img class="img-nav" src="images/discernLogo.png" /></a>
         <input id="main-search2" type="text" class="form-control" placeholder="Global Search">
         <button id="submit2"><i class="fa fa-search"></i></button>
     </div>
     <div class="navLinks col-md-6 col-lg-7">
         <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/overview">
-                <p class="navText">Overview</p>
+                <p class="navText bolded">OVERVIEW</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/services">
-                <p class="navText">Services</p>
+                <p class="navText bolded">SERVICES</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
-            <a href="#/partners">
-                <p class="navText">Partners</p>
+            <a ng-href="#/partners">
+                <p class="navText bolded">PARTNERS</p>
             </a>
         </div>
 
         <div class="col-xs-2 navLinkDivs">
             <a href="#/news">
-                <p class="navText">News</p>
+                <p class="navText bolded">NEWS</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/about">
-                <p class="navText">About</p>
+                <p class="navText bolded">ABOUT</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/contact">
-                <p class="navText activetab">Contact Us</p>
+                <p class="navText activetab bolded">CONTACT US</p>
             </a>
         </div>
 
@@ -53,7 +43,7 @@
         <div class="col-xs-6"></div>
         <div class="borderLogin col-xs-6">
             <div id="break"></div>
-            <a id="lockA2" href="#"><span id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></span>&nbsp;Login</a>
+            <a id="lockA2" href="#"><span id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></span>&nbsp;<b>Login</b></a>
         </div>
     </div>
 </div>
@@ -116,9 +106,14 @@
 <div id="pushContent"></div>
 <!-- pushing down site -->
 <!-- navbar code done -->
+<style>
+    #servicesNav {
+     margin-top: 0px; 
+    }
+</style>
 <div id="max-breaker"></div>
 <div id="bg-contact">
-    <h1 style="font-size: 120px; margin-top: 0; padding-top: 100px;" id="fade">CONNECT WITH US</h1>
+    <h1 style="font-size: 120px; margin-top: 0; padding-top: 100px;" id="fade"><b>CONNECT WITH US</b></h1>
 </div>
 <!--<div class="container" style="background-color:#f5f5f5">-->
 <div class="container">
@@ -166,43 +161,62 @@
 
 
 <div id="footer-contact">
-    <div class="footer-icons fade">
-        <div id="break"></div>
-        <a href="">
-            <span class="socicon-google ficon">
-        </span>
-        </a>
-        <a href="">
-            <span class="socicon-linkedin ficon">
-        </span>
-        </a>
-        <a href="">
-            <span class="socicon-twitter ficon"></span>
-        </a>
-    </div>
-    <div class="row rowcontact">
-        <div class="col-sm-4 fade">
-            <br/>
-            <h3>Offices: </h3>
-            <h4>493 S El Camino Real<br>San Mateo, CA</h4>
-        </div>
-        <div class="col-sm-4 fade">
-            <br/>
-            <div class="">
-                <iframe width="200" height="220" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8JfQVNwDzOZTyZp34mhHIqb3BZa9nI60
-                                                                                       &q=493+S+El+Camino+Real+San+Mateo" allowfullscreen style="display:block;">
-                </iframe>
+    <div class="container" style="margin: 0 auto; padding: 10px; padding-top: 40px; font-size: 20px;">
+        <div class="row">
+            <div class="col-xs-7" style="margin: 0 auto;">
+                <img src="./images/discernLogoKlief.png" id="footer-logo"/>
+                <br/>
+                <br/>
+                <br/>
+                <div style="height: 50px; float: right;">
+                    <ul class="footer-ul" style="display: inline-block">
+                        <li style="list-style: none; color: #F7F7F7;">REGISTER</li>
+                        <li style="list-style: none; color: #F7F7F7;">SEARCH</li>
+                        <li style="list-style: none; color: #F7F7F7;">TOS</li>
+                    </ul>
+                    <ul style="display: inline-block; list-style: none;">
+                        <li style="list-style: none; color: #c6c6c6;">OVERVIEW</li>
+                        <li style="list-style: none; color: #c6c6c6;">CUSTOMERS</li>
+                        <li style="list-style: none; color: #c6c6c6;">PARTNERS</li>
+                    </ul>
+                    <ul style="display: inline-block; list-style: none;">
+                        <li style="list-style: none; color: #c6c6c6;">NEWS</li>
+                        <li style="list-style: none; color: #c6c6c6">ABOUT US</li>
+                        <li style="list-style: none; color: #c6c6c6;">CONTACT US</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4 fade">
-            <br/>
-            <h3>Want to work here?</h3>
-            <button class="btn btn-primary">JOBS</button>
+
+            <div class="col-xs-5" style="color: #c6c6c6;">
+                <div class="footer-icons fade">
+                    <div id="break"></div>
+                    <a href="">
+                        <span class="socicon-google ficon">
+                    </span>
+                    </a>
+                    <a href="">
+                        <span class="socicon-linkedin ficon">
+                    </span>
+                    </a>
+                    <a href="">
+                        <span class="socicon-twitter ficon"></span>
+                    </a>
+                </div>
+                    <div class="col-sm-4 fade" style="width: 100%;">
+                        <br/>
+                        <h3>PHONE:650.336.0222</h3>
+                        <h4>204 E 2ND AVENUE. #210 <br>San Mateo, CA 94401</h4>
+                    </div>
+            </div>
         </div>
     </div>
 </div>
 
 <style>
+    #footer-logo
+    {
+        width: 200px;
+    }
     .Aligner {
         height: 60vh;
         display: flex;
@@ -228,7 +242,8 @@
         min-height: 300px;
         height: 300px;
         width: 100%;
-        background-color: #116194;
+        color: black;
+        background-color: #474747;
     }
 
     .rowcontact {

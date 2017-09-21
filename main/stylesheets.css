@@ -45,15 +45,13 @@
 
 @font-face {
     font-family: 'franklingothic-demi';
-    src: url('franklingothic-demi-webfont.woff2') format('woff2'),
-         url('franklingothic-demi-webfont.woff') format('woff');
+    src: url('franklingothic-demi-webfont.woff2') format('woff2'), url('franklingothic-demi-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
-b, .bolded
-{
+b,
+.bolded {
     font-family: "franklingothic-demi" !important;
 }
 
@@ -101,6 +99,7 @@ img {
 
 #homeButtonDiv {
     margin-top: 0;
+    padding: 0;
 }
 
 
@@ -181,7 +180,7 @@ img {
 #submit {
     display: inline;
     /*margin-left: -40px;*/
-    width: 50%;
+    width: 25%;
     font-size: 26px;
     height: 41px;
 }

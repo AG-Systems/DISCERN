@@ -33,6 +33,9 @@ app.config(function ($routeProvider) {
         .when("/linkedin", {
             templateUrl: "linkedin.html"
         })
+        .when("/customers", {
+            templateUrl: "customers.html"
+        })
         .when("/overview", {
             templateUrl: "overview.html"
         })
@@ -69,7 +72,7 @@ app.controller('news', function ($scope, $sce, $http) {
             link: "https://www.battlefin.com/press-release-discern",
             text: "'DISCERN’s platform automates non-alpha generating activities such as data management, visualization and sharing while simultaneously augmenting and enhancing alpha-generating activities in a repeatable, scalable, machine-learning framework” said Harry Blount, CEO of DISCERN. 'Our partnership with Battlefin enables their hedge fund customers to achieve more insights, more often and better returns..."
       },*/
-    {
+        {
             title: "SNL Financial Joins DISCERN’s Signaling Platform",
             date: "11/13/2014",
             post_id: 2,

@@ -8,33 +8,33 @@
     <div class="navLinks col-md-6 col-lg-7">
         <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/overview">
-                <p class="navText bolded">OVERVIEW</p>
+                <p class="navText">OVERVIEW</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
-            <a href="#/services">
-                <p class="navText bolded">SERVICES</p>
+            <a href="#/customers">
+                <p class="navText">CUSTOMERS</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a ng-href="#/partners">
-                <p class="navText bolded">PARTNERS</p>
+                <p class="navText">PARTNERS</p>
             </a>
         </div>
 
         <div class="col-xs-2 navLinkDivs">
             <a href="#/news">
-                <p class="navText activetab bolded">NEWS</p>
+                <p class="navText activetab">NEWS</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/about">
-                <p class="navText bolded">ABOUT</p>
+                <p class="navText">ABOUT</p>
             </a>
         </div>
         <div class="col-xs-2 navLinkDivs">
             <a href="#/contact">
-                <p class="navText bolded">CONTACT US</p>
+                <p class="navText">CONTACT US</p>
             </a>
         </div>
 
@@ -43,7 +43,7 @@
         <div class="col-xs-6"></div>
         <div class="borderLogin col-xs-6">
             <div id="break"></div>
-            <a id="lockA2" href="#"><span id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></span>&nbsp;<b>Login</b></a>
+            <a id="lockA2" href="#"><span id="lock" class="fa fa-lock fa-lg" aria-hidden="true"></span>&nbsp;LOGIN</a>
         </div>
     </div>
 </div>
@@ -108,7 +108,7 @@
 <!-- navbar code done -->
 <br/>
 <div style="width: 100%; height: 330px; background-image: url('images/hero_news.png')">
-    <h1 style="text-align: center; color: white; font-size: 120px; padding-top: 100px;" id="fade">DISCERN NEWS</h1>
+    <h1 style="text-align: center; color: white; font-size: 120px; padding-top: 100px;" id="fade"><b>DISCERN NEWS</b></h1>
     <script>
         $(window).scroll(function () {
             $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
@@ -116,7 +116,7 @@
     </script>
 </div>
 <div id="needCopy">
-    <h1 style="color:#116194;font-size:80px;">Check Out the Latest Buzz Below:</h1>
+    <h1 style="color:#116194;font-size:48px;">Check Out the Latest Buzz Below:</h1>
 </div>
 
 <div id="newsContainer" class="container" ng-controller="news">
@@ -129,8 +129,8 @@
             <!--<div ng-repeat="post in posts.slice().reverse()" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">-->
             <div ng-repeat="post in posts" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">
                 <div>
-                    <h4 class="headlines">{{ post.title }}</h4>
-                    <p style="color:#474747">{{ post.date }}</p>
+                    <h4 class="headlines"><span style="color:#474747" id="dates">{{ post.date }}:</span> {{ post.title }}</h4>
+                    <!--<p style="color:#474747; font-size:14px;">{{ post.date }}</p>-->
                 </div>
                 <!--<hr>-->
             </div>
@@ -161,7 +161,8 @@
     .headlines {
         cursor: pointer;
         color: #116194;
-        padding: 10px;
+        padding: 20px;
+        text-align: left;
     }
 
     .headlines:hover {
@@ -174,7 +175,7 @@
 
     #fill {
         height: 700px;
-        border: 1px solid #474747;
+        /*border: 1px solid #474747;*/
         padding: 0;
     }
 

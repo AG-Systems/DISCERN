@@ -129,7 +129,8 @@
             <!--<div ng-repeat="post in posts.slice().reverse()" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">-->
             <div ng-repeat="post in posts" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">
                 <div>
-                    <h4 class="headlines"><span style="color:#474747" id="dates">{{ post.date }}:</span> {{ post.title }}</h4>
+                    <p style="color:#474747; font-size:16px; text-align:left; padding:20px 20px 0px;margin:0;" id="dates">{{ post.date }}:</p>
+                    <h4 class="headlines"> {{ post.title }}</h4>
                     <!--<p style="color:#474747; font-size:14px;">{{ post.date }}</p>-->
                 </div>
                 <!--<hr>-->
@@ -161,8 +162,9 @@
     .headlines {
         cursor: pointer;
         color: #116194;
-        padding: 20px;
+        padding: 0px 20px 20px;
         text-align: left;
+        margin: 0;
     }
 
     .headlines:hover {

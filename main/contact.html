@@ -126,7 +126,7 @@
                             <input class="form-inputs" autofocus="autofocus" placeholder="Email address" type="email" value="" name="user[email]" id="user_email">
                             <textarea class="form-control" rows="5" id="message_box" placeholder="Message"></textarea>
                             <br/>
-                            <input type="submit" name="commit" value="Submit" class="btn btn-primary">
+                            <input type="submit" name="commit" value="Submit" class="btn" style="background-color:#474747; color:white;">
                         </form>
                         <br>
                     </div>
@@ -160,8 +160,8 @@
         <div class="row">
             <div class="col-xs-7" style="margin: 0 auto;">
                 <img src="images/whiteLogo.png" id="footer-logo" />
-                <br/>
-                <br/>
+                <!--<br/>
+                <br/>-->
                 <br/>
                 <div style="height: 50px; float: right;">
                     <ul class="footer-ul" style="display: inline-block">
@@ -219,8 +219,8 @@
                             </a>
                         </div>
                         <div style="margin-left: 30px;">
-                            <h3>PHONE:650.336.0222</h3>
-                            <h4>204 E 2ND AVENUE. #210 <br>San Mateo, CA 94401</h4>
+                            <h3 style="font-size:18px;">PHONE:650.336.0222</h3>
+                            <h4 style="font-size:18px;">204 E 2ND AVENUE. #210 <br>San Mateo, CA 94401</h4>
                         </div>
                     </div>
                 </div>
@@ -232,6 +232,12 @@
 <style>
     #footer-logo {
         width: 200px;
+    }
+
+    ul>a>li,
+    #footer-contact>h3,
+    #footer-contact>h4 {
+        font-size: 18px;
     }
 
     #servicesNav {
@@ -260,8 +266,8 @@
     }
 
     #footer-contact {
-        min-height: 300px;
-        height: 300px;
+        min-height: 250px;
+        height: 250px;
         width: 100%;
         color: black;
         background-color: #474747;
@@ -315,6 +321,11 @@
     .form-inputs {
         border: 2px solid #ccc;
         border-radius: 4px;
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+        width: 100%;
     }
 
     .border-form-div {
@@ -336,9 +347,9 @@
         margin-bottom: 10px;
     }
 
-    .border-form-div input[type="text"],
-    .border-form-div input[type="email"],
-    .border-form-div input[type="password"] {
+    .border-form-div input[type=" text "],
+    .border-form-div input[type="email "],
+    .border-form-div input[type="password "] {
         font-size: 16px;
         height: auto;
         margin-bottom: 15px;
@@ -385,9 +396,9 @@
 
 <script>
     $(window).scroll(function () {
-        $(".fade").css("opacity", 0 + $(window).scrollTop() / 250);
+        $(".fade ").css("opacity ", 0 + $(window).scrollTop() / 250);
     });
     $(window).scroll(function () {
-        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
+        $("#fade ").css("opacity ", 1 - $(window).scrollTop() / 250);
     });
 </script>

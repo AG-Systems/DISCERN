@@ -270,6 +270,10 @@ p {
     border: none;
 }
 
+ul > a:hover {
+    text-decoration: none;
+}
+
 .thumbnail img {
     height: 200px;
     display: block;
@@ -512,4 +516,36 @@ iframe {
 .biotext {
     width: 85%;
     margin: 0 auto;
+}
+
+#footer-contact {
+    min-height: 300px;
+    height: 300px;
+    width: 100%;
+    color: black;
+    background-color: #474747;
+}
+
+#footer-logo {
+    width: 200px;
+}
+
+.footer-icons {
+    font-size: 20px;
+    text-align: center;
+    width: 160px;
+}
+
+.ficon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.socicon-googleplus {
+    font-size: 45px;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    color: white;
 }

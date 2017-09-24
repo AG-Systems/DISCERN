@@ -122,12 +122,18 @@
 <div id="newsContainer" class="container" ng-controller="news">
     <!-- <h2 class="newsHeader">DISCERN in the News</h2> -->
     <br/>
+    <div style="width: 90%; background-color: #474747; margin: 0 auto;">
+        <div>
+
+            <button id="news_btn" ng-click="toggle_news()" class="btn btn-primary" style="width: 17%; border: 4px solid #474747; background-color: #ececec; color: black;">News</button>
+            <button id="events_btn" ng-click="toggle_events()" class="btn btn-primary" style="width: 16%; background-color: #474747; border: 4px solid #474747;"> Upcoming Events</button>
+        </div>
+    </div>
     <div class="row" id="news_page">
 
-        <div class="col-xs-4" style="overflow-y: auto;" id="fill">
-
+        <div class="col-xs-4" style="overflow-y: auto; min-height: 500px; background-color: white;" id="fill">
             <!--<div ng-repeat="post in posts.slice().reverse()" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">-->
-            <div ng-repeat="post in posts" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">
+            <div ng-repeat="post in current_tab" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">
                 <div>
                     <p style="color:#474747; font-size:16px; text-align:left; padding:20px 20px 0px;margin:0;" id="dates">{{ post.date }}:</p>
                     <h4 class="headlines"> {{ post.title }}</h4>
@@ -222,6 +228,10 @@
             margin-top: 0px;
         }
     }
+
+    .activesec {
+        background-color: #116194;
+    }
 </style>
 
 <script>
@@ -230,3 +240,76 @@
     });
     // navbar
 </script>
+<div id="footer-contact">
+    <div class="container" style="margin: 0 auto; padding: 10px; padding-top: 40px; font-size: 20px;">
+        <div class="row">
+            <div class="col-xs-7" style="margin: 0 auto;">
+                <img src="images/whiteLogo.png" id="footer-logo" />
+                <br/>
+                <br/>
+                <br/>
+                <div style="height: 50px; float: right;">
+                    <ul class="footer-ul" style="display: inline-block">
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">REGISTER</li>
+                        </a>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">SEARCH</li>
+                        </a>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">TOS</li>
+                        </a>
+                    </ul>
+                    <ul style="display: inline-block; list-style: none;">
+                        <a ng-href="#/overview">
+                            <li style="list-style: none; color: #c6c6c6;">OVERVIEW</li>
+                        </a>
+                        <a ng-href="#/customers">
+                            <li style="list-style: none; color: #c6c6c6;">CUSTOMERS</li>
+                        </a>
+                        <a ng-href="#/partners">
+                            <li style="list-style: none; color: #c6c6c6;">PARTNERS</li>
+                        </a>
+                    </ul>
+                    <ul style="display: inline-block; list-style: none;">
+                        <a ng-href="#/news">
+                            <li style="list-style: none; color: #c6c6c6;">NEWS</li>
+                        </a>
+                        <a ng-href="#/about">
+                            <li style="list-style: none; color: #c6c6c6">ABOUT US</li>
+                        </a>
+                        <a ng-href="#/contact">
+                            <li style="list-style: none; color: #c6c6c6;">CONTACT US</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-5" style="color: #c6c6c6;">
+                <div class="col-sm-4" style="width: 100%; ">
+                    <br/>
+                    <div style="border-left: 2px solid #c6c6c6; height: 140px;">
+                        <div class="footer-icons">
+                            <div id="break"></div>
+                            <a href="">
+                                <span class="socicon-google ficon">
+                            </span>
+                            </a>
+                            <a href="">
+                                <span class="socicon-linkedin ficon">
+                            </span>
+                            </a>
+                            <a href="">
+                                <span class="socicon-twitter ficon"></span>
+                            </a>
+                        </div>
+                        <div style="margin-left: 30px;">
+                            <h3>PHONE:650.336.0222</h3>
+                            <h4>204 E 2ND AVENUE. #210 <br>San Mateo, CA 94401</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

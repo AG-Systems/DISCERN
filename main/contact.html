@@ -144,12 +144,11 @@
                 <div class="col-xs-12 col-sm-5">
                     <div id="breakPs"></div>
                     <p class="contactPs">sales@discern.com</p>
-                    <p class="contactPs">415-555-555</p>
-                    <p class="contactPs">493 S El Camino Real
-                        <br>San Mateo, CA
-                        <br>94401</p>
+                    <p class="contactPs">650-336-0222</p>
+                    <p class="contactPs">204 E 2nd Avenue, #210
+                        <br>San Mateo, CA 94401</p>
                     <iframe width="200" height="220" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC8JfQVNwDzOZTyZp34mhHIqb3BZa9nI60
-                                                                                   &q=493+S+El+Camino+Real+San+Mateo" allowfullscreen style="display:block;">
+                                                                                   &q=204+E+2nd+Ave+San+Mateo" allowfullscreen style="display:block;">
                     </iframe>
                 </div>
             </div>
@@ -170,42 +169,64 @@
                 <br/>
                 <div style="height: 50px; float: right;">
                     <ul class="footer-ul" style="display: inline-block">
-                        <li style="list-style: none; color: #F7F7F7;">REGISTER</li>
-                        <li style="list-style: none; color: #F7F7F7;">SEARCH</li>
-                        <li style="list-style: none; color: #F7F7F7;">TOS</li>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">REGISTER</li>
+                        </a>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">SEARCH</li>
+                        </a>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">TOS</li>
+                        </a>
                     </ul>
                     <ul style="display: inline-block; list-style: none;">
-                        <li style="list-style: none; color: #c6c6c6;">OVERVIEW</li>
-                        <li style="list-style: none; color: #c6c6c6;">CUSTOMERS</li>
-                        <li style="list-style: none; color: #c6c6c6;">PARTNERS</li>
+                        <a ng-href="#/overview">
+                            <li style="list-style: none; color: #c6c6c6;">OVERVIEW</li>
+                        </a>
+                        <a ng-href="#/customers">
+                            <li style="list-style: none; color: #c6c6c6;">CUSTOMERS</li>
+                        </a>
+                        <a ng-href="#/partners">
+                            <li style="list-style: none; color: #c6c6c6;">PARTNERS</li>
+                        </a>
                     </ul>
                     <ul style="display: inline-block; list-style: none;">
-                        <li style="list-style: none; color: #c6c6c6;">NEWS</li>
-                        <li style="list-style: none; color: #c6c6c6">ABOUT US</li>
-                        <li style="list-style: none; color: #c6c6c6;">CONTACT US</li>
+                        <a ng-href="#/news">
+                            <li style="list-style: none; color: #c6c6c6;">NEWS</li>
+                        </a>
+                        <a ng-href="#/about">
+                            <li style="list-style: none; color: #c6c6c6">ABOUT US</li>
+                        </a>
+                        <a ng-href="#/contact">
+                            <li style="list-style: none; color: #c6c6c6;">CONTACT US</li>
+                        </a>
                     </ul>
                 </div>
             </div>
 
             <div class="col-xs-5" style="color: #c6c6c6;">
-                <div class="footer-icons fade">
-                    <div id="break"></div>
-                    <a href="">
-                        <span class="socicon-google ficon">
-                    </span>
-                    </a>
-                    <a href="">
-                        <span class="socicon-linkedin ficon">
-                    </span>
-                    </a>
-                    <a href="">
-                        <span class="socicon-twitter ficon"></span>
-                    </a>
-                </div>
-                <div class="col-sm-4 fade" style="width: 100%;">
+                <div class="col-sm-4" style="width: 100%; ">
                     <br/>
-                    <h3>PHONE:650.336.0222</h3>
-                    <h4>204 E 2ND AVENUE. #210 <br>San Mateo, CA 94401</h4>
+                    <div style="border-left: 2px solid #c6c6c6; height: 140px;">
+                        <div class="footer-icons">
+                            <div id="break"></div>
+                            <a href="">
+                                <span class="socicon-google ficon">
+                            </span>
+                            </a>
+                            <a href="">
+                                <span class="socicon-linkedin ficon">
+                            </span>
+                            </a>
+                            <a href="">
+                                <span class="socicon-twitter ficon"></span>
+                            </a>
+                        </div>
+                        <div style="margin-left: 30px;">
+                            <h3>PHONE:650.336.0222</h3>
+                            <h4>204 E 2ND AVENUE. #210 <br>San Mateo, CA 94401</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -259,6 +280,7 @@
     .footer-icons {
         font-size: 20px;
         text-align: center;
+        width: 160px;
     }
 
     .ficon {

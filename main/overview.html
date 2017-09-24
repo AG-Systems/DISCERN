@@ -131,7 +131,7 @@
                         <!--<h5 id="partnersh5">You've got the data and a drive to get it to the people who need it</h5>
                         <p class="servicesAndPartnersPs">How do you get your data in front of the people who are looking for it? <span class="textLinks">Turn to DISCERN.</span></p>
                         <p class="servicesAndPartnersPs">Our proprietary platform puts your data in front of the very people and companies that want to leverage your work. <span class="textLinks">Don't get lost in an ocean of data.</span></p>-->
-                        <h5 id="partnersh5">You have valuable content.</h5>
+                        <h5 id="partnersh5">You have valuable content</h5>
                         <p class="servicesAndPartnersPs">With DISCERN you get in front of:</p>
                         <ul>
                             <li style="text-align: left; padding: 10px 0; color: #474747;font-size:18px;">more customers, in more ways</li>
@@ -199,7 +199,7 @@
     </div>
 </div>
 <!--<div id="max-breaker"></div>-->
-<div id="follow">
+<!--<div id="follow">
     <div class="btn-group dropup">
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Sign up Now! <span class="caret"></span>
@@ -210,7 +210,7 @@
             <li><a href="#">Connect to Chat</a></li>
         </ul>
     </div>
-</div>
+</div>-->
 <div id="footer-contact">
     <div class="container" style="margin: 0 auto; padding: 10px; padding-top: 40px; font-size: 20px;">
         <div class="row">
@@ -221,9 +221,15 @@
                 <br/>
                 <div style="height: 50px; float: right;">
                     <ul class="footer-ul" style="display: inline-block">
-                        <li style="list-style: none; color: #F7F7F7;">REGISTER</li>
-                        <li style="list-style: none; color: #F7F7F7;">SEARCH</li>
-                        <li style="list-style: none; color: #F7F7F7;">TOS</li>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">REGISTER</li>
+                        </a>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">SEARCH</li>
+                        </a>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">TOS</li>
+                        </a>
                     </ul>
                     <ul style="display: inline-block; list-style: none;">
                         <a ng-href="#/overview">
@@ -256,15 +262,15 @@
                     <div style="border-left: 2px solid #c6c6c6; height: 140px;">
                         <div class="footer-icons">
                             <div id="break"></div>
-                            <a href="">
+                            <a href="#">
                                 <span class="socicon-google ficon">
                             </span>
                             </a>
-                            <a href="">
+                            <a href="#">
                                 <span class="socicon-linkedin ficon">
                             </span>
                             </a>
-                            <a href="">
+                            <a href="#">
                                 <span class="socicon-twitter ficon"></span>
                             </a>
                         </div>
@@ -299,6 +305,10 @@
         font-size: 24px;
         padding: 20px 0;
         color: #474747;
+    }
+
+    ul > a:hover {
+        text-decoration: none;
     }
 
     .servicesAndPartnersh3s {

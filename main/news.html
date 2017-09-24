@@ -123,11 +123,11 @@
     <!-- <h2 class="newsHeader">DISCERN in the News</h2> -->
     <br/>
     <div style="width: 90%; background-color: #474747; margin: 0 auto;">
-    <div> 
-        
-        <button id="news_btn" ng-click="toggle_news()" class="btn btn-primary" style="width: 17%; border: 4px solid #474747; background-color: #ececec; color: black;">News</button>
-        <button id="events_btn" ng-click="toggle_events()" class="btn btn-primary" style="width: 16%; background-color: #474747; border: 4px solid #474747;">Events</button>
-    </div>
+        <div>
+
+            <button id="news_btn" ng-click="toggle_news()" class="btn btn-primary" style="width: 17%; border: 4px solid #474747; background-color: #ececec; color: black;">News</button>
+            <button id="events_btn" ng-click="toggle_events()" class="btn btn-primary" style="width: 16%; background-color: #474747; border: 4px solid #474747;"> Upcoming Events</button>
+        </div>
     </div>
     <div class="row" id="news_page">
 
@@ -228,8 +228,8 @@
             margin-top: 0px;
         }
     }
-    .activesec
-    {
+
+    .activesec {
         background-color: #116194;
     }
 </style>
@@ -250,19 +250,37 @@
                 <br/>
                 <div style="height: 50px; float: right;">
                     <ul class="footer-ul" style="display: inline-block">
-                        <li style="list-style: none; color: #F7F7F7;">REGISTER</li>
-                        <li style="list-style: none; color: #F7F7F7;">SEARCH</li>
-                        <li style="list-style: none; color: #F7F7F7;">TOS</li>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">REGISTER</li>
+                        </a>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">SEARCH</li>
+                        </a>
+                        <a href="#">
+                            <li style="list-style: none; color: #F7F7F7;">TOS</li>
+                        </a>
                     </ul>
                     <ul style="display: inline-block; list-style: none;">
-                        <a ng-href="#/overview"><li style="list-style: none; color: #c6c6c6;">OVERVIEW</li></a>
-                        <a ng-href="#/customers"><li style="list-style: none; color: #c6c6c6;">CUSTOMERS</li></a>
-                        <a ng-href="#/partners"><li style="list-style: none; color: #c6c6c6;">PARTNERS</li></a>
+                        <a ng-href="#/overview">
+                            <li style="list-style: none; color: #c6c6c6;">OVERVIEW</li>
+                        </a>
+                        <a ng-href="#/customers">
+                            <li style="list-style: none; color: #c6c6c6;">CUSTOMERS</li>
+                        </a>
+                        <a ng-href="#/partners">
+                            <li style="list-style: none; color: #c6c6c6;">PARTNERS</li>
+                        </a>
                     </ul>
                     <ul style="display: inline-block; list-style: none;">
-                        <a ng-href="#/news"><li style="list-style: none; color: #c6c6c6;">NEWS</li></a>
-                        <a ng-href="#/about"><li style="list-style: none; color: #c6c6c6">ABOUT US</li></a>
-                        <a ng-href="#/contact"><li style="list-style: none; color: #c6c6c6;">CONTACT US</li></a>
+                        <a ng-href="#/news">
+                            <li style="list-style: none; color: #c6c6c6;">NEWS</li>
+                        </a>
+                        <a ng-href="#/about">
+                            <li style="list-style: none; color: #c6c6c6">ABOUT US</li>
+                        </a>
+                        <a ng-href="#/contact">
+                            <li style="list-style: none; color: #c6c6c6;">CONTACT US</li>
+                        </a>
                     </ul>
                 </div>
             </div>

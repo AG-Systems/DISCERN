@@ -148,6 +148,25 @@ app.controller('news', function ($scope, $sce, $http) {
 
 
     ]
+    
+    $scope.events = [
+        {
+            title: "Events",
+            date: "11/13/2014",
+            post_id: 2,
+            link: "https://www.discern.com/news/2015/4/6/snl-financial-joins-discerns-signaling-platform",
+            text: "'Customers desire to spend more time on analysis and less time on mundane activities such as data aggregation, organization and presentation” says DISCERN CEO Harry Blount.  'With the addition of SNL, we can now provide real estate investors with all of the supply, demand, inventory valuation data they need, in one-location, to create and sustain a competitive information advantage...'"
+      },
+        {
+            title: "Events",
+            date: "09/08/2015",
+            post_id: 1,
+            link: "https://blogs.wsj.com/venturecapital/2015/09/08/discern-secures-20-million-to-find-signals-for-investors-in-a-field-of-noise/",
+            text: "Discern Group Inc., a San Francisco-based startup that specializes in finding what it calls 'weak signals' that could affect financial markets, used public data to determine that a well drilled by an Oklahoma-based energy company one day last November performed better than 95% of the company's wells in the region, was an outlier and therefore deserved a closer look..."
+
+      }
+        ]
+    $scope.current_tab = $scope.posts;
     $scope.change_post = function (index) {
         $scope.index = index
         $scope.current_story = $scope.posts[$scope.index]
@@ -156,6 +175,45 @@ app.controller('news', function ($scope, $sce, $http) {
     $scope.current_story = $scope.posts[$scope.index]
     $scope.trustSrc = function (src) {
         return $sce.trustAsResourceUrl(src);
+    }
+    $scope.toggle_news = function() {
+        if ($scope.current_tab == $scope.posts)
+        {
+            $scope.current_tab = $scope.events;
+        }
+        else
+        {
+            $scope.current_tab = $scope.posts;
+        }
+        
+        $('#news_btn').css({
+            'background-color' : '#ececec',
+            'color' : 'black',
+        });
+        
+        $('#events_btn').css({
+            'background-color' : '#474747',
+            'color' : 'white',
+        });
+    }
+    $scope.toggle_events = function() {
+        if ($scope.current_tab == $scope.posts)
+        {
+            $scope.current_tab = $scope.events;
+        }
+        else
+        {
+            $scope.current_tab = $scope.posts;
+        }
+        $('#events_btn').css({
+            'background-color' : '#ececec',
+            'color' : 'black',
+        });
+        
+        $('#news_btn').css({
+            'background-color' : '#474747',
+            'color' : 'white',
+        });
     }
 });
 

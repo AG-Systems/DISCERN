@@ -46,9 +46,9 @@ app.config(function ($routeProvider) {
             templateUrl: "news.html",
             controller: "news"
         })
-        .when("/services", {
+        /*.when("/services", {
             templateUrl: "services.html"
-        })
+        })*/
         .otherwise({
             templateUrl: "home.html"
         });
@@ -76,7 +76,7 @@ app.controller('news', function ($scope, $sce, $http) {
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
 
       },
-      
+
         {
             title: "DISCERN to present at Battlefin West Coast on October 26 in Palo Alto",
             date: "08/01/2017",
@@ -104,7 +104,7 @@ app.controller('news', function ($scope, $sce, $http) {
 
 
     ]
-    
+
     $scope.events = [
         {
             title: "DISCERN to present at Battlefin West Coast",
@@ -132,43 +132,37 @@ app.controller('news', function ($scope, $sce, $http) {
     $scope.trustSrc = function (src) {
         return $sce.trustAsResourceUrl(src);
     }
-    $scope.toggle_news = function() {
-        if ($scope.current_tab == $scope.posts)
-        {
+    $scope.toggle_news = function () {
+        if ($scope.current_tab == $scope.posts) {
             $scope.current_tab = $scope.events;
-        }
-        else
-        {
+        } else {
             $scope.current_tab = $scope.posts;
         }
-        
+
         $('#news_btn').css({
-            'background-color' : '#ececec',
-            'color' : 'black',
+            'background-color': '#ececec',
+            'color': 'black',
         });
-        
+
         $('#events_btn').css({
-            'background-color' : '#474747',
-            'color' : 'white',
+            'background-color': '#474747',
+            'color': 'white',
         });
     }
-    $scope.toggle_events = function() {
-        if ($scope.current_tab == $scope.posts)
-        {
+    $scope.toggle_events = function () {
+        if ($scope.current_tab == $scope.posts) {
             $scope.current_tab = $scope.events;
-        }
-        else
-        {
+        } else {
             $scope.current_tab = $scope.posts;
         }
         $('#events_btn').css({
-            'background-color' : '#ececec',
-            'color' : 'black',
+            'background-color': '#ececec',
+            'color': 'black',
         });
-        
+
         $('#news_btn').css({
-            'background-color' : '#474747',
-            'color' : 'white',
+            'background-color': '#474747',
+            'color': 'white',
         });
     }
 });

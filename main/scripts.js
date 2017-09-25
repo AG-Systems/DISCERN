@@ -62,7 +62,7 @@ app.controller('news', function ($scope, $sce, $http) {
 
         {
             title: "DISCERN chosen as default search platform for Alpha Theory Portfolio Optimization platform ",
-            date: "08/15/17",
+            date: "09/26/17",
             post_id: 0,
             link: "https://www.youtube.com/",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
@@ -77,18 +77,18 @@ app.controller('news', function ($scope, $sce, $http) {
 
       },
 
-        {
+        /*{
             title: "DISCERN to present at Battlefin West Coast on October 26 in Palo Alto",
             date: "08/01/17",
             post_id: 2,
             link: "https://www.google.com/",
             text: "Tbh heirloom wayfarers everyday carry distillery, shoreditch pickled glossier bespoke occupy. 3 wolf moon edison bulb portland, green juice cred raw denim adaptogen tattooed. Yuccie chillwave cardigan tattooed poke waistcoat affogato cred cloud bread trust fund pok pok semiotics typewriter literally brunch. Leggings celiac hashtag, freegan bicycle rights iPhone occupy farm-to-table copper mug tbh church-key cred. Tacos lo-fi YOLO poke. Chicharrones 90's lumbersexual, mlkshk small batch adaptogen franzen ennui four dollar toast kogi. Gentrify craft beer bitters, slow-carb cronut cred farm-to-table intelligentsia. Ramps raclette pok pok bespoke leggings tilde you probably haven't heard of them franzen lo-fi. Williamsburg jean shorts air plant, green juice YOLO knausgaard try-hard four loko helvetica brunch food truck gluten-free hell of truffaut..."
 
-      },
+      },*/
         {
             title: "DISCERN chosen as default search platform for Battlefin",
             date: "06/14/17",
-            post_id: 3,
+            post_id: 2,
             link: "http://www.battlefin.com/press-release-discern",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
 
@@ -96,7 +96,7 @@ app.controller('news', function ($scope, $sce, $http) {
         {
             title: "Is Your Data Ready?",
             date: "05/25/17",
-            post_id: 4,
+            post_id: 3,
             link: "./linkedin.html",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
 
@@ -110,7 +110,7 @@ app.controller('news', function ($scope, $sce, $http) {
             title: "DISCERN to present at Outsell’s Emerging Company Growth Tank Conference",
             date: "10/4/17",
             post_id: 0,
-            link: "https://blogs.wsj.com/venturecapital/2015/09/08/discern-secures-20-million-to-find-signals-for-investors-in-a-field-of-noise/",
+            link: "https://outsellinc.com/signature-event-2017/#!/emergingcompanygrowthtank",
             text: "Discern Group Inc., a San Francisco-based startup that specializes in finding what it calls 'weak signals' that could affect financial markets, used public data to determine that a well drilled by an Oklahoma-based energy company one day last November performed better than 95% of the company's wells in the region, was an outlier and therefore deserved a closer look..."
 
         },
@@ -118,7 +118,7 @@ app.controller('news', function ($scope, $sce, $http) {
             title: "DISCERN to present at Battlefin West Coast",
             date: "10/26/17",
             post_id: 1,
-            link: "https://www.discern.com/news/2015/4/6/snl-financial-joins-discerns-signaling-platform",
+            link: "http://www.battlefin.com/press-release-discern",
             text: "'Customers desire to spend more time on analysis and less time on mundane activities such as data aggregation, organization and presentation” says DISCERN CEO Harry Blount.  'With the addition of SNL, we can now provide real estate investors with all of the supply, demand, inventory valuation data they need, in one-location, to create and sustain a competitive information advantage...'"
       }
 

@@ -62,7 +62,7 @@ app.controller('news', function ($scope, $sce, $http) {
 
         {
             title: "DISCERN chosen as default search platform for Alpha Theory Portfolio Optimization platform ",
-            date: "08/15/2017",
+            date: "08/15/17",
             post_id: 0,
             link: "https://www.youtube.com/",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
@@ -70,7 +70,7 @@ app.controller('news', function ($scope, $sce, $http) {
       },
         {
             title: "DISCERN chosen as one of 8 to watch in 2018 by Data Industry Research Leader Outsell  September 12, 2017 ",
-            date: "08/11/2017",
+            date: "08/11/17",
             post_id: 1,
             link: "https://outsellinc.com/signature-event-2017/#!/emergingcompanygrowthtank",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
@@ -79,7 +79,7 @@ app.controller('news', function ($scope, $sce, $http) {
 
         {
             title: "DISCERN to present at Battlefin West Coast on October 26 in Palo Alto",
-            date: "08/01/2017",
+            date: "08/01/17",
             post_id: 2,
             link: "https://www.google.com/",
             text: "Tbh heirloom wayfarers everyday carry distillery, shoreditch pickled glossier bespoke occupy. 3 wolf moon edison bulb portland, green juice cred raw denim adaptogen tattooed. Yuccie chillwave cardigan tattooed poke waistcoat affogato cred cloud bread trust fund pok pok semiotics typewriter literally brunch. Leggings celiac hashtag, freegan bicycle rights iPhone occupy farm-to-table copper mug tbh church-key cred. Tacos lo-fi YOLO poke. Chicharrones 90's lumbersexual, mlkshk small batch adaptogen franzen ennui four dollar toast kogi. Gentrify craft beer bitters, slow-carb cronut cred farm-to-table intelligentsia. Ramps raclette pok pok bespoke leggings tilde you probably haven't heard of them franzen lo-fi. Williamsburg jean shorts air plant, green juice YOLO knausgaard try-hard four loko helvetica brunch food truck gluten-free hell of truffaut..."
@@ -87,7 +87,7 @@ app.controller('news', function ($scope, $sce, $http) {
       },
         {
             title: "DISCERN chosen as default search platform for Battlefin",
-            date: "06/14/2017",
+            date: "06/14/17",
             post_id: 3,
             link: "http://www.battlefin.com/press-release-discern",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
@@ -95,7 +95,7 @@ app.controller('news', function ($scope, $sce, $http) {
       },
         {
             title: "Is Your Data Ready?",
-            date: "05/25/2017",
+            date: "05/25/17",
             post_id: 4,
             link: "./linkedin.html",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "

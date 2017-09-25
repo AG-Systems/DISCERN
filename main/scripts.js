@@ -132,12 +132,12 @@ app.controller('news', function ($scope, $sce, $http) {
     $scope.trustSrc = function (src) {
         return $sce.trustAsResourceUrl(src);
     }
-    $scope.toggle_news = function () {
-        if ($scope.current_tab == $scope.posts) {
+    $scope.show_news = function () {
+        /*if ($scope.current_tab == $scope.posts) {
             $scope.current_tab = $scope.events;
-        } else {
-            $scope.current_tab = $scope.posts;
-        }
+        } else {*/
+        $scope.current_tab = $scope.posts;
+        //}
 
         $('#news_btn').css({
             'background-color': '#ececec',
@@ -149,12 +149,12 @@ app.controller('news', function ($scope, $sce, $http) {
             'color': 'white',
         });
     }
-    $scope.toggle_events = function () {
-        if ($scope.current_tab == $scope.posts) {
+    $scope.show_events = function () {
+        /*if ($scope.current_tab == $scope.posts) {
             $scope.current_tab = $scope.events;
-        } else {
-            $scope.current_tab = $scope.posts;
-        }
+        } else {*/
+        $scope.current_tab = $scope.events;
+        //}
         $('#events_btn').css({
             'background-color': '#ececec',
             'color': 'black',

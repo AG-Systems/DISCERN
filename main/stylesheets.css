@@ -277,6 +277,10 @@ ul > a:hover {
     text-decoration: none;
 }
 
+ul>a>li {
+    font-size: 16px;
+}
+
 .thumbnail img {
     height: 200px;
     display: block;
@@ -522,8 +526,8 @@ iframe {
 }
 
 #footer-contact {
-    min-height: 300px;
-    height: 300px;
+    min-height: 250px;
+    height: 250px;
     width: 100%;
     color: black;
     background-color: #474747;

@@ -34,13 +34,13 @@ app.controller('news', function ($scope, $sce, $http) {
     $scope.posts = [
 
         {
-            title: "DISCERN chosen as default search platform for Alpha Theory Portfolio Optimization platform ",
+            title: "DISCERN chosen as default search platform by Alpha Theory",
             date: "09/26/17",
             post_id: 0,
             link: "./alpha_theory.pdf"
       },
         {
-            title: "DISCERN chosen as one of 8 to watch in 2018 by Data Industry Research Leader Outsell  September 12, 2017 ",
+            title: "DISCERN chosen as finalist for company of the year by Outsell",
             date: "09/12/17",
             post_id: 1,
             link: "https://outsellinc.com/signature-event-2017/#!/emergingcompanygrowthtank"

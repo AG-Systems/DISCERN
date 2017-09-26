@@ -106,22 +106,14 @@
 <div id="pushContent"></div>
 <!-- pushing down site -->
 <!-- navbar code done -->
-<script>
-    $('.navbar-toggle').on("click", function () {
-        $('#pushContent').slideToggle();
-    });
-</script>
-
 
 <div id="about-page" ng-controller="about_controller">
-
 
     <div id="bg-about">
         <h1 style="font-size: 120px; padding-top: 100px;" id="fade"><b>OUR TEAM</b></h1>
     </div>
     <div id="valuePropDiv" style="padding:50px;">
         <h2 style="color:#116194; text-align:center; font-size:48px">Vision. Expertise. Execution.</h2>
-        <!--<span id="increase100" style="color: #337ab7;"><b>>100x</b></span></h2>-->
     </div>
     <hr style="color:#474747; margin:0;">
     <ul class="nav nav-tabs aboutpages nav-justified">
@@ -135,9 +127,6 @@
             <div class="thumbnail">
                 <img src="images/Team_Members_Harry.png" class="img-circle">
                 <div class="caption">
-                    <!--<h3 ng-click="changeName('Harry E. Blount');
-            changeImg('images/Team_Members_Harry.png')
-            " class="bios">Harry Blount</h3>-->
                     <h3>Harry Blount</h3>
                     <p>Chairman & CEO</p>
                     <a class="bioAs" ng-click="loadbio(0, 'leader', 'Harry Blount, co-founded DISCERN in 2016, following a 20+ year stint on Wall Street with major investment firms such as Lehman Brothers, Credit Suisse First Boston, Donaldson Lukfin & Jenrette and CIBC Oppenheimer.  While on Wall Street, Harry was named an All-American analyst in both Information Technology Hardware and Internet Infrastructure and a Wall Street Journal All-Star covering the Computer Hardware sector.   He is currently on the Board of Governors of the Commonwealth Club and previously was on the Board of The Tech Museum of Innovation in San Jose where he chaired the Futures Committee.  Harry also lent his expertise to a National Academy of Sciences study funded by the DoD and the Defense Intelligence Agency, where he was a principal author of a report entitled Persistent Forecasting of Disruptive Technologies.  Harry is a graduate of the University of Wisconsin -  La Crosse and is Chartered Financial Analyst.');">Read Bio</a>
@@ -168,7 +157,6 @@
             <div class="thumbnail">
                 <img src="images/Team_Members_Raghu.png" class="img-circle">
                 <div class="caption">
-                    <!--<h3 class="bios" ng-click="changeName('Raghu Madabusi'); changebio('Raghu Madabusi possess more than 20 years of design, development, and management experience in leading complex projects and high-caliber teams in USA, Germany and India. A Principal Technical Architect with strong business acumen and technical experience in Big Data, Cloud Computing & Traditional IT Projects. Raghu is PMP certified and holds close to dozen IT certifications. He has expertise in building complex Prototypes & Implementations in Big Data & Cloud that involve Machine Learning, Natural Language Processing, Graph Databases, Distributed Computing, Microservices, and more.'); changeImg('images/Team_Members_Raghu.png');">Raghu Madabusi</h3>-->
                     <h3>Raghu Madabusi</h3>
                     <p>CTO</p>
                     <a class="bioAs" ng-click="loadbio(1, 'leader', 'Raghu Madabusi possess more than 20 years of design, development, and management experience in leading complex projects and high-caliber teams in USA, Germany and India. A Principal Technical Architect with strong business acumen and technical experience in Big Data, Cloud Computing & Traditional IT Projects. Raghu is PMP certified and holds close to dozen IT certifications. He has expertise in building complex Prototypes & Implementations in Big Data & Cloud that involve Machine Learning, Natural Language Processing, Graph Databases, Distributed Computing, Microservices, and more.')">Read Bio</a>
@@ -180,9 +168,6 @@
             <div class="thumbnail">
                 <img src="images/Team_Members_Troy.png" class="img-circle">
                 <div class="caption">
-                    <!--<h3 ng-click="changeName('Troy Hansen');
-                changebio('Troy Hansen has 30+ years of experience as a Senior-level Quality Assurance executive. Prior to joining DISCERN, Troy worked for General Dynamics where he was responsible for communications testing on the last two major U.S. satellite constellations. Troy has also served in senior engineering positions for a variety of other firms including Xerox, Honeywell and Fischer Scientific. Troy is an avid options and commodity trader specializing in gold securities.');
-                changeImg('images/Team_Members_Troy.png')" class="bios">Troy Hansen</h3>-->
                     <h3>Troy Hansen</h3>
                     <p>Data Integrity & Enhancement</p>
                     <a class="bioAs" ng-click="loadbio(2, 'leader', 'Troy Hansen has 30+ years of experience as a Senior-level Quality Assurance executive. Prior to joining DISCERN, Troy worked for General Dynamics where he was responsible for communications testing on the last two major U.S. satellite constellations. Troy has also served in senior engineering positions for a variety of other firms including Xerox, Honeywell and Fischer Scientific. Troy is an avid options and commodity trader specializing in gold securities.')">Read Bio</a>
@@ -196,10 +181,6 @@
             <div class="thumbnail">
                 <img src="images/Team_Members_Mark.png" class="img-circle">
                 <div class="caption">
-                    <!--<h3 ng-click="changeName('Mark Herrmann');
-                                  changebio('Mark Herrmann has 18 years of institutional equity sales experience, including 9 as a Managing Director at Bear Stearns, covering the largest hedge funds and mutual funds on the west coast.  Over the past year, he has been working in a marketing and product development role for several alternative data companies.  Mark received an undergraduate degree in mechanical engineering from Rensselaer Polytechnic Institute and an MBA in finance from USC. He is based in San Francisco.');
-                                  changeImg('images/Team_Members_Mark.png');
-                                  " class="bios">Mark Herrmann</h3>-->
                     <h3>Mark Herrmann</h3>
                     <p>Data & Content Sales</p>
                     <a class="bioAs" ng-click="loadbio(5, 'sales', 'Mark Herrmann has 18 years of institutional equity sales experience, including 9 as a Managing Director at Bear Stearns, covering the largest hedge funds and mutual funds on the west coast.  Over the past year, he has been working in a marketing and product development role for several alternative data companies.  Mark received an undergraduate degree in mechanical engineering from Rensselaer Polytechnic Institute and an MBA in finance from USC. He is based in San Francisco.')">Read Bio</a>
@@ -210,9 +191,6 @@
             <div class="thumbnail">
                 <img src="images/Team_Members_Dave.png" class="img-circle">
                 <div class="caption">
-                    <!--<h3 class="bios" ng-click="changeName('Dave Wigginton');
-                changebio('David Wigginton has demonstrated a consistent ability to provide differentiated coverage of the real estate investment trust sector both as a Senior Analyst at Macquarie Capital and in the equity research department of Merrill Lynch. Prior to commencing his career in research, David worked as a Senior Consultant in the Financial Services Advisory area at Ernst & Young. He is a graduate of the University of Notre Dame, where he earned an M.S. in Accountancy, and Brigham Young University, where he earned a B.S. in Business Management with a finance emphasis.');
-                changeImg('images/Team_Members_Dave.png');">Dave Wigginton</h3>-->
                     <h3>Dave Wigginton</h3>
                     <p>Real Estate Curation</p>
                     <a class="bioAs" ng-click="loadbio(7, 'product', 'David Wigginton has demonstrated a consistent ability to provide
@@ -230,9 +208,6 @@ B.S. in Business Management with a finance emphasis.')">Read Bio</a>
             <div class="thumbnail">
                 <img src="images/Team_Members_Richard.png" class="img-circle">
                 <div class="caption">
-                    <!--<h3 class="bios" ng-click="changeName('Rick Church');
-                changebio('Richard Church’s experience base includes 20+ years in equity investing in both public and private realms. His strengths revolve around strategy, financial advisory services, business valuation and global consumer/retail fundamental research. Richard’s background includes senior roles, such as Managing Director at Citi-Smith Barney; Managing Director at Shumway Capital Partners; and Principal/CIO at Quartern Capital Partners. Among Richard’s honors stand his distinction as a five-time winner of the Institutional Investor All-America Research Team award and the Wall Street Journal Best of the Street Award.');
-                changeImg('images/Team_Members_Richard.png');">Rick Church</h3>-->
                     <h3>Rick Church</h3>
                     <p>Consumer Retail Curation</p>
                     <a class="bioAs" ng-click="loadbio(8, 'product', 'Richard Church’s experience base includes 20+ years in equity
@@ -252,7 +227,6 @@ the Street Award.')">Read Bio</a>
             <div class="thumbnail">
                 <img src="images/Team_Members_Gil.png" class="img-circle">
                 <div class="caption">
-                    <!--<h3 class="bios" ng-click="changeName('Gil Yang'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/Team_Members_Gil.png');">Dr. Gil Yang</h3>-->
                     <h3>Gil Yang</h3>
                     <p>Energy Curation</p>
                     <a class="bioAs" ng-click="loadbio(9, 'product', 'Gil Yang brings a broad wealth of expertise to his role as energy anaylst, given his understanding of not only the financial analysis, but the science behind this sector. Prior to joining DISCERN. Gil was a senior analyst at Bank of Amercia Merrill Lynch covering Oil and Gas: SMID Cap U.S E&P, and at Citi Investment Research covering North Amercian E&P. Gills additional work includes coverage of Specialty Chemicals at Citi where he was ranked #3 in 2002, and coverage of SPecialty chemicals and Ag Biotech at JP Morgan Securities. Gill holds a BA from Cornell,an MBA in Finance from UCLA and a PHD in chemistry from the universty of California - Berkeley.')">Read Bio</a>
@@ -263,13 +237,10 @@ the Street Award.')">Read Bio</a>
             <div class="thumbnail">
                 <img src="images/Team_Members_Sanjay.png" class="img-circle">
                 <div class="caption">
-                    <!--<h3 class="bios" ng-click="changeName('Sanjay Agarwal'); changebio('Jeff Bezos is his own bodyguard... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga similique beatae neque, consectetur quasi, nisi. Sunt odio odit quibusdam repellendus in architecto libero corporis magnam tenetur. Nesciunt mollitia excepturi sequi.'); changeImg('images/Team_Members_Sanjay.png');">Sanjay Agarwal</h3>-->
                     <h3>Sanjay Agarwal</h3>
                     <p>Chief Data Scientist</p>
                     <a class="bioAs" ng-click="loadbio(3, 'leader', 'Sanjay Agarwal has a broad wealth of experience in machine learning, data
 science, software engineering and visualization.
-
-
 Prior to joining DISCERN, led the data science effort in Petzilla where he
 deployed machine learning tools for logistic regression and real time
 geo-mapping. Sanjay was a lead data scientist at Qualcomm Analytics
@@ -284,145 +255,7 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
         </div>
     </div>
 </div>
-<script>
-    $(".productteam").hide();
-    $(".salesteam").hide();
-    $(".product").click(function () {
-        $(".sales").removeClass("active");
-        $(".leader").removeClass("active");
-        $(".product").addClass("active");
-        $(".productteam").show();
-        $(".salesteam").hide();
-        $(".leaderteam").hide();
-        $(".bioinfo").remove();
-    });
 
-    $(".sales").click(function () {
-        $(".sales").addClass("active");
-        $(".leader").removeClass("active");
-        $(".product").removeClass("active");
-        $(".productteam").hide();
-        $(".salesteam").show();
-        $(".leaderteam").hide();
-        $(".bioinfo").remove();
-    });
-
-    $(".leader").click(function () {
-        $(".sales").removeClass("active");
-        $(".leader").addClass("active");
-        $(".product").removeClass("active");
-        $(".leaderteam").show();
-        $(".salesteam").hide();
-        $(".productteam").hide();
-        $(".bioinfo").remove();
-    });
-</script>
-<style>
-    /* @media (max-width: 644px) {
-        #servicesNav {
-            margin-top: -20px;
-        }
-        .right {
-            text-align: center;
-            overflow-y: auto;
-            max-height: 230px;
-        }
-        .left {
-            margin: 0 auto;
-        }
-        .modal-content {
-            background-color: #fefefe;
-            position: relative;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 60%;
-            height: 90%;
-        }
-    }*/
-
-    #bg-about {
-        width: 100%;
-        height: 330px;
-        margin-top: 20px;
-        background-image: url("./images/hero_our_team.png");
-        background-repeat: no-repeat;
-        text-align: center;
-        /*background-position: -50px -100px;*/
-        color: white;
-    }
-
-    .right {
-        overflow-y: auto;
-        max-height: 230px;
-    }
-
-    .aboutpages li {
-        margin: 0 auto;
-        text-align: center;
-    }
-</style>
-<style>
-    .Aligner {
-        height: 60vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .leader active {
-        font-weight: bold;
-    }
-
-    .bioinfo {
-        padding: 25px;
-        background-color: #F7F7F7;
-        color: #116194;
-    }
-
-    .bioAs {
-        cursor: pointer;
-    }
-
-    .rowcontact {
-        text-align: center;
-        color: white;
-    }
-
-    .mapsize {
-        height: 50px;
-        width: 250px;
-    }
-
-    .footer-icons {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .leader,
-    .sales,
-    .product {
-        cursor: pointer;
-    }
-
-    .caption > p {
-        color: #474747;
-    }
-
-    .ficon {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .socicon-googleplus {
-        font-size: 45px;
-    }
-
-    .footer-icons a {
-        text-decoration: none;
-        color: white;
-    }
-</style>
 </div>
 </div>
 </div>
@@ -500,6 +333,41 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
     </div>
 </div>
 <script>
+    $(".productteam").hide();
+    $(".salesteam").hide();
+    $(".product").click(function () {
+        $(".sales").removeClass("active");
+        $(".leader").removeClass("active");
+        $(".product").addClass("active");
+        $(".productteam").show();
+        $(".salesteam").hide();
+        $(".leaderteam").hide();
+        $(".bioinfo").remove();
+    });
+
+    $(".sales").click(function () {
+        $(".sales").addClass("active");
+        $(".leader").removeClass("active");
+        $(".product").removeClass("active");
+        $(".productteam").hide();
+        $(".salesteam").show();
+        $(".leaderteam").hide();
+        $(".bioinfo").remove();
+    });
+
+    $(".leader").click(function () {
+        $(".sales").removeClass("active");
+        $(".leader").addClass("active");
+        $(".product").removeClass("active");
+        $(".leaderteam").show();
+        $(".salesteam").hide();
+        $(".productteam").hide();
+        $(".bioinfo").remove();
+    });
+
+    $('.navbar-toggle').on("click", function () {
+        $('#pushContent').slideToggle();
+    });
     $(window).scroll(function () {
         $(".fade").css("opacity", 0 + $(window).scrollTop() / 250);
     });
@@ -557,11 +425,85 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
     a {
         color: #116194;
     }
-    /*#myModal {
+
+    #bg-about {
+        width: 100%;
+        height: 330px;
+        margin-top: 20px;
+        background-image: url("./images/hero_our_team.png");
+        background-repeat: no-repeat;
+        text-align: center;
+        /*background-position: -50px -100px;*/
+        color: white;
+    }
+
+    .right {
+        overflow-y: auto;
+        max-height: 230px;
+    }
+
+    .aboutpages li {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .Aligner {
+        height: 60vh;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
-    #leftside {
-        margin: auto;
-    }*/
+
+    .leader active {
+        font-weight: bold;
+    }
+
+    .bioinfo {
+        padding: 25px;
+        background-color: #F7F7F7;
+        color: #116194;
+    }
+
+    .bioAs {
+        cursor: pointer;
+    }
+
+    .rowcontact {
+        text-align: center;
+        color: white;
+    }
+
+    .mapsize {
+        height: 50px;
+        width: 250px;
+    }
+
+    .footer-icons {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .leader,
+    .sales,
+    .product {
+        cursor: pointer;
+    }
+
+    .caption > p {
+        color: #474747;
+    }
+
+    .ficon {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .socicon-googleplus {
+        font-size: 45px;
+    }
+
+    .footer-icons a {
+        text-decoration: none;
+        color: white;
+    }
 </style>

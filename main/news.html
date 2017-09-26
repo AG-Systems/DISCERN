@@ -109,49 +109,30 @@
 <br/>
 <div style="width: 100%; height: 330px; background-image: url('images/hero_news.png');margin-top:20px;">
     <h1 style="text-align: center; color: white; font-size: 120px; padding-top: 100px;" id="fade"><b>DISCERN NEWS</b></h1>
-    <script>
-        $(window).scroll(function () {
-            $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
-        });
-    </script>
 </div>
 <div id="needCopy">
     <h1 style="color:#116194;font-size:48px;">Check Out the Latest Buzz Below:</h1>
 </div>
 
 <div id="newsContainer" class="container" ng-controller="news">
-    <!-- <h2 class="newsHeader">DISCERN in the News</h2> -->
     <br/>
-    <!--<div style="width: 90%; background-color: #474747; margin: 0 auto;">-->
-    <div style="width: 90%; margin: 0 auto;border:1px solid #474747; background-color:#474747">
-        <!--<div>
-            <!--<button id="news_btn" ng-click="toggle_news()" class="btn btn-primary" style="width: 17%; border: 4px solid #474747; background-color: #ececec; color: black;">News</button>
-            <button id="events_btn" ng-click="toggle_events()" class="btn btn-primary" style="width: 16%; background-color: #474747; border: 4px solid #474747;"> Upcoming Events</button>-->
-        <ul class="nav nav-tabs aboutpages nav-justified">
+    <div style="width: 90%; margin: 0 auto; background-color:#ececec">
+        <ul class="nav nav-tabs aboutpages nav-justified" style="border:1px solid #474747;">
             <li id="newsTab" class="news active"><a id="newsA" ng-click="show_news()" style="border:0; font-size:18px;">News</a></li>
             <li id="eventsTab" class="events"><a id="eventsA" ng-click="show_events()" style="border:0; font-size:18px;" class="blue">Events</a></li>
         </ul>
-        <!--</div>-->
     </div>
     <div class="row" id="news_page">
-
         <div class="col-xs-4" style="overflow-y: auto; min-height: 500px; background-color: white;border-right:1px solid #474747" id="fill">
-            <!--<div ng-repeat="post in posts.slice().reverse()" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">-->
             <div ng-repeat="post in current_tab" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">
                 <div>
                     <p style="color:#474747; font-size:16px; text-align:left; padding:20px 20px 0px;margin:0;" id="dates">{{ post.date }}:</p>
                     <h4 class="headlines"> {{ post.title }}</h4>
-                    <!--<p style="color:#474747; font-size:14px;">{{ post.date }}</p>-->
+
                 </div>
-                <!--<hr>-->
             </div>
         </div>
         <div class="col-xs-8" style="text-align: center; overflow-y: scroll;" id="currentpost">
-            <!--
-            <p>Date published: {{ current_story.date }}</p>
-            <p>{{ current_story.text }}</p>
-            <p><a ng-href="{{current_story.link}}">Link to the full article</a></p>-->
-            <!--<iframe src="https://www.linkedin.com/pulse/your-data-ready-anthea-stratigos?trk=v-feed&lipi=urn:li:page:d_flagship3_profile_view_base_recent_activity_details_all;UASEq0lDL1iAuDpVmHVakw%3D%3D"></iframe>-->
             <iframe id="Example2" title="Example2" width="100%" height="900px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" ng-src="{{ trustSrc(current_story.link) }}">
         </div>
         </iframe>
@@ -213,9 +194,13 @@
 
     #newsTab,
     #eventsTab {
-        border-right: 1px solid #474747;
+        /*border-right: 1px solid #474747;*/
         background-color: white;
         color: #116194;
+    }
+
+    #newsTab {
+        border-right: 1px solid #474747;
     }
 
     #needCopy {
@@ -254,27 +239,25 @@
         $('#pushContent').slideToggle();
     });
 
+    $(window).scroll(function () {
+        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
+
     $("#newsTab").click(function () {
         $("#eventsTab").removeClass("active");
         $("#newsTab").addClass("active");
         $("#eventsA").addClass("blue");
-        /*if ($("#newsTab").hasClass("active")) {
-            toggle_news();
-        } else {
-            toggle_events();
-        }*/
     });
     $("#eventsTab").click(function () {
         $("#eventsTab").addClass("active");
         $("#newsTab").removeClass("active");
         $("#newsA").addClass("blue");
-        /*if ($("#newsTab").hasClass("active")) {
-            toggle_news();
-        } else {
-            toggle_events();
-        }*/
     });
-    // navbar
+    $(document).ready(function () {
+            //$("iframe").prop("src", "./alpha_theory.pdf");
+            $("iframe").prop("src", "{{posts[0].link}}");
+        })
+        // navbar
 </script>
 <div id="footer-contact">
     <div class="container" style="margin: 0 auto; padding: 10px; padding-top: 40px; font-size: 20px;">

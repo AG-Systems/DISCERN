@@ -64,7 +64,7 @@ app.controller('news', function ($scope, $sce, $http) {
             title: "DISCERN chosen as default search platform for Alpha Theory Portfolio Optimization platform ",
             date: "09/26/17",
             post_id: 0,
-            link: "https://www.youtube.com/",
+            link: "./alpha_theory.pdf",
             text: "Hella church-key listicle heirloom squid. Humblebrag woke biodiesel la croix post-ironic truffaut. Echo park thundercats pickled YOLO fingerstache. Food truck bespoke before they sold out, cornhole plaid semiotics four dollar toast irony snackwave squid tousled. 90's farm-to-table cray beard meggings cloud bread yr sriracha readymade... "
 
       },
@@ -124,11 +124,11 @@ app.controller('news', function ($scope, $sce, $http) {
 
         ]
     $scope.current_tab = $scope.posts;
-    $scope.change_post = function (index) {
+    /*$scope.change_post = function (index) {
         $scope.index = index
         $scope.current_story = $scope.posts[$scope.index]
         console.log($scope.current_story);
-    };
+    };*/
     /*$scope.current_story = $scope.posts[$scope.index]
     $scope.trustSrc = function (src) {
         return $sce.trustAsResourceUrl(src);
@@ -139,7 +139,8 @@ app.controller('news', function ($scope, $sce, $http) {
         } else {*/
         $scope.current_tab = $scope.posts;
         $scope.index = 0;
-        $scope.current_story = $scope.posts[$scope.index]
+        $scope.current_story = $scope.posts[$scope.index];
+        console.log($scope.current_story);
         $scope.trustSrc = function (src) {
                 return $sce.trustAsResourceUrl(src);
             }
@@ -161,7 +162,8 @@ app.controller('news', function ($scope, $sce, $http) {
         } else {*/
         $scope.current_tab = $scope.events;
         $scope.index = 0;
-        $scope.current_story = $scope.events[$scope.index]
+        $scope.current_story = $scope.events[$scope.index];
+        console.log($scope.current_story);
         $scope.trustSrc = function (src) {
                 return $sce.trustAsResourceUrl(src);
             }

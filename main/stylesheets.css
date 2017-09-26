@@ -389,6 +389,18 @@ button.navbar-toggle {
     margin-left: -3px;
 }
 
+.discernBlue {
+    color: #116194;
+    text-align: left;
+    margin: 0;
+}
+
+.dropdownDs {
+    max-width: 71px;
+    display: block;
+    margin: auto;
+}
+
 iframe {
     width: 100%;
 }

@@ -103,10 +103,6 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
-<!-- <div id="emptySpace"></div> -->
-<!--<div style="text-align: center; height: 330px; width: 100%; background-image: url('images/hero_partners.png'); margin-top:10px;">
-<h1 id="fade" style="font-size: 120px; color: white; padding-top: 100px; margin-top:0">DATA PARTNERS</h1>
-</div>-->
 <div id="max-breaker"></div>
 <div id="bg-partners">
     <h1 style="font-size: 120px; color: white; padding-top: 100px; margin-top:0" id="fade"><b>PARTNERS</b></h1>
@@ -371,6 +367,13 @@
             }
         });
     });
+    $('.navbar-toggle').on("click", function () {
+        $('#pushContent').slideToggle();
+    });
+    // navbar
+    $(window).scroll(function () {
+        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
 </script>
 
 <style>
@@ -460,9 +463,8 @@
     blockquote {
         border-left: none;
     }
-</style>
-<!-- CSS for Accordion Dropdown -->
-<style>
+    /* CSS for Accordion Dropdown */
+
     h3 {
         color: #fff;
         font-size: 24px;
@@ -551,41 +553,6 @@
         border-radius: 0;
         transition: border-radius linear 0s;
     }
-    /* #bs-collapse icon scale option */
-    /*.panel-heading a:before {
-    content: '\e146';
-    position: absolute;
-    font-family: 'Material Icons';
-    right: 5px;
-    top: 10px;
-    font-size: 24px;
-    transition: all 0.5s;
-    transform: scale(1);
-    }
-
-    .panel-heading.active a:before {
-    content: ' ';
-    transition: all 0.5s;
-    transform: scale(0);
-    }
-
-    #bs-collapse .panel-heading a:after {
-    content: ' ';
-    font-size: 24px;
-    position: absolute;
-    font-family: 'Material Icons';
-    right: 5px;
-    top: 10px;
-    transform: scale(0);
-    transition: all 0.5s;
-    }
-
-    #bs-collapse .panel-heading.active a:after {
-    content: '\e909';
-    transform: scale(1);
-    transition: all 0.5s;
-    }*/
-    /* #accordion rotate icon option */
 
     #accordion .panel-heading a:before {
         content: '\e316';
@@ -603,13 +570,3 @@
         transition: all 0.5s;
     }
 </style>
-
-<script>
-    $('.navbar-toggle').on("click", function () {
-        $('#pushContent').slideToggle();
-    });
-    // navbar
-    $(window).scroll(function () {
-        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
-    });
-</script>

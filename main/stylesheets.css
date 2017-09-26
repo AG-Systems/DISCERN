@@ -377,6 +377,10 @@ ul>a>li {
     border-right: 3px solid #116194;
 }
 
+button.navbar-toggle {
+    margin: 5px;
+}
+
 #rightside {
     float: left;
     width: 70%;

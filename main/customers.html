@@ -244,7 +244,7 @@
 
     </div>
     <!-- end of #bs-collapse  -->
-    <div id="valuePropDiv">
+    <div style="padding:50px;">
         <h2 style="color:#116194; text-align:center; font-size:48px;">More Insights. More Often. Better Returns.</h2>
     </div>
     <div style="background-color:#963095">
@@ -387,14 +387,16 @@ s.parentNode.insertBefore(ac, s);
             }
         });
     });
+    $('.navbar-toggle').on("click", function () {
+        $('#pushContent').slideToggle();
+    });
+    // navbar
+    $(window).scroll(function () {
+        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
 </script>
 
 <style>
-    #valuePropDiv {
-        padding: 50px;
-        /*background-color: #116194;*/
-    }
-
     .ficon {
         margin: 0;
     }
@@ -595,13 +597,3 @@ s.parentNode.insertBefore(ac, s);
         transition: all 0.5s;
     }
 </style>
-
-<script>
-    $('.navbar-toggle').on("click", function () {
-        $('#pushContent').slideToggle();
-    });
-    // navbar
-    $(window).scroll(function () {
-        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
-    });
-</script>

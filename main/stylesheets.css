@@ -808,3 +808,296 @@ select {
 
 
 /* ----------------------- */
+
+
+/* CSS for About Page */
+
+#about-page {
+    margin-top: 20px;
+    padding-top: 1px;
+}
+
+.teamH1 {
+    color: white;
+    padding-bottom: 50px;
+    font-size: 120px;
+    padding-top: 100px;
+}
+
+.caption {
+    margin-bottom: 10px;
+}
+
+.img-circle {
+    margin-top: 50px;
+}
+
+.thumbnail {
+    background-color: white;
+}
+
+.thumbnail:hover {
+    background-color: white;
+}
+
+h3.bios {
+    color: #474747;
+}
+
+.bioinfo {
+    color: #474747;
+}
+
+#bg-about {
+    width: 100%;
+    height: 330px;
+    margin-top: 20px;
+    background-image: url("./images/hero_our_team.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    /*background-position: -190px 0px;*/
+    color: white;
+}
+
+.aboutpages li {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.leader active {
+    font-weight: bold;
+}
+
+.bioinfo {
+    padding: 25px;
+    background-color: #F7F7F7;
+    color: #116194;
+}
+
+.bioAs {
+    cursor: pointer;
+}
+
+.rowcontact {
+    text-align: center;
+    color: white;
+}
+
+.mapsize {
+    height: 50px;
+    width: 250px;
+}
+
+.footer-icons {
+    font-size: 20px;
+    text-align: center;
+}
+
+.leader,
+.sales,
+.product {
+    cursor: pointer;
+}
+
+.caption > p {
+    color: #474747;
+}
+
+.ficon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.socicon-googleplus {
+    font-size: 45px;
+}
+
+.footer-icons a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ------------------ */
+
+
+/* CSS for About Page */
+
+#follow {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.textLinks {
+    font-weight: bold;
+    color: #116194;
+    font-size: 18px;
+    /*cursor: pointer;*/
+}
+
+#servicesh5,
+#partnersh5 {
+    text-align: left;
+    font-size: 24px;
+    /*padding: 10px 0;*/
+    color: #474747;
+}
+
+ul > a:hover {
+    text-decoration: none;
+}
+
+.servicesAndPartnersh3s {
+    font-size: 48px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.servicesAndPartnersPs {
+    text-align: left;
+    padding: 10px 0;
+    margin: 0;
+    color: #474747;
+}
+
+#servicesDiv,
+#partnersDiv {
+    background-color: #F7F7F7;
+}
+
+#servicesDiv {
+    border-right: 1px solid #474747;
+}
+
+#theGap {
+    color: #116194;
+    margin-top: 50px;
+    font-size: 48px;
+}
+
+#bulletDiv {
+    padding: 0;
+}
+
+#bridgeGap {
+    font-size: 60px;
+    margin: 30px 0;
+    color: #474747;
+}
+
+#leftButtonDiv {
+    border-right: 1px solid #474747;
+    padding: 30px;
+}
+
+#rightButtonDiv {
+    padding: 30px;
+}
+
+#splitButtons {
+    background-color: #F7F7F7;
+    padding-top: 15px;
+    height: 150px;
+}
+
+#leftButton {
+    width: 50%;
+    display: block;
+    margin: auto;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #f36b21;
+    border: 1px solid #f36b21;
+    color: white;
+    font-weight: bold;
+}
+
+#leftButton:hover {
+    background-color: orange;
+    border: 1px solid orange;
+    text-decoration: none;
+}
+
+#rightButton {
+    width: 50%;
+    display: block;
+    margin: auto;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #962A97;
+    border: 1px solid #962A97;
+    color: white;
+    font-weight: bold;
+}
+
+#rightButton:hover {
+    background-color: purple;
+    border: 1px solid purple;
+    text-decoration: none;
+}
+
+.noUnderline:hover {
+    text-decoration: none;
+}
+
+#bulletsHeader {
+    font-size: 42px;
+    padding: 20px;
+}
+
+#bg-demo {
+    width: 100%;
+    height: 330px;
+    margin-top: -10px;
+    background-image: url("./images/hero_overview.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    /*background-position: -50px -160px;*/
+    color: white;
+}
+
+
+/*#max-breaker {
+    width: 100%;
+    height: 50px;
+}*/
+
+#theProblem {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#change {
+    padding: 50px;
+    background-color: #116194;
+}
+
+#changeHeader {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+
+#valuePropDiv {
+    padding: 50px;
+    background-color: #116194;
+}
+
+#circleImg {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#servicesAndPartners {
+    background-color: #F7F7F7;
+    padding-top: 25px;
+}
+
+
+/* ----------------- */

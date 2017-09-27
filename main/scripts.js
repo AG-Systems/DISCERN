@@ -130,6 +130,17 @@ app.controller('news', function ($scope, $sce, $http) {
                 'color': 'white',
             });*/
     }
+
+    $("#newsTab").click(function () {
+        $("#eventsTab").removeClass("active");
+        $("#newsTab").addClass("active");
+        $("#eventsA").addClass("blue");
+    });
+    $("#eventsTab").click(function () {
+        $("#eventsTab").addClass("active");
+        $("#newsTab").removeClass("active");
+        $("#newsA").addClass("blue");
+    });
 });
 
 app.controller('about_controller', function ($scope) {

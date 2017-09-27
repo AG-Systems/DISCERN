@@ -110,20 +110,20 @@
 <div style="width: 100%; height: 330px; background-image: url('images/hero_news.png');margin-top:20px;">
     <h1 style="text-align: center; color: white; font-size: 120px; padding-top: 100px;" id="fade"><b>DISCERN NEWS</b></h1>
 </div>
-<div id="needCopy">
+<div id="underNewsHero">
     <h1 style="color:#116194;font-size:48px;">Check Out the Latest Buzz:</h1>
 </div>
 
 <div id="newsContainer" class="container" ng-controller="news">
     <br/>
     <div style="width: 90%; margin: 0 auto; background-color:#ececec">
-        <ul class="nav nav-tabs aboutpages nav-justified" style="border:1px solid #474747;">
+        <ul class="nav nav-tabs newspages nav-justified" style="border:1px solid #474747;">
             <li id="newsTab" class="news active"><a id="newsA" ng-click="show_news()" style="border:0; font-size:18px;">News</a></li>
             <li id="eventsTab" class="events"><a id="eventsA" ng-click="show_events()" style="border:0; font-size:18px;" class="blue">Events</a></li>
         </ul>
     </div>
     <div class="row" id="news_page">
-        <div class="col-xs-4" style="overflow-y: auto; min-height: 500px; background-color: white;border-right:1px solid #474747" id="fill">
+        <div class="col-xs-4" style="overflow-y: auto; min-height: 500px; background-color: white;border-right:1px solid #474747" id="fillNews">
             <div ng-repeat="post in current_tab" id="single_news" ng-click="change_post(post.post_id)" style="overflow-y: hidden;">
                 <div>
                     <p style="color:#474747; font-size:16px; text-align:left; padding:20px 20px 0px;margin:0;" id="dates">{{ post.date }}:</p>
@@ -141,124 +141,13 @@
 </div>
 
 <style>
-    #single_news {
-        /* width: 300px; */
-        /*height: 100px;*/
-        background-color: white;
-        color: black;
-        text-align: center;
-        border-bottom: 1px solid #474747;
-    }
-
-    .headlines {
-        cursor: pointer;
-        color: #116194;
-        padding: 0px 20px 20px;
-        text-align: left;
-        margin: 0;
-    }
-
-    .blue {
-        color: #116194;
-    }
-
-    .headlines:hover {
-        color: #337ab7;
-    }
-
-    .selected {
-        background-color: green;
-    }
-
-    #fill {
-        height: 700px;
-        /*border: 1px solid #474747;*/
-        padding: 0;
-    }
-
-    #currentpost {
-        height: 700px;
-        background-color: #d3d3d3;
-        /*border: 1px solid #474747;*/
-        padding: 0;
-    }
-
-    .nav-tabs.nav-justified {
-        width: 33.333333333333%;
-        border-bottom: 0;
-    }
-
-    li.active {
-        color: #474747;
-    }
-
-    #newsTab,
-    #eventsTab {
-        /*border-right: 1px solid #474747;*/
-        background-color: white;
-        color: #116194;
-    }
-
-    #newsTab {
-        border-right: 1px solid #474747;
-    }
-
-    #needCopy {
-        text-align: center;
-        padding: 20px;
-        background-color: white;
-    }
-
-    #newsContainer {
-        background-color: #ececec;
-        padding: 50px 0;
-    }
-
-    a {
-        cursor: pointer;
-    }
-
-    #news_page {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     @media (min-width: 992px) {
         #servicesNav {
             margin-top: 0px;
         }
     }
-
-    .activesec {
-        background-color: #116194;
-    }
 </style>
 
-<script>
-    $('.navbar-toggle').on("click", function () {
-        $('#pushContent').slideToggle();
-    });
-
-    $(window).scroll(function () {
-        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
-    });
-
-    $("#newsTab").click(function () {
-        $("#eventsTab").removeClass("active");
-        $("#newsTab").addClass("active");
-        $("#eventsA").addClass("blue");
-    });
-    $("#eventsTab").click(function () {
-        $("#eventsTab").addClass("active");
-        $("#newsTab").removeClass("active");
-        $("#newsA").addClass("blue");
-    });
-    $(document).ready(function () {
-            //$("iframe").prop("src", "./alpha_theory.pdf");
-            $("iframe").prop("src", "{{posts[0].link}}");
-        })
-        // navbar
-</script>
 <div id="footer-contact">
     <div class="container" style="margin: 0 auto; padding: 10px; padding-top: 40px; font-size: 20px;">
         <div class="row">
@@ -332,3 +221,17 @@
         </div>
     </div>
 </div>
+
+<script>
+    $('.navbar-toggle').on("click", function () {
+        $('#pushContent').slideToggle();
+    });
+
+    $(window).scroll(function () {
+        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
+
+    $(document).ready(function () {
+        $("iframe").prop("src", "{{posts[0].link}}");
+    })
+</script>

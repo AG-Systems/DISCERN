@@ -77,25 +77,25 @@
                     </div>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#page-top">Demo</a>
+                    <a class="page-scroll" href="#/overview">Overview</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">Partners</a>
+                    <a class="page-scroll" href="#/customers">Customers</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Services</a>
+                    <a class="page-scroll" href="#/partners">Partners</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">News</a>
+                    <a class="page-scroll" href="#/news">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">About</a>
+                    <a class="page-scroll" href="#/about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact Us</a>
+                    <a class="page-scroll" href="#/contact">Contact Us</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Login</a>
+                    <a class="page-scroll" href="#">Login</a>
                 </li>
             </ul>
         </div>
@@ -110,7 +110,7 @@
 <div id="about-page" ng-controller="about_controller">
 
     <div id="bg-about">
-        <h1 style="font-size: 120px; padding-top: 100px;" id="fade"><b>OUR TEAM</b></h1>
+        <h1 class="teamH1" id="fade"><b>OUR TEAM</b></h1>
     </div>
     <div id="valuePropDiv" style="padding:50px;">
         <h2 style="color:#116194; text-align:center; font-size:48px">Vision. Expertise. Execution.</h2>
@@ -381,10 +381,11 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
         padding-top: 1px;
     }
 
-    h1 {
+    .teamH1 {
         color: white;
-        padding-top: 50px;
         padding-bottom: 50px;
+        font-size: 120px;
+        padding-top: 100px;
     }
 
     .row {
@@ -421,11 +422,6 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
         color: #474747;
     }
 
-    p,
-    a {
-        color: #116194;
-    }
-
     #bg-about {
         width: 100%;
         height: 330px;
@@ -433,7 +429,7 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
         background-image: url("./images/hero_our_team.png");
         background-repeat: no-repeat;
         text-align: center;
-        background-position: -190px 0px;
+        /*background-position: -190px 0px;*/
         color: white;
     }
 
@@ -445,13 +441,6 @@ and and Data Analytics certificate from the UC – Santa Cruz.')">Read Bio</a>
     .aboutpages li {
         margin: 0 auto;
         text-align: center;
-    }
-
-    .Aligner {
-        height: 60vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .leader active {

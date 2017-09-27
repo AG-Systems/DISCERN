@@ -77,25 +77,25 @@
                     </div>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#page-top">Demo</a>
+                    <a class="page-scroll" href="#/overview">Overview</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">Partners</a>
+                    <a class="page-scroll" href="#/customers">Customers</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Services</a>
+                    <a class="page-scroll" href="#/partners">Partners</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">News</a>
+                    <a class="page-scroll" href="#/news">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">About</a>
+                    <a class="page-scroll" href="#/about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact Us</a>
+                    <a class="page-scroll" href="#/contact">Contact Us</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Login</a>
+                    <a class="page-scroll" href="#">Login</a>
                 </li>
             </ul>
         </div>
@@ -103,6 +103,9 @@
     </div>
     <!-- /.container-fluid -->
 </nav>
+<div id="pushContent"></div>
+<!-- pushing down site -->
+<!-- navbar code done -->
 <div id="max-breaker"></div>
 <div id="bg-customers">
     <h1 style="font-size: 120px; color: white; padding-top: 100px; margin-top:0" id="fade"><b>CUSTOMERS</b></h1>
@@ -241,7 +244,7 @@
 
     </div>
     <!-- end of #bs-collapse  -->
-    <div id="valuePropDiv">
+    <div style="padding:50px;">
         <h2 style="color:#116194; text-align:center; font-size:48px;">More Insights. More Often. Better Returns.</h2>
     </div>
     <div style="background-color:#963095">
@@ -384,14 +387,16 @@ s.parentNode.insertBefore(ac, s);
             }
         });
     });
+    $('.navbar-toggle').on("click", function () {
+        $('#pushContent').slideToggle();
+    });
+    // navbar
+    $(window).scroll(function () {
+        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
 </script>
 
 <style>
-    #valuePropDiv {
-        padding: 50px;
-        /*background-color: #116194;*/
-    }
-
     .ficon {
         margin: 0;
     }
@@ -592,13 +597,3 @@ s.parentNode.insertBefore(ac, s);
         transition: all 0.5s;
     }
 </style>
-
-<script>
-    $('.navbar-toggle').on("click", function () {
-        $('#pushContent').slideToggle();
-    });
-    // navbar
-    $(window).scroll(function () {
-        $("#fade").css("opacity", 1 - $(window).scrollTop() / 250);
-    });
-</script>

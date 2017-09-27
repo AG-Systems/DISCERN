@@ -1,4 +1,4 @@
-<div id="servicesNav" class="mainNav col-xs-12">
+<div id="servicesNav" class="mainNav col-xs-12" style="margin-top: 0px;">
 
     <div class="searchNav col-md-5 col-lg-4">
         <a ng-href="#/home" class="img-a"><img class="img-nav" src="images/discernLogo.png" /></a>
@@ -77,25 +77,25 @@
                     </div>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#page-top">Demo</a>
+                    <a class="page-scroll" href="#/overview">Overview</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">Partners</a>
+                    <a class="page-scroll" href="#/customers">Customers</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Services</a>
+                    <a class="page-scroll" href="#/partners">Partners</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">News</a>
+                    <a class="page-scroll" href="#/news">News</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">About</a>
+                    <a class="page-scroll" href="#/about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact Us</a>
+                    <a class="page-scroll" href="#/contact">Contact Us</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Login</a>
+                    <a class="page-scroll" href="#">Login</a>
                 </li>
             </ul>
         </div>
@@ -106,7 +106,6 @@
 <div id="pushContent"></div>
 <!-- pushing down site -->
 <!-- navbar code done -->
-
 <div id="max-breaker"></div>
 <div id="bg-contact">
     <h1 style="font-size: 120px; margin-top: 0; padding-top: 100px;" id="fade"><b>CONNECT WITH US</b></h1>
@@ -226,168 +225,14 @@
 </div>
 
 <style>
-    #footer-logo {
-        width: 200px;
-    }
-
-    ul>a>li {
-        font-size: 16px;
-    }
-
-    #servicesNav {
-        margin-top: 0px;
-    }
-
-    .Aligner {
-        height: 60vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .contactPs {
-        color: #474747;
-        text-align: left;
-    }
-
-    #middleSection {
-        width: 100%;
-        padding: 50px 0;
-    }
-
-    #breakPs {
-        margin-bottom: 20px;
-    }
-
-    #footer-contact {
-        min-height: 250px;
-        height: 250px;
-        width: 100%;
-        color: black;
-        background-color: #474747;
-    }
-
-    .rowcontact {
-        text-align: center;
-        color: white;
-    }
-
-    .mapsize {
-        height: 50px;
-        width: 250px;
-    }
-
-    .footer-icons {
-        font-size: 20px;
-        text-align: center;
-        width: 160px;
-    }
-
-    .ficon {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .socicon-googleplus {
-        font-size: 45px;
-    }
-
-    .footer-icons a {
-        text-decoration: none;
-        color: white;
-    }
-
-    @media(max-width:767px) {
-        #divider {
-            display: none;
-        }
-    }
-
-    #message_box {
-        resize: vertical;
-        padding: 7px 9px;
-        font-size: 16px;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-    }
-
-    .form-inputs {
-        border: 2px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
-        height: auto;
-        margin-bottom: 15px;
-        padding: 7px 9px;
-        width: 100%;
-    }
-
-    .border-form-div {
-        max-width: 400px;
-        padding: 20px 0;
-        margin: 0 auto 20px;
-        /*background-color: #f5f5f5;
-        border: 1px solid #e5e5e5;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-        -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, .05);*/
-    }
-
-    .border-form-div .form-signin-heading,
-    .border-form-div .checkbox {
-        margin-bottom: 10px;
-    }
-
-    .border-form-div input[type=" text "],
-    .border-form-div input[type="email "],
-    .border-form-div input[type="password "] {
-        font-size: 16px;
-        height: auto;
-        margin-bottom: 15px;
-        padding: 7px 9px;
-        width: 100%;
-    }
-
-    #title_page {
-        text-align: center;
-    }
-
-    .hidden {
-        display: none;
-    }
-
-    select {
-        width: 100%;
-    }
-
-    #max-breaker {
-        width: 100%;
-        height: 50px;
-    }
-
-    #contactImage {
-        background-image: url('./images/hero_contact.png');
-        /*background-repeat: no-repeat;
-        background-position: 0px -100px;
-        padding: 100px;*/
-        height: 330px;
-    }
-
-    #bg-contact {
-        width: 100%;
-        height: 330px;
-        margin-top: -10px;
-        background-image: url('./images/hero_contact.png');
-        background-repeat: no-repeat;
-        text-align: center;
-        /*background-position: -100px -90px;*/
-        color: white;
-    }
+    /* Responsive CSS */
 </style>
 
+
 <script>
+    $('.navbar-toggle').on("click", function () {
+        $('#pushContent').slideToggle();
+    });
     $(window).scroll(function () {
         $(".fade").css("opacity", 0 + $(window).scrollTop() / 250);
     });
